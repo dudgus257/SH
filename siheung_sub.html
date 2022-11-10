@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <scrip type="text/javascript">
+
+
+    </scrip>
+    <style type="text/css">
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd 
+        {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: "나눔고딕";
+            font-size: 18px
+        }
+
+        ul,li,dl,dt,dd {
+            list-style: none
+        }
+        
+        a{
+            text-decoration: none;
+            color: #000
+                /* inherit */
+        }
+        
+        address {
+            font-style: normal
+        }
+        
+
+        /* 공통 클래스 */
+        
+        .blind{
+            position:absolute;
+            clip:rect(0 0 0 0);
+            width:1px;
+            height:1px;
+            margin:-1px;
+            overflow:hidden
+            }
+        
+        .screen_out{
+            overflow:hidden;
+            position:absolute;
+            width:0;
+            height:0;
+            line-height:0;
+            text-indent:-9999px
+            }
+        
+        .hide{
+            position:absolute;
+            left:-9999px;
+            top:-9999px
+            }
+
+            /* wrap */
+        .wrap{
+            min-width:1600px
+        }
+
+        .header{
+            height:271px;
+            width:1600px;
+            border-bottom:1px solid #DDDDE0;
+            margin:auto;
+            position:relative;
+            z-index:10
+        }
+        /* header */
+        .top{
+            border-bottom:2px solid #36AE58;
+            width:1600px;
+            height:70px;            
+            margin: auto
+        }
+        .top_menu{
+            
+            width:1200px;
+            height:70px;
+            position:relative;
+            margin: auto 
+        }
+        
+        .top1{
+            float:left;
+            position:relative;
+            margin:25px 36px 26px 0
+        }
+        .top1 > a{
+            width:72px;
+            height:70px;
+            font-weight:900;
+            display:block
+            /* margin:25px 36px 26px 218px  */
+        }
+        .top2{
+            float:left;
+            margin:25px 36px 26px 0;    
+        }
+        .top2 a{
+            width:72px;
+            height:70px;
+            display:block;
+            font-weight:900;
+            
+            
+        }
+        .top3 {
+            float:left;
+            margin:25px 36px 26px 0 
+        }
+        .top3 a {
+            width:54px;
+            height:18px;
+            display:block;
+            font-weight:900;
+        }
+        .top4 {
+            float:left;
+            margin:25px 36px 26px 0 
+        }
+        .top4 a {
+            width:90px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        .top5 {
+            float:left;
+            margin:25px 36px 26px 0 
+        }
+        .top5 a {
+            width:72px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        .top6 {
+            float:left;
+            margin:25px 36px 26px 0 
+        }
+        .top6 a {
+            width:108px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        .top7 {
+            
+            float:left;
+            margin:25px 0px 26px 0px 
+        }
+        .top7 a {
+            width:90px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        .top8 {
+            float:left;
+            margin:25px 16px 36px 199px 
+        }
+        .top8 a {
+            width:108px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        .top9{
+            float:left;
+            margin:25px 16px 36px 0;
+            width:5px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        
+        
+        .top10 {
+            float:left;
+            margin:25px 0 36px 0 
+        }
+        .top10 a {
+            width:82px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+                /* logo */
+
+        .logo{
+            width:225px;
+            height:99px;
+            margin:17px auto 0px
+            
+        }
+        .logo a{
+            
+            display:block;
+            background:url(images/logo_03.jpg) no-repeat;
+            text-indent:-9999px;
+            width:225px;
+            height:99px;
+        }
+        /* .gnb{
+            border:3px solid #cbcbcb
+        } */
+        .gnb{
+            position:relative;
+            margin:auto;
+            width: 1200px;
+            height: auto;
+            
+            
+        }
+
+        .nav_bg{
+            
+            width:1200px;
+            height:auto;
+            background:#8484aa;
+            margin:auto  
+        }
+
+        .gnb h2{
+            position:absolute;
+            left:-9999px;
+            top:-9999px;
+        }
+
+        
+
+        /* .gnb>ul{
+            width:100%;
+            height: 40px;
+            margin:30px auto;
+            font-size:18px;
+            color:#000
+        } */
+
+        .gnb>ul>li{
+            float:left;
+            width:171px;
+            position:relative;
+            line-height:40px;
+            text-align:center;
+            margin:25px 0 0 0;
+            height:auto                               
+        }
+
+        .gnb>ul>li>a{
+            display:block; height: 40px;
+            height:auto
+            
+        }
+
+        .gnb1>ul{
+            display:none;
+            height:auto
+        }
+        .gnb2>ul{
+            display:none
+        }
+        .gnb3>ul{
+            display:none
+        }
+        .gnb4>ul{
+            display:none
+        }
+        .gnb5>ul{
+            display:none
+        }
+        .gnb6>ul{
+            display:none
+        }
+        .gnb7>ul{
+            display:none
+        }
+        
+                        /* gnb1 */
+        
+        .a1{
+            font-weight: bold;
+        }
+        .bg1{
+            position:relative;
+            background-color: #fff;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 0;
+        }
+        .gnb1 ul ul{
+            width:200px;
+            height:200px;
+        }
+        .small_gnb ul{
+            position:absolute;
+            text-align:left;            
+            font-size:15px;
+            height:250px;
+        }
+        .gnb1_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;
+            font-size:15px;
+            /* margin-left:10px; */
+            width:200px;
+            height:auto;        
+            font-weight: bold;
+            display: block;            
+        }
+        .small_gnb2 {
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+
+        .gnb1_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            
+            font-weight: bold;
+            display: block;         
+        }
+
+        .small_gnb3{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+
+        .gnb1_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            display: block;  
+            font-size:15px;       
+        }
+
+        .small_gnb4{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb1_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            
+            font-weight: bold;
+            display: block;         
+        }
+
+        .small_gnb5{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb1_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            font-size:15px;
+            font-weight: bold;
+            display: block;         
+        }
+
+        .small_gnb6{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:265px
+        }
+
+        .gnb1_6{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            display: block;         
+        }
+
+        .small_gnb7{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:250px
+        }
+
+        .gnb1_7{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            line-height:50px;
+            font-weight: bold;
+            display: block;         
+        }
+
+        .small_gnb8{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:250px
+        }
+        .gnb1_8{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            line-height:50px;
+            font-weight: bold;
+            display: block;         
+        }
+
+        .small_gnb9{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:250px
+        }
+        .gnb1_9{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            line-height:50px;
+            font-weight: bold;
+            display: block;         
+        }
+        .small_gnb10{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:250px
+        }
+        .gnb1_10{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;
+            line-height:50px;
+            font-weight: bold;
+            display: block;         
+        }
+        .small_gnb11{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:550px
+        }
+        .gnb1_11{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            display: block;         
+        }
+        .small_gnb12{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:550px
+        }
+        .gnb1_12{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            display: block;         
+        }
+        .small_gnb13{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:550px
+        }
+        .gnb1_13{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            display: block;         
+        }
+        .small_gnb14{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:550px
+        }
+        .gnb1_14{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            display: block;         
+        }
+
+                        /* gnb2 */
+        .a2{
+            font-weight: bold;
+        }
+        .bg2{
+            position:relative;
+            background-color: #8484aa;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 -171px;
+        }
+        .small_gnb15{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb2_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb16{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb2_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb17{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb2_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb18{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb2_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb19{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb2_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb20{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:450px
+        }
+        .gnb2_6{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb21{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:450px
+        }
+        .gnb2_7{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:211px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb22{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:450px
+        }
+        .gnb2_8{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:230px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb23{
+            position:absolute;
+            text-align:left;
+            left:760px;
+            font-size:15px;
+            top:450px
+        }
+        .gnb2_9{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb24{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:450px
+        }
+        .gnb2_10{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb25{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:750px
+        }
+        .gnb2_11{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb26{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:750px
+        }
+        .gnb2_12{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+
+                        /* gnb3 */
+
+        .a3{
+            font-weight: bold;
+            
+        }
+        .bg3{
+            position:relative;
+            background-color: #8484aa;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 -342px
+        }
+        .small_gnb27{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb3_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb28{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb3_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb29{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb3_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb30{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb3_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb31{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb3_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+
+                        /* gnb4 */
+        .a4{
+            font-weight: bold;
+        }
+        .bg4{
+            position:relative;
+            background-color: #8484aa;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 -513px
+        }     
+        .small_gnb32{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb4_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }     
+        .small_gnb33{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb4_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }     
+        .small_gnb34{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb4_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }   
+        .small_gnb35{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb4_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }    
+        .small_gnb36{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb4_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }        
+        .small_gnb37{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:300px
+        }
+        .gnb4_6{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }     
+        .small_gnb38{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:300px
+        }
+        .gnb4_7{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }     
+        .small_gnb39{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:300px
+        }
+        .gnb4_8{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }     
+        .small_gnb40{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:300px
+        }
+        .gnb4_9{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }     
+        .small_gnb41{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:300px
+        }
+        .gnb4_10{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .a5{
+            font-weight: bold;
+        }
+        .bg5{
+            position:relative;
+            background-color: #8484aa;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 -684px
+        }
+        .small_gnb42{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb5_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb43{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb5_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:209px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb44{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb5_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb45{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb5_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb46{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb5_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb47{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:250px
+        }
+        .gnb5_6{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;         
+        }
+        .small_gnb48{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:250px
+        }
+        .gnb5_7{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+
+                    /* gnb6 */
+
+        .a6{
+            font-weight: bold;
+        }
+        .bg6{
+            position:relative;
+            background-color: #8484aa;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 -855px
+        }
+        .small_gnb49{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb6_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb50{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb6_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb51{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb6_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb52{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb6_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb53{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb6_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb54{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:350px
+        }
+        .gnb6_6{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb55{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:350px
+        }
+        .gnb6_7{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb56{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:350px
+        }
+        .gnb6_8{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb57{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:350px
+        }
+        .gnb6_9{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .a7{
+            font-weight: bold;
+        }
+        .bg7{
+            position:relative;
+            background-color: #8484aa;
+            border-bottom:1px solid #D9D7D7;
+            width:1200px;
+            height:500px;
+            margin:20px 0 0 -1026px
+        }
+        .small_gnb58{
+            position:absolute;
+            text-align:left;
+            left:0px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb7_1{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb59{
+            position:absolute;
+            text-align:left;
+            left:250px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb7_2{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb60{
+            position:absolute;
+            text-align:left;
+            left:500px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb7_3{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb61{
+            position:absolute;
+            text-align:left;
+            left:750px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb7_4{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;            
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+        .small_gnb62{
+            position:absolute;
+            text-align:left;
+            left:1000px;
+            font-size:15px;
+            top:0px
+        }
+        .gnb7_5{
+            float:left;
+            text-align:left;
+            border-bottom:1px solid #36AE58;
+            width:200px;
+            height:auto;            
+            font-weight: bold;
+            font-size:15px;
+            display: block;       
+        }
+
+                        /* 검색창 */
+        fieldset{
+            border : none
+        }
+        legend{
+            text-indent: -9999px;
+            font-size:0px
+        }
+        .search{
+            position:relative;
+            border:2px solid #36AE58;            
+            width: 850px;
+            height: 50px;
+            margin:20px auto 20px;
+            border-radius: 15px 0 15px 0;
+            box-shadow: 10px 5px 5px #535353
+                     
+        }
+        select, input{
+            border:none;
+            background: none;
+            float:left;
+            color :#c2bfbf;
+            font-size:20px;
+        }
+        .search3{
+            border:none;
+            width: 494px;
+            height: 48px;
+            padding-left:50px;
+            font-weight: bold;
+            color :#c2bfbf;        
+        }
+        
+            
+        
+        select{
+            width: 200px;
+            height: 50px;
+            font-size:20px;
+            font-weight: bold;
+            color :#c2bfbf
+            
+        }
+        .search_button{
+            width: 100px;
+            height: 50px;
+            background-color:#36AE58;
+            color : #fff;
+            font-weight: bold;
+            font-size:20px;
+            border:none;
+            margin:0 0 0 4px;
+            border-radius: 10px 0 10px 0;            
+        }
+        
+                        /* 복지메뉴 */
+
+        .welfare{
+            position:relative;            
+            width:1600px;
+            height: 500px;
+            margin:auto;
+            
+        }
+        .welfare::before{
+            content: "";
+            position:absolute;
+            background:url(images/welfare2.jpg) no-repeat;
+            background-size: cover;        
+            margin:auto;
+            opacity: 0.3;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+        .welfare li{
+            position:relative;
+            
+        }
+        .welfare h2{
+            text-indent:-9999px;
+        }
+
+        .welfare2{
+            
+            width: 200px;
+            height: 50px;
+            background-color: #36AE58;
+            text-align:center;
+            
+        }
+        
+    </style>        
+</head>
+<body>
+    <div class="wrap">
+                                            <!-- header -->
+        <header id="header" class="header">
+            <h2 class="screen_out">사용자 메뉴</h2>
+                <div class="top">
+                    <ul class="top_menu">
+                        <li class="top1"><a href="#">시흥시청</a></li>
+                        <li class="top2"><a href="#">평생학습</a></li>
+                        <li class="top3"><a href="#">분야별</a></li>
+                        <li class="top4"><a href="#">일자리경제</a></li>
+                        <li class="top5"><a href="#">통합예약</a></li>
+                        <li class="top6"><a href="#">아동친화도시</a></li>        
+                        <li class="top7"><a href="#">시흥시의회</a></li>
+                        <li class="top8"><a href="#">자주찾는메뉴</a></li>                    
+                        <li class="top9">|</li>
+                        <li class="top10"><a href="#">Language</a></li>
+                    </ul>
+                </div>
+                <h1 class="logo"><a href="#">시흥</a></h1>
+
+                                        <!-- gnb -->
+
+            <div class="nav_bg">
+                <nav class="gnb">
+                    <h2 class="blind">주요메뉴</h2>
+                        <ul>
+                            <li class="gnb1"><span class="a1"><a href="#">복지</a></span>
+                                <ul class="bg1">
+                                    <li>
+                                        <ul class="small_gnb">
+                                            <li><span class="gnb1_1"><a href="#">시흥등불SOS센터</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb2">
+                                            <li><span class="gnb1_2"><a href="#">아동복지</a></span>
+                                                <ul>
+                                                    <li><a href="#">아동학대 및 보호</a></li>
+                                                    <li><a href="#">영유아복지</a></li>
+                                                    <li><a href="#">아동복지</a></li>
+                                                    <li><a href="#">아동친화도시</a></li>
+                                                    <li><a href="#">초등돌봄서비스</a></li>                                            
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb3">
+                                            <li><span class="gnb1_3"><a href="#">여성/가정</a></span>
+                                                <ul>
+                                                    <li><a href="#">여성복지시설</a></li>
+                                                    <li><a href="#">여성친화도시조성</a></li>
+                                                    <li><a href="#">양성평등사업</a></li>
+                                                    <li><a href="#">건강가정지원사업</a></li>
+                                                    <li><a href="#">한부모가족지원사업</a></li>                                            
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb4">
+                                            <li><span class="gnb1_4"><a href="#">어르신</a></span>
+                                                <ul>
+                                                    <li><a href="#">일반현황</a></li>
+                                                    <li><a href="#">시설안내</a></li>
+                                                    <li><a href="#">노인서비스</a></li>
+                                                    <li><a href="#">경로식당</a></li>
+                                                    <li><a href="#">공설묘지(정왕)</a></li>                                            
+                                                </ul>                                        
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb5">
+                                            <li><span class="gnb1_5"><a href="#">장애인</a></span>
+                                                <ul>
+                                                    <li><a href="#">장애인등록</a></li>
+                                                    <li><a href="#">수당 및 연금</a></li>
+                                                    <li><a href="#">각종지원내용</a></li>
+                                                    <li><a href="#">장애인 일자리</a></li>
+                                                    <li><a href="#">장애인종합복지관</a></li>                                            
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb6">
+                                            <li><span class="gnb1_6"><a href="#">다문화가족</a></span>
+                                                <ul>
+                                                    <li><a href="#">다문화가족 시설현황</a></li>
+                                                    <li><a href="#">다문화가족지원사업</a></li>
+                                                    <li><a href="#">외국인주민지원사업안내</a></li>                                            
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb7">
+                                            <li><span class="gnb1_7"><a href="#">Global Information</a></span>
+                                                <ul>
+                                                    <li><a href="#">中國語</a></li>
+                                                    <li><a href="#">Tiếng Việt</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb8">
+                                            <li><span class="gnb1_8"><a href="#">주거복지</a></span>
+                                                <ul>
+                                                    <li><a href="#">울터전</a></li>
+                                                    <li><a href="#">주거지원사업</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb9">
+                                            <li><span class="gnb1_9"><a href="#">자활고용지원</a></span>
+                                                <ul>
+                                                    <li><a href="#">자활사업안내</a></li>
+                                                    <li><a href="#">가사 · 간병 방문지원사업</a></li>
+                                                    <li><a href="#">전세점포지원</a></li>
+                                                    <li><a href="#">희망저출/청년내일저축계좌</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb10">
+                                            <li><span class="gnb1_10"><a href="#">사회복지</a></span>
+                                                <ul>
+                                                    <li><a href="#">국민기초생활보장</a></li>
+                                                    <li><a href="#">위기가구지원</a></li>
+                                                    <li><a href="#">사회복지시설현황</a></li>
+                                                    <li><a href="#">지역사회서비스투자사업</a></li>
+                                                    <li><a href="#">통합문화이용권<br>(문화누리카드)</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb11">
+                                            <li><span class="gnb1_11"><a href="#">의료급여</a></span>
+                                                <ul>
+                                                    <li><a href="#">제도안내</a></li>
+                                                    <li><a href="#">지원안내</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb12">
+                                            <li><span class="gnb1_12"><a href="#">시흥시 자원봉사센터</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb13">
+                                            <li><span class="gnb1_13"><a href="#">사회복지정보센터</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb14">
+                                            <li><span class="gnb1_14"><a href="#">시흥지역사회보장협의체</a></span></li>
+                                        </ul>                                        
+                                    </li>
+                                </ul>
+                            </li>   
+                            <li class="gnb2"><span class="a2"><a href="#">보건/위생</a></span>
+                                <ul class="bg2">
+                                    <li>
+                                        <ul class="small_gnb15">
+                                            <li><span class="gnb2_1"><a href="#">시흥시보건소</a></span>
+                                                <ul>
+                                                    <li><a href="#">인사말</a></li>
+                                                    <li><a href="#">연혁 및 현황</a></li>
+                                                    <li><a href="#">조직도</a></li>
+                                                    <li><a href="#">찾아오시는길</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb16">
+                                            <li><span class="gnb2_2"><a href="#">진료/민원안내</a></span>
+                                                <ul>
+                                                    <li><a href="#">진료안내</a></li>
+                                                    <li><a href="#">민원안내</a></li>
+                                                    <li><a href="#">인·허가안내</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb17">
+                                            <li><span class="gnb2_3"><a href="#">보건사업 공지</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb18">
+                                            <li><span class="gnb2_4"><a href="#">보건사업</a></span>
+                                                <ul>
+                                                    <li><a href="#">국가건강·암검진사업</a></li>
+                                                    <li><a href="#">감염병예방사업</a></li>
+                                                    <li><a href="#">출산관련사업</a></li>
+                                                    <li><a href="#">모자보건사업</a></li>
+                                                    <li><a href="#">건강증진사업</a></li>
+                                                    <li><a href="#">예방접종사업</a></li>
+                                                    <li><a href="#">의료비지원사업</a></li>
+                                                    <li><a href="#">건강관리사업</a></li>
+                                                    <li><a href="#">치매안심센터 운영</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb19">
+                                            <li><span class="gnb2_5"><a href="#">건강도시</a></span>
+                                                <ul>
+                                                    <li><a href="#">건강도시 시흥</a></li>
+                                                    <li><a href="#">건강도시 소통의장</a></li>
+                                                    <li><a href="#">건강도시 갤러리/영상</a></li>
+                                                    <li><a href="#">건강도시 e-뉴스레터</a></li>
+                                                    <li><a href="#">심폐소생술&자동심장충격기</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb20">
+                                            <li><span class="gnb2_6"><a href="#">건강한 놀이문화</a></span>
+                                                <ul>
+                                                    <li><a href="#">숨쉬는놀이터</a></li>
+                                                    <li><a href="#">플레이스타트 시흥</a></li>
+                                                    <li><a href="#">팝업놀이터</a></li>
+                                                    <li><a href="#">플레이꾸러미</a></li>
+                                                    <li><a href="#">플레이스타터</a></li>
+                                                    <li><a href="#">플레이스타트 갤러리/영상</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb21">
+                                            <li><span class="gnb2_7"><a href="#">행복건강센터</a></span>
+                                                <ul>
+                                                    <li><a href="#">행복건강센터현황</a></li>
+                                                    <li><a href="#">특화사업</a></li>
+                                                    <li><a href="#">행복건강센터 기능</a></li>
+                                                    <li><a href="#">소생활권맞춤형건강증진시범사업</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb22">
+                                            <li><span class="gnb2_8"><a href="#">중부건강생활지원센터</a></span>
+                                                <ul>
+                                                    <li><a href="#">센터소개 및 위치안내</a></li>
+                                                    <li><a href="#">재활보건사업</a></li>
+                                                    <li><a href="#">지역내소지역건강격차해소시범사업</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb23">
+                                            <li><span class="gnb2_9"><a href="#">지역의료정보</a></span>
+                                                <ul>
+                                                    <li><a href="#">의료기관</a></li>
+                                                    <li><a href="#">의약품판매업소</a></li>
+                                                    <li><a href="#">기타</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb24">
+                                            <li><span class="gnb2_10"><a href="#">집콕건강레시피</a></span>
+                                                <ul>
+                                                    <li><a href="#">소개영상</a></li>
+                                                    <li><a href="#">집콕마음백신</a></li>
+                                                    <li><a href="#">집콕건강백신</a></li>
+                                                    <li><a href="#">집콕COOKING</a></li>
+                                                    <li><a href="#">집콕플레이</a></li>
+                                                    <li><a href="#">집콕챌린지</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb25">
+                                            <li><span class="gnb2_11"><a href="#">의·약업소 자율점검</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb26">
+                                            <li><span class="gnb2_12"><a href="#">우수 위생 업소</a></span>
+                                                <ul>
+                                                    <li><a href="#">음식점 위생등급 지정현황</a></li>
+                                                    <li><a href="#">코로나19안심식당</a></li>
+                                                    <li><a href="#">어린이기호식품우수판매업소</a></li> 
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb3"><span class="a3"><a href="#">재난안전</a></span>
+                                <ul class="bg3">
+                                    <li>
+                                        <ul class="small_gnb27">
+                                            <li><span class="gnb3_1"><a href="#">재난안전</a></span>
+                                                <ul>
+                                                    <li><a href="#">국제안전도시</a></li>
+                                                    <li><a href="#">시흥시시민안전보험</a></li>
+                                                    <li><a href="#">자율안전점검</a></li>
+                                                    <li><a href="#">어린이놀이시설점검</a></li>
+                                                    <li><a href="#">안전신문고</a></li>
+                                                    <li><a href="#">반려동물을위한재난대처법</a></li>
+                                                    <li><a href="#">강수량</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb28">
+                                            <li><span class="gnb3_2"><a href="#">중대재해처벌법</a></span>
+                                                <ul>
+                                                    <li><a href="#">중대재해처벌법이란?</a></li>
+                                                    <li><a href="#">중대재해처벌법바로알기</a></li>
+                                                    <li><a href="#">자료게시판</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>    
+                                        <ul class="small_gnb29">
+                                            <li><span class="gnb3_3"><a href="#">민방위</a></span>
+                                                <ul>
+                                                    <li><a href="#">개요</a></li>
+                                                    <li><a href="#">교육일정</a></li>
+                                                    <li><a href="#">훈련정보</a></li>
+                                                    <li><a href="#">담당부서(동)연락처</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb30">
+                                            <li><span class="gnb3_4"><a href="#">어린이 안전체험관</a></span>
+                                                <ul>
+                                                    <li><a href="#">체험관 소개</a></li>
+                                                    <li><a href="#">시설·이용안내</a></li>
+                                                    <li><a href="#">예약하기</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb31">
+                                            <li><span class="gnb3_5"><a href="#">재난&소통알리미</a></span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb4"><span class="a4"><a href="#">지능형도시/교통</a></span>
+                                <ul class="bg4">
+                                    <li>
+                                        <ul class="small_gnb32">
+                                            <li><span class="gnb4_1"><a href="#">스마트도시</a></span>
+                                                <ul>
+                                                    <li><a href="#">스마트도시란</a></li>
+                                                    <li><a href="#">스마트도시 시흥(2020-2024)</a></li>
+                                                    <li><a href="#">스마트도시 사업</a></li>
+                                                    <li><a href="#">스마트도시 시흥 리빙랩</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb33">
+                                            <li><span class="gnb4_2"><a href="#">도시계획</a></span>
+                                                <ul>
+                                                    <li><a href="#">2020시흥도시기본계획</a></li>
+                                                    <li><a href="#">지구단위계획</a></li>
+                                                    <li><a href="#">시흥시 경관계획</a></li>
+                                                    <li><a href="#">개발행위허가</a></li>
+                                                    <li><a href="#">개발제한구역불법행위단속</a></li>
+                                                    <li><a href="#">도시행정자료실</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb34">
+                                            <li><span class="gnb4_3"><a href="#">도시재생</a></span>
+                                                <ul>
+                                                    <li><a href="#">주시주거환경정비기본계획</a></li>
+                                                    <li><a href="#">주택정비사업</a></li>
+                                                    <li><a href="#">주거·도시환경사업</a></li>
+                                                    <li><a href="#">도시재생전략계획</a></li>                                                
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb35">
+                                            <li><span class="gnb4_4"><a href="#">도시개발</a></span>
+                                                <ul>
+                                                    <li><a href="#">택지개발(미래도시)</a></li>
+                                                    <li><a href="#">택지개발(배곧)</a></li>
+                                                    <li><a href="#">광명시흥공공주택지구</a></li>
+                                                    <li><a href="#">산업단지개발</a></li>
+                                                    <li><a href="#">월동지구, 월곶역세권 등</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb36">
+                                            <li><span class="gnb4_5"><a href="#">희망마을만들기</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb37">
+                                            <li><span class="gnb4_6"><a href="#">교통안내</a></span>
+                                                <ul>
+                                                    <li><a href="#">경기도버스정보시스템</a></li>
+                                                    <li><a href="#">버스공영차고지</a></li>
+                                                    <li><a href="#">대중교통 및 콜택시</a></li>
+                                                    <li><a href="#">주차시설현황</a></li>
+                                                    <li><a href="#">교통소식</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb38">
+                                            <li><span class="gnb4_7"><a href="#">시흥전철사업</a></span>
+                                                <ul>
+                                                    <li><a href="#">신안산선 복선전철</a></li>
+                                                    <li><a href="#">소사-원시선</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb39">
+                                            <li><span class="gnb4_8"><a href="#">자전거활성화사업</a></span>
+                                                <ul>
+                                                    <li><a href="#">시흥시민 자전거보험</a></li>
+                                                    <li><a href="#">자전거대여소</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb40">
+                                            <li><span class="gnb4_9"><a href="#">주정차단속정보조회</a></span></li>
+                                        </ul>
+                                        <ul class="small_gnb41">
+                                            <li><span class="gnb4_10"><a href="#">시흥시 건축문화상</a></span>
+                                                <ul>
+                                                    <li><a href="#">연도별수상작</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>        
+                                </ul>                                 
+                            </li>
+                            <li class="gnb5"><span class="a5"><a href="#">교육/체육</a></span>
+                                <ul class="bg5">
+                                    <li>
+                                        <ul class="small_gnb42">
+                                            <li><span class="gnb5_1"><a href="#">시흥시 평생교육원</a></span></li>
+                                        </ul>    
+                                        <ul class="small_gnb43">
+                                            <li><span class="gnb5_2"><a href="#">시흥배움터조성</a></span>
+                                                <ul>
+                                                    <li><a href="#">시흥혁신교육지구시즌3 교육사업</a></li>
+                                                    <li><a href="#">서울대 교육협력</a></li>
+                                                    <li><a href="#">학교급식지원</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb44">
+                                            <li><span class="gnb5_3"><a href="#">교육지원사업</a></span>
+                                                <ul>
+                                                    <li><a href="#">교육경비지원사업</a></li>
+                                                    <li><a href="#">적성검사 및 진로지도</a></li>
+                                                    <li><a href="#">청소년 진로·심리 상담</a></li>
+                                                    <li><a href="#">오이도꿈나무안심학교</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb45">
+                                            <li><span class="gnb5_4"><a href="#">청소년성장지원</a></span>
+                                                <ul>
+                                                    <li><a href="#">청소년시설현황</a></li>
+                                                    <li><a href="#">청소년주관행사</a></li>
+                                                    <li><a href="#">청소년방과후아카데미</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb46">
+                                            <li><span class="gnb5_5"><a href="#">국제교류</a></span>
+                                                <ul>
+                                                    <li><a href="#">청소년 국제교류</a></li>
+                                                    <li><a href="#">교류도시</a></li>                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb47">
+                                            <li><span class="gnb5_6"><a href="#">체육</a></span>
+                                                <ul>
+                                                    <li><a href="#">주요체육시설</a></li>
+                                                    <li><a href="#">체육시설확충</a></li>
+                                                    <li><a href="#">직장운동경기부</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb48">
+                                            <li><span class="gnb5_7"><a href="#">시흥청년백서</a></span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb6"><span class="a6"><a href="#">환경/농어업</a></span>
+                                <ul class="bg6">
+                                    <li>
+                                        <ul class="small_gnb49">
+                                            <li><span class="gnb6_1"><a href="#">환경정책사업</a></span>
+                                                <ul>
+                                                    <li><a href="#">EM사업</a></li>
+                                                    <li><a href="#">민간환경감시원</a></li>
+                                                    <li><a href="#">환경오염신고 포상제</a></li>
+                                                    <li><a href="#">자동차 관련</a></li> 
+                                                    <li><a href="#">실내공기질 관리</a></li>
+                                                    <li><a href="#">친환경콘덴싱보일러 지원사업</a></li>
+                                                    <li><a href="#">도시생태현황지도</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb50">
+                                            <li><span class="gnb6_2"><a href="#">환경소식</a></span>
+                                                <ul>
+                                                    <li><a href="#">환경소식</a></li>
+                                                    <li><a href="#">화학안전관리</a></li>                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb51">
+                                            <li><span class="gnb6_3"><a href="#">생활폐기물</a></span>
+                                                <ul>
+                                                    <li><a href="#">생활폐기물배출요령</a></li>
+                                                    <li><a href="#">종량제봉투판매가격</a><li>
+                                                    <li><a href="#">1회용품사용규제</a></li>
+                                                    <li><a href="#">폐기물불법행위신고포상금신청</a><li>
+                                                    <li><a href="#">폐기물불법소각금지</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb52">
+                                            <li><span class="gnb6_4"><a href="#">맑은물사업소</a></span>
+                                                <ul>
+                                                    <li><a href="#">맑은물사업소소개</a></li>
+                                                    <li><a href="#">상하수도요금사이버창구</a></li>                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb53">
+                                            <li><span class="gnb6_5"><a href="#">하수</a></span>
+                                                <ul>
+                                                    <li><a href="#">하수도</a></li>
+                                                    <li><a href="#">공공하수처리시설현황</a></li>                                                   
+                                                    <li><a href="#">분뇨수집업체현황</a></li>
+                                                    <li><a href="#">수질검사결과</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb54">
+                                            <li><span class="gnb6_6"><a href="#">농업</a></span>
+                                                <ul>
+                                                    <li><a href="#">농업정보</a></li>
+                                                    <li><a href="#">농업지원사업</a></li>                                                   
+                                                    <li><a href="#">친환경농업</a></li>
+                                                    <li><a href="#">농지관리</a></li>
+                                                    <li><a href="#">농업기술센터</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb55">
+                                            <li><span class="gnb6_7"><a href="#">동물보호 및 방역</a></span>
+                                                <ul>
+                                                    <li><a href="#">동물등록</a></li>
+                                                    <li><a href="#">구제역</a></li>                                                   
+                                                    <li><a href="#">광견병</a></li>
+                                                    <li><a href="#">유기분실동물찾기</a></li>
+                                                    <li><a href="#">동물누리보호센터</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb56">
+                                            <li><span class="gnb6_8"><a href="#">공원녹지</a></span>
+                                                <ul>
+                                                    <li><a href="#">공원현황</a></li>
+                                                    <li><a href="#">산림교육</a></li>                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb57">
+                                            <li><span class="gnb6_9"><a href="#">대형폐기물</a></span></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="gnb7"><span class="a7"><a href="#">문화/관광</a></span>
+                                <ul class="bg7">
+                                    <li>
+                                        <ul class="small_gnb58">
+                                            <li><span class="gnb7_1"><a href="#">문화예술</a></span>
+                                                <ul>
+                                                    <li><a href="#">생태문화도시</a></li>
+                                                    <li><a href="#">문화특화사업</a></li>                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb59">
+                                            <li><span class="gnb7_2"><a href="#">볼거리</a></span>
+                                                <ul>
+                                                    <li><a href="#">자연</a></li>
+                                                    <li><a href="#">역사</a></li>
+                                                    <li><a href="#">시흥구경</a></li>
+                                                    <li><a href="#">K-골든코스트</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb60">
+                                            <li><span class="gnb7_3"><a href="#">즐길거리</a></span>
+                                                <ul>
+                                                    <li><a href="#">체험</a></li>
+                                                    <li><a href="#">축제</a></li>
+                                                    <li><a href="#">숙박</a></li>                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb61">
+                                            <li><span class="gnb7_4"><a href="#">먹거리</a></span>
+                                                <ul>
+                                                    <li><a href="#">전통시장</a></li>
+                                                    <li><a href="#">시흥특산물</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="small_gnb62">
+                                            <li><span class="gnb7_5"><a href="#">문화관광</a></span>
+                                                <ul>
+                                                    <li><a href="#">관광안내책자 신청</a></li>
+                                                    <li><a href="#">문화관광해설사예약</a></li>
+                                                    <li><a href="#">문화/관광/체육</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </nav>
+            </div>                              
+        </header>
+                                        <!-- main -->
+
+        <main id="content">
+            <form name="search2" id="search2" action="search" method="post" onsubmit="return form_check()" onbutton="return form_check()">
+                <fieldset>
+                    <div class="search">
+                    <legend>검색</legend>
+                        <select name="total_search" id="total_search">
+                            <option>통합검색</option>
+                            <option>웹페이지검색</option>
+                            <option>게시판검색</option>
+                            <option>콘텐츠검색</option>
+                            <option>파일검색</option>
+                            <option>직원검색</option>
+                        </select>
+                    
+                        <input type="text" class="search3" placeholder="검색어를 입력하세요.">
+                        <button class="search_button" type="submit">검색
+
+                            
+
+                        </button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+                <div class="welfare">
+                    <h2>복지 메뉴</h2>
+                    <ul>
+                        <li class="welfare2"><a href="#">아동복지</a></li>
+                        <li class="welfare3"><a href="#">여성복지</a></li>
+                        <li class="welfare4"><a href="#">장애인복지</a></li>
+                        <li class="welfare5"><a href="#">어르신복지</a></li>
+                        <li class="welfare6"><a href="#">다문화가정</a></li>
+                    </ul>
+                </div>
+
+
+        </main>                                        
+
+
+    </div>
+</body>
+</html>

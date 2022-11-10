@@ -1,0 +1,1742 @@
+무조건 <meta charset="utf-8">	
+	<title>문서제목</title>
+	
+* 웹 페이지 개발 방법	
+ 1. 분리해서 코딩	
+ - 구조(Structure): html	
+ - 표현(Presentation): CSS	
+ - 동작(Behavior): jacascript	
+
+vs코드 단축키
+ - Emmet Cheat Sheet
+
+*html
+1. "<" 와 ">" 사이에 명령어 (tag, element) 작성
+
+2. 시작태그와 종료태그로 구성
+
+3. 태그는 중첩 가능하며 종료태그는 나중에 작성한 태그 먼저 작성
+
+ - <div><p><a></a></p></div>
+
+4. 종료태그가 없거나 생략 가능한 태그
+ ★ 종료태그가 없는 태그 : br, img, hr, meta, input
+  - 종료태그 생략 가능한 태그 : 주석, p, option
+
+5. 디버깅을 하지 않음
+
+6. 가급적 모든 태그와 속성은 소문자로 작성
+
+ &nbsp; = space bar * 1
+ &NonBreakingSpace; = space bar * 1
+ &copy; = 저작권
+ &amp; = & (ampersend)
+
+* 태그의 형식
+< 명령어		속성		=		"속성값" >
+< tag		  property	   =		"value" >
+< element	  attribute	   =		 "value" >
+
+< img			src		   =		 "logo.jpg">
+
+*속성의 특징
+1. 태그와 속성, 속성과 속성은 공백으로 구분
+<a href="#">
+
+2. 여러 개의 속성을 사용할 수 있지만
+ - <img src="/" width="길이" height="높이"> O
+
+ - 같은 속성을 두 번 이상 사용불가
+  - <img src="/" width="300" width="400"> X
+
+3. 하나의 속성에는 값을 한 개만 지정
+ - <img src="/" width="300, 400"> X
+
+4. 속성값은 원래의 이름이 한글인 경우를 제외하고 한글 사용 불가
+ - <img width="삼백">  X
+
+ - 예외 태그: meta
+  - <meta name="keywords" content="영화, 한국영화, 외국영화"> O
+
+5. 속성값에는 " " 생략 가능
+	(xhtml에서는 생략 불가)
+
+<head>	
+	<meta name="viewport" content="width=divice
+	<meta name="keywords" content="웹디자인, 웹 퍼블리셔, 프론트엔드 개발">
+</head>
+
+*주요 태그
+ - meta
+	-문서의 속성 정의
+	- head 태그 내에 작성
+
+ - title
+	- 문서의 제목 정의
+	- head 태그 내에 작성
+
+ - h(Heading)
+	- 제목 표시
+	- h1(큰 제목) ~ h6(작은 제목)
+	-줄 바꿈 + 볼드체 적용
+
+ - p(paragraph)
+	- 문단 구분
+
+ - br(break)
+	- 줄 바꿈
+
+	과제
+	1. html 모든 명령어 적용시켜보기
+		ex) <i>i: 기울임 적용</i>
+		01_html_elements_김영현.html
+
+	2. table(표만들기 기능)태그 요소 및 속성들 정리하기
+
+	3. 웹홈(ID, password)에 어떤 태그들이 있는 지 그 태그에 속성까지 조사하기
+		02_테이블_웹폼_김영현.hwp
+
+	4. "220913_김영현" 폴더에 모두 포함하여 압축 후 제출
+
+ - a(Anchor)
+	 - 링크 생성
+
+ - img
+	 - 웹 페이지에 이미지 불러오기
+
+ - div
+	 - 여러 개의 요소를 그룹화
+
+	 tab menu = 마우스 올렸을 때 아이콘이 변함. (내부링크)
+
+header
+
+content
+main
+container
+
+footer
+
+<div id="name" date-role="class"></div>
+<div id="name" date-role="class"></div>
+<div id="name" date-role="class"></div>
+
+name = web form
+data-role = with jacascript
+class = presentation(css design)
+
+id = 웹 표준성 접근성 / 자바스크립트에서 선택할때
+
+ex) 
+
+
+    <div id="header" date-role="class">
+        ~~~
+    </div>
+
+    <div id="content" date-role="class">
+        ~~~
+    </div>
+
+    <div id="footer" date-role="class">
+        ~~~
+    </div>
+
+
+**레이아웃 기본 구조**
+ 1. header
+	- 상단 로고, GNB, topmenu등
+	- 주로 페이지 안내(이동)에 관한 요소 포함
+	- GNB: Glibal Navigation Bar - 메뉴바
+
+ 2. content(main)
+	- 페이지별 내용, LNB, 배너, 게시판, 퀵메뉴 등
+	- 해당 페이지에서 나타내고자 하는 내용 작성
+	- LNB: Local Navigation Bar - 사이드 메뉴
+		메인메뉴(대메뉴)에 포함된 하위메뉴(소메뉴)의 집합
+
+ 3. footer
+	- 회사나 사이트에 대한 정보
+	- 각종 연락처, 관리자 정보, 약관 및 정책, 카피라이트 등
+
+ 4. 기타 요소(SNS, 검색, 관련 사이트 등)는 필요한 위치에 추가
+
+
+ div id = 웹 표준성 접근성 / 자바스크립트에서 선택할때
+ div class = 구분할 때
+
+2가지 방법
+ = <div class="top_menu">Top Menu</div>
+ = <div class="topMenu">Top Menu</div>
+
+NAVER 하위 사이트 = 널리(NULI)
+
+의미 부여 태그 = Semantic Elements
+
+단어나 문장, 공간에 의미를 부여하는 태그도 있음.
+
+오늘은 <time>화요일</time>입니다.
+<time> = markup elements(마크업 요소)
+
+**HTML5의 Section 요소**
+
+1. header 
+ - 페이지의 독자적 요소
+ - 로고, 내비게이션
+ - 반드시 하나 이상의 제목(h1~h6) 명시
+ - section, header, footer 태그 사용 불가
+
+2. article
+ - 페이지 내용상 별개의 내용을 구성할 때 사용되는 섹션
+
+3. section
+ - 단란, 이미지, 제목 등의 콘텐트를 묶어 더 큰 논리적 단위 형성
+ - body 안에 들어갈 수 있는 모든 요소 사용(header, footer 포함)
+ - class 나 id 속성을 사용하여 섹션에 대한 특징정보(메타데이터) 추가
+
+4. main
+ - 문서의 주요 내용 정의(요소 내부의 내용은 문서에 고유)
+ - 문서 내에 한 번만 사용
+ - article, aside, header, nav, footer 요소의 하위에 사용 불가
+ -사이드 콘텐트, 저작권 정보, 사이트 로고, 검색 양식 등 모든 내용 포함 가능
+
+왼쪽 메뉴<article> -> 내용<section>  = (본문 내용)
+
+5. nav
+ - 페이지 링크, 내부 링크가 있는 섹션 마크업 시 사용
+ - 메인 내비게이션이 있는 섹션에만 사용
+
+6. aside
+ - 본문 내용에 대한 추가적인 설명, 부수적 콘텐트 표시에 사용하는 태그
+ - 퀵메뉴, 오늘 본 상품 목록
+
+7. footer
+ - 저작권, 개인정보 보호정책, 연락처 등의 콘텐트
+ - 문서상의 위치 무관
+
+8. figure
+ - 이미지에 대한 캡션이나 설명을 위한 태그
+ - 문서의 흐름에 영향을 주지 않는 콘텐트 마크업에도 사용
+
+<figure>
+	<img>
+	<figcaption> ~~~</figcaption>
+</figure>
+
+220914 과제
+1. 01_html_elements_김영현.html 정리한 것 공부하기
+
+2.프로젝트 사이트 구조 제작
+2-1. 타겟 사이트 전체화면 캡처
+ - 시흥.jpg
+2-2. 타겟 사이트 와이어프레임 제작
+ - 시흥사이트 구조.jpg
+2-3. 와이어프레임 참조하여 sectioning markup
+ - 시흥사이트 구조.html
+2-4. 220914_김영현 폴더에 파일 모두 포함하여 압축 후 제출
+
+**경로(URL, Uniform Resource Location, URI, Path)
+1. 파일의 위치
+
+	<link rel="styelsheet"
+	type="text/css"
+	href="불러올 위치">
+
+	<script type="" src="불러올 위치">
+
+	html			javascript
+	<a href="불러올 위치">	location.href="불러올위치";
+				location.replace("불러올 위치");
+
+background-image:url(위치)
+@import "위치";
+
+* 절대경로
+1. 최상위 디렉토리부터 순차적으로 이동하는 경로
+2. 드라이브명(c; d:)이나 프로토콜(http://, ftp://)으로 시작
+3. 기준 파일의 위치에 상관없이 대상 파일의 경로가 동일
+4. 다른 사이트의 자원을 이용하는 경우
+
+< Less than A  => &lt;
+> Greater Than A  => &gt;
+
+* 상대 경로
+1. 기준 파일과 대상 파일의 위치에 따라 경로 설정
+2. 동일한 디렉토리(폴더)에 있는 경우
+ - 파일명.확장자
+3. 하위 디렉토리(폴더)에 있는 경우
+ - 디렉토리(폴더)명 / 파일명.확장자
+4. 상위 디렉토리(폴더)에 있는 경우
+ - ../ : 위로 * 1
+ - ../파일명.확장자
+5. 복합 사용
+
+
+폴더 이름/ => 더블 클릭
+
+* 테이블(table)
+1. 정보 전달에 활용
+
+*특징
+1. 각 행의 셀 개수는 동일
+2. 같은 행에 있는 셀들은 높이가 동일
+3. 같은 열에 있는 셀들은 길이가 동일
+
+행(row) →
+열(column) ↓
+셀(cell)
+
+
+table태그 종류
+table 
+tr
+td
+th
+thead
+tbody
+tfoot
+col
+colgroup
+
+*관련 태그
+1. table: 테이블의 외곽선 표시
+2. tr(Table Row): 표의 행(줄) 구분
+3. td(Table Data cell): 셀(칸) 생성
+4. th(Table Header): 제목 셀 지정
+
+『 = table
+』 = /table
+tr → /tr
+셀『 = td   셀』 = /td
+
+*테이블 관련 요소 속성
+1. colspan: 열 병합	
+2. rowspan: 행 병합
+
+ex) 	colspan="N" (1, 2, 3...)
+	rowspan="N" (1, 2, 3...)
+
+항상 시작점에 기입
+
+* 접근성 향상을 위한 요소
+1. caption: 표의 제목
+2. summary(속성): 표의 제목
+3. thead / tfoot / tbody: 각 셀들의 역할 별 구분
+ - thead: 제목,   tfoot: 결과,    tbody: 내용
+ - 필요하지 않은 태그들은 생략 가능
+ - 태그 사용시 반드시 위 순서대로 사용
+4. id(속성): 제목 셀에 이름 부여
+5. headers(속성): 해당 셀의 제목셀 지정
+
+220915 과제
+
+1. 테이블 활용
+ - 게시판 목록(리스트형 페이지) 페이지 작성
+ - 게시판 내용 보기 페이지 작성
+ - 디자인 무관, 표 작성 후 내용 임의로 작성
+ - 파일 이름 임의 작성, html로 저장
+ - 01_테이블 활용_김영현 폴더에 모든 파일 포함
+
+2. 웹 폼 정리
+ - 웹 폼 관련 요소
+ - input 요소의 type 속성 종류
+ - 웹폼_김영현.hwp
+
+3. CSS 속성 정리하기
+ - naver, daum
+ - 031_CSS 속성 정리_김영현.hwp(종류만)
+ - 031_CSS 속성 정의_김영현.hwp
+
+ = 220915_김영현 폴더에 압축
+
+
+
+
+** 입력 양식 (Web Form) **
+사용자가 페이지에 값을 전달하는 모든 형식
+
+** form **
+1. 모든 양식은 <form> ~ </form> 안에서 작성
+2. 모든 양식은 이름(name AND id)입력
+3. 대부분의 양식은 <input> 태그의 "type" 속성으로 정의
+   <input type="종류 선언">
+
+
+
+1. input/result	2. process	3. DB	4. process	5. result
+프론트엔드	   백엔드		백엔드	   백엔드		프론드엔드
+
+
+Back-End 언어
+ - jsp
+ - php
+ - asp
+ - sql
+
+데이터 전송 방식 = get / post
+get = 보완x / 빠름 (검색, 검색리스트)
+post = 보완o / 느림 (회원가입, 로그인)
+
+<input type="속성">
+
+* type 속성
+1. text
+2. password
+3. checkbox
+4. radio = 2개의 name이 같아야 하나만 선택 가능
+5. image
+6. file
+7. hidden = 화면에 안 보이는 텍스트 표시할 때
+8. button  = 버튼만 있고 아무런 기능 없음.
+9. submit = action으로 전송하기
+10. reset = 원래 상태로 되돌리기
+
+- 8, 9, 10 => <input> X     <button> O
+
+<button type="button / submit / reset">
+
+readonly = 전송 가능
+disabled = 전송 x
+
+CSS
+
+A { B1 : C1 ;  B2 : C2 ; ... }
+
+A = selector
+B = property
+C = value
+
+4.	<select>: 콤보 상자 작성
+	<select>
+		<option>~</option>
+		<option>~</option>
+	</select>
+5. <textarea>: 텍스트를 여러 줄 입력하는 상자 작성
+6. <button>: 버튼 형식의 요소 작성(input 대신 button 사용)
+ - <button type="">TEXT</button>
+
+<datalist> + <option> 목록 미리보기
+
+7. fieldset: 양식의 소그룹
+8. legend: fieldset 의 제목
+9. label: 필드와 텍스트의 그룹
+10. for(속성): 연결하고자 하는 필드의 id 값 작성
+
+* CSS (Cascading Style Sheet)
+ - 웹 페이지의 표현(디자인)을 나타내는 언어
+
+<	A	B	=	"C"		B	=	"C"	...	>
+
+selector(선택자: 누구한테) {
+
+	property(속성: 어떤효과) : value(값 : 얼만큼) ;
+
+	B : C ;
+
+}
+
+CSS = 
+
+<	A		B		=	"C"		B	=	"C"	...	>
+
+selector { property : value ; B : C ; }
+
+JAVASCRIPT = 
+
+object	.	property	=	value
+
+* 선택자
+ 1. 태그 선택자(Element Selector)
+ - html 태그에 직접 효과 적용
+ - 해당 태그 작성 시 자동으로 효과 적용
+
+ *사용자(개발자)
+ 2. 클래스 선택자
+ - 중복 가능
+ .name(효과)
+ <요소 class="name">
+
+ 3. 아이디 선택자
+ - 중복 불가
+ #name(효과)
+ <요소 id="name">
+
+ex)
+	. NAME {	}
+	<element class = "NAME">
+
+	. = calss
+	NAME = class_name
+
+	# NAME {   }
+	<element id = "NAME">
+
+	# = id
+	name = id name
+
+4. 다중 선택자
+	A, B, C { 효과 }
+
+5. 후손 요소 선택자
+	A	B { 효과 }
+
+6. 자식 요소 선택자
+	A > B { 효과 }
+
+a { color : red }
+div, a{ color : red } = 둘 다 적용
+div a{ color : red } = 같이 있는 곳에만 적용
+div > a { color : red } = 부모자식간에만 적용
+
+= a, p, div { color : red }
+
+ancestor(조상요소) > parent(부모요소) > children(자식요소) > descendant(후손요소)
+
+ex) div = div sibling(형제 요소)
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+
+** 스타일 적용 방법
+
+ * 내부 방식
+ 1. 내부 스타일
+  <head>
+  <style type="text">   <-- 스타일 선언문
+  selector { property : value }
+  </style>
+
+ 2. 인라인 방식
+ <elem style="property:value; property:value">
+
+ * 외부 방식
+ selector { property : value } <-- name.css 로 저장, 선언문 생략
+
+ 1. 링크 방식
+ <head>
+ <link rel="stylesheet "type="text/css" href="name.css">
+
+ 2. 임포트 방식
+ <head>
+ <style type="text>
+ @import "name.css";
+ </style>
+
+** 요소 레벨(Element Level) **
+태그가 어떻게 보여지는가에 대한 구분
+
+1. 블록 레벨(Block Level)
+ - 독립된 행을 갖는 요소 집합
+ - 크기 지정, 위치 조정 가능(*)
+ - p, h1~h6, ul, ol, li, div, table...
+ - 다른 블록 레벨 요소와 인라인 요소 포함 가능
+ - p, h, dt, address 같은 일부 요소는 다른 블록 포함 불가
+
+2. 인라인 레벨(Inline Level)
+ - 범위 표시 요소의 집합
+ - 크기(예외:img), 위치 조정 불가
+ - a, em, strong, img, span...
+ - 블록 레벨 요소는 포함할 수 없고 인라인 요소만 포함 가능
+ - html5 이후 a요소는 블럭 포함 가능
+ - 높이 속성 사용 불가
+
+* 여백 속성
+1. margin    = 바깥쪽 여백
+2. padding   = 안쪽 여백
+
+*margin
+1. 바깥쪽 여백(위치)
+2. margin-top / margin-right / margin-bottom / margin-left
+3. 
+	margin: top right bottom left
+	margin: top tight bottom (same right)
+	margin: top/bottom right/left
+	margin: all
+4. margin: auto
+	상하 여백 0, 좌우 여백 동일
+	(블럭 요소 가운데 정렬)
+	= margin:0auto
+
+* text-align:center
+	인라인 요소 가운데 정렬
+
+* padding
+1. 안쪽 여백(크기)
+2. margin 사용법과 동일
+
+* Box Width:800px
+ - width:800px + padding:100px + border:100px
+	= 800px+(100+100)px+(100+100)px = 1200px
+-----------------------------------------------
+*Box Width:100%
+ - width:100% + padding:100px + border:100px = 100%+400px
+-----------------------------------------------
+*Box Width:auto
+ - width + padding + border = 100%
+-----------------------------------------------
+*box-sizing : border-box
+ - width + padding + border = width
+ - width:80%; padding:100px; border:100px = 80%+400px
+ - width:80%; padding:100px; border:100px; box-sizing:border-box=80%
+
+
+width:600px;
+padding:100px;
+border:100px solid #000
+
+= ↑↓같은 값 (1000px)
+
+width:1000px;
+padding:100px;
+border:100px solid #000;
+box-sizing : border-box
+
+
+*float
+1. 수직 구조의 요소를 수평 구조로 변경
+2. 요소의 레벨이 inline-block 형식으로 변경
+3. 수평으로 나열될 모든 요소에 float 속성 적용
+4. none / left / right
+5. 선택된 요소를 위로 띄우는 속성
+6. 위로 이동하면서 생긴 빈 자리에 다른 요소가 이동
+7. 자식 요소의 길이합이 부모 요소의 길이보다 길면 부모 요소의 길이를 초과하는 요소들이 아래쪽으로 이동(태그작성순)
+8. 형제와 부모 관계의 요소들끼리만 적용
+(자식 요소들이 float이 되면 높이 = 0)
+9. 부모 요소는 float이 적용된 자식 요소의 높이 인식 못함
+
+*clear
+1. float 속성 해제
+2. left /right / both
+
+***************************CSS 우선순위 이해하기**************************
+
+
+
+	p	:	A	/	F	>	float	>	m	:	A	(+width, p : R)
+
+
+P : position
+A : absoulte
+F : fixed
+m : margin
+A : auto
+P : position
+R : relative
+
+
+
+***************************CSS 우선순위 이해하기**************************
+
+
+** position
+1. 움직이는 방법
+2. 위치 속성과 함께 사용
+
+* 위치속성
+1. top / right / bottom / left
+2. position 속성이 없는 경우 이동 불가
+3. right, bottom은 relative인 경우 사용 불가
+
+** position 속성값
+1. static : 기본값, 이동불가
+2. absoulte : 절대 위치 지정, 형제 요소간 동일한 중심점 사용
+3. relative : 모든 요소가 독립된 중심점 사용
+4. fixed : 스크린을 기준으로 지정된 위치에 고정
+
+
+220919과제
+1. CSS 모든 속성 정리
+ -1_CSS 속성 정리_김영현.hwp
+(CSS3의 모든 속성)
+
+포토샵 => save for Web (저장 2번)
+ = 슬라이스 한 파일 저장할 때 Images폴더 보이는 곳에 저장하기.
+
+GIF = 웹 전용 확장자 (인쇄 x) 256컬러 8비트 (포토샵에서 애니메이션)
+JPEG = 24비트 (이미지 선명도가 중요하다면) Quality 가 낮을수록 화질 ↓ (웹=80추천)
+PNG = GIF장점 + JPEG장점 (이미지의 투명한 부분을 포함) (PNG8=GIF)
+
+지원가능한 브라우저를 보여주는 웹 사이트 = can i use
+
+* 웹 페이지 개발 방법
+1. 분리해서 코딩
+ - 구조(Structure): html
+ - 표현(Presentation): css
+ - 동작(Begavior): javascript
+
+ 
+* 내용 작성
+ 1. 이해하기 쉽게
+ 2. 논리적으로
+ 3. 의미있게
+ 4. 구조적으로
+ 5. 콘텐트는 "제목+내용"으로 작성
+ 6. 디자인에는 없는 요소들도 내용 전달에 필요하면 추가 작성
+ 7. 중요도, 선호도, 사용빈도가 높은 순으로
+
+
+ * 코딩 순서
+ 1. 내용 작성
+ 2. 마크업(코딩): 용도나 목적에 맞는 태그 작성
+ 3. 콘텐트 블럭
+ 4. CSS 초기화
+ 5. CSS 작성
+ 6. 스크립트 적용
+ 7. 프로그래밍 적용
+ 8. 표준/접근성 검사
+ 9. 수정/보완
+
+
+가운데 정렬하는 법
+width:400px
+margin:auto
+-------------
+position:absolute;
+left:50%;
+margin-left:-200px(width/2)
+
+: 위치나 이벤트
+:; 가상의 요소
+
+
+
+
+
+
+
+-----------------------------------CSS------------------------------------- 
+
+position:relative
+레프트랑 탑만 돼
+
+탑으로 주면 길어져도 계속 그 위치에 있음
+
+같이 내려가야 되면 바텀으로
+
+position:relative
+썻다는건 z-index가 필요하거나
+안에 position:absolute가 있다는 것
+
+무조건 있어야 함
+마진오토위스
+레프트라이트는 포지션
+
+
+
+white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+ = 텍스트가 한줄일때만 적용
+(말줄임표 ...)
+
+자식요소가 float면 
+부모요소한테 height 필요
+
+한진
+
+ci_wrap{
+	background:#eee; (색 코드 2개 같을 때 3개로 가능)
+	padding:30px 0;
+	margin-bottom:40px
+}
+.ci{
+	width:676px;
+	margin:auto;
+	background:#999
+	float:left
+}
+.ci p{
+	width:397px; height:38px
+}
+.ci a{
+	float:right
+}
+
+= 마지막에 ci 배경색 제거
+
+나중에 동영상 넣을 때
+<h2>한진 영상</h2>
+<p><a href="video.html">영상보기</a></p>	
+<p>
+		<a href="#" onclick="popup()">영상보기</a>
+	</p>
+	<p>
+		<object data="" type=""></object>
+		<video src=""></video>
+		<iframe src="" frameborder="0"></iframe>
+	</p>
+<video>
+	<source src
+
+
+
+
+픽셀은 소수점이 안 돼
+퍼센트나 이행은 소수점 돼
+
+부모요소는 float이 적용된 자식요소의 높이를 읽지 못해
+=
+부모요소에게 높이가 필요함! 자식요소의 높이와 똑같은 높이
+
+마진탑 이슈 : 혼자 안 내려오고 부모 손잡고 같이 내려옴
+
+유튜브 공유 -> 퍼가기 -> iframe형식 -> width, height, frameborder 지운 후 class따로 만들어서 css로 만들어야 함
+
+
+마진 탑 이슈가 나타나지 않을 때
+상위요소에
+1. position:absolute/ fixed, float 
+2. border-top
+있을 때
+
+
+자식요소에 float하면 아래 요소 올라오니까 
+올라오지 말라고 부모요소 추가해서 부모한테 height
+
+footer에 검정/흰 X
+
+글자 관련된 요소는 모두 적용
+
+.manu1{text-indent:-9999px}
+.menu1 ul{text-indent:0}
+
+링크는 색상 x
+
+a {
+color:inherit
+}
+ = 글자 색 흰색적용
+
+block의 기본 너비 auto
+
+자식요소 float 부모한테는 무조건 height
+
+
+
+img src / alt
+a href / title
+
+
+플룻
+포지션 앱솔루트
+
+블록이 아니다 그래서 width랑 같이 써야함.
+
+인라인블록 100% X
+
+Flex(Flexible Box, Flexbox)속성
+ - 컨테이너에 적용하는 속성
+ - 아이템에 적용하는 속성
+
+display:flex;
+
+container {
+	display:flex;
+/*display:inline-flex;*/
+}
+
+ - 아이템들이 가로 방향으로 배치
+ - 내용물만큼 width 적용(=inline)
+ - 아이템들의 height가 모두 컨테이너의 높이만큼으로 자동 적용
+  (float은 각각의 콘텐트만큼 높이 설정)
+
+display : flax   =  수평 배치
+
+왼쪽에서 오른쪽 기본값
+
+row = 		1 2 3
+row-reverse = 	  3 2 1
+
+
+ * flex-wrap : 줄넘김 처리 설정
+ - 아이템 줄바꿈 속성
+
+ 1. nowrap : 줄바꿈을 하지 않음
+ 2. wrap : 줄바꿈
+ 3. wrap-reverse : 역순으로 배치 후 줄바꿈
+
+ *flex-flow
+
+ .container {
+	flex-flow:row wrap;
+
+	/*flex-direction:row;*/
+	/*flex-wrap:wrap;*/
+ }
+
+ 1. flex-direction과 flex-wrap을 한번에 지정
+ 2. flex-direction, flex-wrap의 순으로 공백으로 구분
+
+ * 아이템 정렬
+ 1. justify: 수평축 정렬
+ 2. align: 수직축 정렬
+
+ *justify-content:메인축 방향 정렬
+  - 수평축 방향으로 아이템 정렬
+
+  .container {
+	justify-content: flex-start;
+	*/justify-content:flex-end;*/
+	*/justify-content:center;*/
+	*/justify-content:space-between;*/
+	*/justify-content:space-around;*/
+	*/justify-content:space-evenly;*/
+  }
+
+	1. flex-start(기본값) : 아이템들을 시작점으로 정렬
+		- flex-direction : row(왼쪽), column(위)
+
+	2. flex-end : 아이템들을 끝점으로 정렬
+		- flex-direction : row(오른쪽), column(아래)
+	
+	3. center:아이템들을 가운데로 정렬
+
+	4. space-between : 아이템들 사이에 균일한 간격 생성
+
+	5. space-around : 각 아이템의 좌우에 균일한 간격 생성
+
+	6. space-evenly : 아이템들의 사이와 양 끝에 균일한 간격 생성
+
+	7. IE와 엣지(Edge) 지원 불가
+
+	*align-items: 수직축 방향 정렬
+	 - 수직축 방향으로 아이템 정렬
+
+	 .container {
+		align-items: stretch;
+			/*align-items: flex-start;*/
+			/*align-items: flex-end;*/
+			/*align-items: center;*/
+			/*align-items: baseline;*/
+	 }
+
+	 1. stretch (기본값) : 아이템들을 위아래 방향으로 끝까지 늘림
+
+	 2. flex-start : 아이템들을 위쪽으로 정렬
+	  - flex-direction : column인 경우
+
+	 3. flex-end : 아이템들을 아래쪽으로 정렬
+	  - flex-direction: column인 경우
+
+	 4. center : 아이템들을 중간 정렬
+
+	 5. baseline : 아이템들을 텍스트 베이스라인 기준으로 정렬
+
+	 **아이템 중간 정렬
+	 hustify-content: center;
+	 align-item:center;
+
+	 *align-content : 여러 행 정렬
+	  - flex-wrap:wrap이 설정된 상태에서 아이템들의 행이 2줄 이상인 경우 수직축 방향 정렬 지정
+
+	  .container {
+		flex-wrap: wrap;
+		align-content: stretch;
+		/*align-content:flex-start;*/
+		/*align-content:flex-end*/
+		/*align-content:center*/
+		/*align-content:space-between*/
+		/*align-content:space-around*/
+		/*align-content:space-evenly*/
+	  }
+
+	  1. stretch
+	  2. flex-start
+	  3. flex-end
+	  4. center
+	  5. space-between
+	  6. spave-around
+	  7. space-evenly : MS 계열 브라우저(iE, 엣지)에서 지원하지 않음
+
+	  *align-self
+	  - align-items로 교차축(cross axis)아이템 정렬
+	  - align-items 속성보다 우선 적용
+	  - 콘테이너 안의 모든 아이템에 적용
+	  - 특정 아이템의 정렬을 따로 정할 경우 align-self 속성 사용
+	  - 기본값은 auto로 align-items 속성의 값을 상속	
+
+	.container {
+		flex-wrap:wrap;
+		align-self:flex-start;
+		align-self:flex-end;
+		align-self:center;
+		align-self:baseline;
+		align-self:stretch;
+	}
+	  
+	  1. auto
+	   - 부모 컨테이너의  align-items 속성을 상속 받음.
+	   - 부모 컨테이너가 없는 경우 stretch 적용.
+
+	   2. stretch : 컨테이너에 맞게 변경
+
+	   3. center : 컨테이너 중심에 위치
+
+	   4. flex-start : 컨테이너 앞단 부분에 위치
+
+	   5. flex-end : 컨테이너 끝단 부분에 위치
+
+	   6. baseline : 컨테이너의 기본선에 위치
+
+	   7. initial : 이 속성의 기본값으로 설정
+
+	   8. inherit : 부모 요소의 속성값 상속
+
+------------------------------자바 스크립트-------------------------------
+
+ * 자바스크립트
+ 1. 웹 브라우저에서 읽고 실행되는 언어
+ 2. 보안성이 없음
+ 3. html내에 작성
+ 4. 대소문자의 구분 엄격(aaa AAA)
+
+
+ * 적용 방법
+ 1. 내부 스크립트
+ - html 문서 내에 스크립트 정의 후 직접 작성
+ - 필요한 위치에 
+	<script type="text/javascript">
+	스크립트 효과
+	</script>
+
+ 2. 외부 스크립트
+ - 스크립트 효과를 다른 문서에 작성하고 "이름.js"로 저장
+ - 효과를 적용할 문서에 
+	<scritp type="text/javascript" src="이름.js">
+	다른 문장 작성 금지
+	</script>
+
+ * 스크립트 주석
+  1. //: 한 줄 주석
+  2. /* */: 여러 줄 주석
+
+마지막에 무조건 ;
+
+자바스크립트는 html처럼 한 줄씩 차례대로 실행된다.
+
+자바스크립트는 연산 능력이 있다.
+
+Data Type = 연산에 활용되는 숫자 
+
+Operator(연산자) = +, -, = (기호)
+
+ECMA Script = ES 
+ES6 or 7
+
+***자료형(Date Type)***
+연산에 사용되는 값의 종류
+
+ * 상수 : 값이 정해져 있는 형식
+  1. 정수 
+  - 음수(-), 소수(.) 를 제외한 양의 실수
+  - 8진수, 16진수 포함
+
+  2. 실수
+  - 실제 사용 가능한 모든 수
+
+  3. 문자형 상수(String)
+  -일반적인 텍스트
+  - ""사용
+
+  정수, 실수 = Number Object
+
+  4. 불린(boolean)
+  - true(1) / false(0) 의 형식
+
+  5. null
+  - 값이 없음
+
+  *****변수(variable)******
+  1. 변할 수 있는 값
+  2. 값을 저장하는 장소나 이름
+  3. 변수 선언문
+	- var: 변수 재선언 & 변수 재할당 가능, 생략 가능
+			ex) var abc
+	- let: 변수에 재할당
+	- const: 변수 재선언, 변수 재할당 불가능
+  4. 선언과 동시에 값 입력 가능
+			ex) var abc = 1
+
+				var abc
+				abc = 1
+
+				var a, b, c 
+				a = 1
+				b = 2
+				c = 3
+
+				var a, b, c=1
+
+				var= a=b=c=1
+
+a = 1
+1을 a에 
+
+자바스크립트 실행 안될 때 개발자도구 -> Console
+
+not define = 못 찾겠어
+
+* var 변수이름 = 값
+
+ ** 이름 규칙 **
+ 1. 알파벳, 숫자 사용 가능
+ 2. 한글, 특수문자, 공백 사용 불가
+	(단 특수문자 중 "_"는 사용 가능)
+ 3. 첫번째 글자는 "_"또는 알파벳만 가능
+ 4. 대소문자 반드시 구분
+ 5. 예약어 사용불가
+ 6. 이름만 보고도 역할(용도)을 알 수 있어야 함.
+
+ ** 연산자 **
+
+ * 산술 연산자 *
+ 1. +
+ 2. -
+ 3. *
+ 4. /
+ 5. % : 두개의 수를 나눈 나머지
+		10 / 3 = 3.333334
+		10 % 3 = 1
+		20 % 3 = 2
+		10 % 7 = 3
+
+
+ * 연결 연산자 *
+  1. + : 연산자의 좌변과 우변의 값이 산술 연산이 불가능한 경우 두 개의 값을 이어주는 연산자
+
+  ex) 1+2=3 <--- 산술 연산이 가능하므로 "산술연산자"
+      "a"+1=a1 <-- 두 개의 값을 연결하는 "연결연산자"
+
+ * 비교 연산자 : 결과값이 true / false 로 출력
+ 1. >
+ 2. <
+ 3. = = : "="는 저장의 의미, "==" 는 비교의 의미
+ 4. <=
+ 5. >=
+ 6. != : ! = not, 다르다(같지 않다)
+   a= =b (a, b 는 같다)
+   a!=b  (a, b 는 다르다)
+
+
+== 같다 
+=== 정확히 같다
+
+ ex)  a = "1"
+		a == 1 --> true / false
+		a === 1 --> false
+
+null <> not null
+		!null
+
+!true = false
+
+ * 논리 연산자 = 기호 2개 && -> true / false
+  좌변과 우변의 식을 검토하여 결과 산출
+
+  1. &&(and): 촤변과 우변의 식이 모두 참인 경우에 참값 반환
+  2. ||(or) : 좌별과 우변의 식 중 하나라도 참이면 참값 반환
+  3. ^(Xor) : 좌변과 우변 중 하나만 참인 경우 참값 반환
+  4. !(not) : 반대 값 반환
+
+ * 비트식 연산자 = 기호 1개 & -> 1 / 0
+ 논리 연산자와 같은 연산자이지만 연산 기호가 1개이고 값이 1(true), 0(false)로 출력
+
+ * 대입 연산자
+  1. "=" 기호가 들어간 연산식
+  2. 좌변과 우변에 동일식이 존재하는 경우 약식 가능
+
+  ex) 
+		a = a + b ------------> a += b
+		a = a - b ------------> a -= b
+		a = a * b ------------> a *= b
+		a = a / b ------------> a /= b
+		a = a % b ------------> a %= b
+
+ * 증감 연산자  = ex 게시판 
+  1. 변수의 값을 증가 또는 감소시키는 연산자
+  2. 연산기호: ++, --
+  3. 증감 범위: +-1
+  4. 선행처리(++a), 후행처리(a++)
+
+	a = 100
+	 	a++: 100+1, 101+1, 102+1...  증감 +1
+		++a: 101, 102, 103...
+
+		a-- : 100-1, 99-1, 98-1...
+		--a : 99, 98, 97...
+
+	
+
+	* 조건 연산자
+	조건의 결과에 따라 다른 값 출력
+	1. (조건)?  조건이 참일 경우: 조건이 거짓인 경우
+
+	(조건)? a : b
+	= 참이면 a 거짓이면 b
+
+
+**제어문**
+해당 언어를 효율적으로 사용할 수 있도록 하는 문장
+ 1. 조건문
+ 2. 반복문
+
+**반복문**
+ 1. 일정한 규칙을 가지고 있는 문장을 직접 작성하지 않고 여러 번 실행시키는 문장
+ 2. 조건(배열, 숫자 범위) + 반복문
+ 3. for
+ 4. while
+ 5. do while
+
+ * while
+ 1. 조건 + 반복문
+ 2. while(조건){
+	조건이 참인 동안 반복할 문장
+	}
+
+얼마부터 얼마까지 얼마만큼씩
+
+*for
+ 1. 형식
+  for(조건){
+	--for(시작값; 최종값; 증감식){  = 증감식 뒤에는 세미클론 X
+	--for(배열){	
+		조건이 참인 동안 반복할 문장
+  }
+  2. 시작값 선언시 변수 선언과 동시에 사용 가능
+   ex) 일반적인 사용 예
+    var a=1
+		b=2
+	for(a=1; a<=10; a++){
+			document.write("무궁화 꽃이 피었습니다.")
+	}
+
+	ex) for문의 사용 예
+	 for(var a=1; a<=10; a+ +){}
+	 for(a=1;a<=10;a++){}} // var생략
+	 for(a=1, b=2; a<=10; a++){} // 여러 개의 변수 선언
+
+	 2. 다중 반복문
+	 for(시작값; 최종값; 증감식){
+		for(시작값; 최종값; 증감식){
+			반복할 문장
+		}
+	 }
+	 
+	**함수**
+	미리 약속되어 있는 명령어
+
+	1. 내장 함수 - 만들어져 있는 명령어
+	2. 사용자 정의 함수 - 만들어서 사용하는 명령어
+
+	
+
+	**대화상자 함수**
+	1. alert("문자열") : 메세지 상자
+	2. confirm("문자열") : 확인/취소 선택 상자
+	3. prompt("질문메세지", "초기메세지") : 사용자 입력 상자
+
+**조건문**
+1. 조건의 결과에 따라 다르게 문장을 실행
+2. if
+3. switch
+
+**if문**
+ 조건이 참인 경우 다음 문장을 실행
+ 1. if(조건) 조건이 참인 경우 실행할 문장
+	
+ 2. if문의 다수 사용
+  - 각각의 조건이 독립적
+
+ 3. 중괄호 사용
+  - 여러 개의 문장을 하나의 조건문에 종속
+
+ 4. if ~ else
+  - if(조건){
+	조건이 참인 경우 실행할 문장
+	} else {// if의 조건이 참이 아닌 나머지 모두
+
+  }
+
+  5. if ~ else if
+  - if(조건){
+	조건1이 참인 경우 실행할 문장
+	} else if(조건2) {
+		조건1이 참이 아니고 조건2가 참인 경우 실행할 문장
+	}
+
+6. if ~ else if ~ else
+  - if(조건1){
+	조건1이 참인 경우 실행할 문장
+	} else if(조건2) {
+		조건1이 참이 아니고 조건2가 참인 경우 실행할 문장
+	} else {
+		조건1과 조건2가 참이 아닌 경우 실행할 문장
+	}
+
+  * switch 문 *
+
+  switch(변수) {
+	case "값1" : 변수값이 "값1"인 경우 실행할 문장 break;
+	case "값2" : 변수값이 "값2"인 경우 실행할 문장 break;
+	case "값3" : 변수값이 "값3"인 경우 실행할 문장 break;
+	default : 변수값이 "값1", "값2", "값3"이 아닌 경우 실행할 문장
+  }
+
+ * 함수
+  1. 내장함수 - 만들어져 있는 명령어
+  2. 사용자 정의함수 - 만들어서 사용하는 명령어
+
+  ** 사용자 정의 함수 **
+   1. 사용자가 임의로 생성한 함수
+   2. 선언문 : function
+   3. function 함수명(매개변수, 매개변수...)(
+	실행문
+	실행문
+	.
+	.
+   )
+   4. 호출 시에만 실행
+   5. 사용자 정의 함수 호출방법
+	- 단독 실행
+	- 변수에 의한 실행
+	- 다른 함수에 의한 실행
+	- 이벤트에 의한 실행(*********)  (가장 많이 사용) (event - 언제로 해석)
+   6. 함수명 규칙 : 변수명 규칙과 동일
+
+	** function = 명령어를 만드는 명령어 **
+
+	function NAME(param, param, ...){
+
+		내용...
+
+	}
+		** 필수속성 : function (param, ..){  } **
+
+
+---------------------------CSS와 JavaScript-------------------------
+				.			NAME							{	}
+				#			NAME							{	}
+				function	함수명(매개변수, 매개변수...)	  {실행문}
+--------------------------------------------------------------------
+
+** 이벤트 **
+1. 언제
+2. 이벤트 : 상황, ~~하다
+3. 이벤트 핸들러 : 이벤트 사용, ~~ 했을 때
+				이벤트 앞에 on 추가
+
+	이벤트			이벤트 핸들러
+	load			onload
+	unload			onunload
+	mouseover		onmouseover
+	mouseout		onmouseout
+	focus			onfocus
+	blur			onblur
+	click			onclick
+	mousedown		onmousedown
+	mouseup			onmouseoup
+
+	syntaxError : missing   =  문법 오류
+	not defined 			=  코드 오류
+
+	과제
+	1. 메인 페이지 완성
+	2. 웹폼 포함된 페이지 완성
+	3. 서브 페이지 1개 이상 제작
+	4. image, css 포함
+
+	5. "221004_김영현" 폴더에 모두 포함하여 제출
+
+	**DOM(Document Object Model) 방식 **
+	 - html 요소에 접근하는 표준화된 방식
+	 - 기존 name 속성과 태그별 접근 방식에서 벗어나 오브젝트의 종류에 상관없이 id속성을 사용하여 요소에 접근하는 방식
+
+
+	 * getElementByld("요소") 객체의 생성
+
+	 웹 페이지 개발 방식
+	  - 분리해서 개발
+	  1. 구조(Structure) - HTML
+	  2. 표현(Presentation) - CSS
+	  3. 동작(Behavior) - JAVASCRIPT
+
+	  #uid { color : blue } --- 100
+	  .txt { color : green } --- 10
+	  p    { color : red }   --- 1
+
+		<div class="box">
+		<p class="txt" id="uid" style="color : pink">
+		                        ---------------------
+								inline --- 1000
+		</div>
+
+		p    { color : red !important }   --- 1  => !important 무조건 1순위 Top1
+
+		** 이벤트 핸들러(이벤트 리스너, 이벤트 처리기)
+		1. 이벤트가 발생했을 때 그 처리를 담당하는 함수
+		2. 지정된 타입의 이벤트가 특정 요소에서 발생하면, 웹 브라우저는 그 요소에 등록된 이벤트 핸들러 실행
+
+		ex) obj.addEventListener("이벤트", 실행할 함수);
+
+
+**외부 CSS 가져오기 
+	CSS 폴더 따로 만든 후 
+	link rel="폴더명"
+** 안쪽여백 10px 주는법
+padding : 10px;
+box-size:10px
+
+ **화살표(=>, ES6) 함수**
+ 1. 뚱뚱한 화살표(=>, arrow function)를 사용하여 함수 선언
+
+ 2. ESS 일반함수 선언
+ function(매개변수) {
+	실행할 문장
+ }
+
+ 3. 화살표 함수
+ (매개변수) => {
+	실행할 문장
+ }
+
+ 4. 매개변수가 하나인 경우 () 생략 가능
+ 매개변수 => {
+	실행할 문장
+ }
+
+ 5. 매개변수가 없는 경우 빈 괄호 사용
+ () => {
+	실행할 문장
+ }
+
+ 6. 문법은 간단해지지만 공통된 규칙이나
+	일반적인 사용방법이 필요할 수 있음
+
+	** id = Element
+	   나머지 = Elements **
+
+	* 	DOM 코어 / HTML-DOM : HTML 요소들의 속성 제어
+		DOM 코어 : 스크립트가 지원되는 모든 기기에서 사용
+		ex) object.getAttribute("src")
+
+		HTML-DOM : 웹 브라우저에서만 사용 가능
+		ex) object.src
+
+		 /* function changeimage(){ */
+            /* 객체 생성 */
+            /* var big_img=document.getElementById() */
+
+            /* 속성값 가져오기 */
+
+            /* HTML-DOM */
+            //alert(big_img.src);
+            //console.log(big_img.src);
+
+            /* DOM Core */
+            //alert{big.img.getAttribute("abc")};
+
+            /* *** 속성값 변경하기 *** */
+            /* HTML-DOM */
+            //big_img.src = "images/img02.jpg";
+            //big_img.abc = "EXAMPLE";
+
+            /* DOM Core */
+            /*
+            big_img.setAttribute("src", "images/img02.jpg"); => 바꾸기
+            big_img.setAttribute("abc", "EXAMPLE");
+            big_img.getAttribute 가져오기
+            */
+            
+            /* 속성 & 값 추가하기  */
+            /* HTML-DOM */
+            //big_img.title = "큰 이미지로 보기";
+            //big_img.def = "HELLO!"; 
+            
+            /* 
+            DOM Core
+            big_img.setAttribute("title", "큰 이미지로 보기")
+            big_img.setAttribute("def", "HELLO!"); 
+            */
+            
+	** 항목 **
+
+이름
+아이디
+아이디 중복 확인
+비밀번호
+비밀번호 확인
+전화번호
+이메일
+생년월일
+주소 약관 동의
+회원가입버튼
+
+---------------------------제이쿼리-------------------------
+
+ **제이쿼리 : 자바스크립트 라이브러리**
+ 자바스크립트 코드를 간결한 상태로 개발이 가능
+
+ **제이쿼리 특징**
+ 1. css 셀렉터
+  html내의 엘리먼트들을 손쉽게 표현 및 사용이 가능
+
+ 2. 플러그인 아키텍처
+  이미 개발된 많은 플러그인을 쉽고 빠르게 사용
+
+ 3. 메소드 체인
+  여러개의 기능을 한줄에 나열하여 불필요한 코드 반복을 줄임
+
+ex) 
+js = 	window.alert("");
+	window.confirm("");
+
+jquery = 	$(window).alert("").confirm("");
+
+ 4. 크로스 브라우저
+  브라우저별 발생 이벤트를 각각 지정 해 줄 필요가 없음
+
+ ** 적용 방법 **
+
+ <script type="text/javascript" src="제이쿼리 문서 경로"></script>
+
+1. local import
+ - 파일을 다운로드 후 html문서에 임포트
+ - js 파일을 항상 같이 이동
+ - 한국 서버에 있는 js 파일을 다른 나라의 사용자가 접속하려 할 경우 속도 저하 발생 기능
+
+2. CDN(Content Delivery Network) (외부주소참조)
+ - 특정 웹 사이트에서 제공하고 있는 파일을 링크
+ - 웹 사용 불가 시 스크립트 동작 안됨
+ - jquery.com / google.com / microsoft.com
+
+ ** 다운로드 **
+  j-Query Download
+  heep://jquery.com
+
+ 1. minified
+  - 파일을 최소화 시키기 위해 불필요한 공백과 줄바꿈 생략
+  - 일반적으로 사용
+
+ 2. uncompressed
+  - 코멘트 등 포함
+  - 코드 분석 시 사용
+
+ * selector($() 함수)
+
+ jquery(선택자).메소드()
+ $(선택자).메소드()
+
+ $(누구한테).어떤효과를()
+ $(누구한테).어떤효과를("")
+ $(누구한테).어떤효과를({ })
+ $(누구한테).어떤효과를(function(){})
+
+ $(누구한테).어떤효과를().다른효과({ }).다른효과(function(){})
+
+document.getElementById("
+document.querySelector("
+
+------------------------------------------------------
+ = $("  ")
+       ↑
+     CSS Selector
+
+<input type="" class="list" id="box">
+
+	 CSS	jq
+	input	$("input")
+	.list	$(".list")
+	#box	$("#box")
+
+------------------------------------------------------
+
+ * ready() 메소드
+ 1. javascript 의 window.onload 와 같은 기능이지만 이 기능보다 정확하게 동작
+ 2. 스크립트가 먼저 작성되고 body 요소가 나중에 작성되기 때문에 스크립트 오류가 발생하는 것을 방지
+ 3. 문서내에 한 번만 선언
+ 4. $(document).ready(function(){
+	실행할 문장 전체
+	})
+
+  * Selector - Basic
+  1. $("element")
+   - 특정 엘리먼트(태그) 지정
+   ex) $("tr").addClass("blue");
+
+   2. $("#id")
+    - 특정 아이디 지정
+	ex) <a href="#" id="test">LINK</a>
+		$("#test").addClass("red");
+
+	3. $(".class")
+	- 특정 클래스 지정
+	ex) <a href="#" class="test">LINK</a>
+	    $(".test").addClass("blue");
+
+	4. $("selector1, selector2, selectorN")
+	 - 다중 선택자, 여러 개의 선택자에 동시에 효과 적용
+	ex) $("h2, h3, h4").addClass("pink");
+	    $("h2, #rest, .hidden").addClass("pink");
+
+	** attribute **
+	
+	$ (" selector [ attribute = 'value' ] ") . method();
+
+	길이가 200인것만 = $(" img [width='200']") 
+
+	/  = 더블클릭
+
+	.. = 이전으로
+
+	.css({prop:val, prop:val });
+			↑
+------------------------------	
+	obj.style.prop = "value"
+	obj.className = "value"
+------------------------------
+			↓
+	.addClass("value");
+
+	jQuery에서 border 수정 불가 
+	jQuery에서 outline 수정 가능 
+	
+
+	$("").event( );
+		  		↑ 무조건 function(){}
+
+ *** 제이쿼리 효과
+
+ ** 기본효과
+
+ 1. hide()
+  - 지정된 요소를 감추기
+  - 매개변수 없음
+  - $("대상").hide()
+
+ 2. show()
+  - 지정된 요소를 보이기
+  - 매개변수 없음
+  - $("대상").show()
+
+ 3. toggle()
+  - 지정된 요소의 속성을 교차
+  - $("대상").toggle()
+
+  sliding = 	basics    +     animation
+				show/hide   	 height
+
+ duration = 애니메이션이 진행되는 시간  400 = 0.4초
+ complete = 앞의 효과가 완료된 후에 다음 진행할 효과
+
+ 순서 = 배열(array)
+ 순번 = index
+ 1 = 0
+
+ *slide 효과
+
+ 1. slideDown
+  - 미끄러지는 듯한 효과
+  - slideDown([duration][complete])	
+
+ 2. duration(생략 가능)
+  - 애니메이션이 진행되는 시간(기본값:400)
+  - String 타입 : "slow", "fast"
+  - Number 타입 : 1/1000s
+
+ 3. complete(생략 가능)
+  - function() 타입
+  - 해당 대상이 효과를 완료했을 때 실행할 내용
+
+ 4. slideUp
+  - slideUp([duration], [complete])
+  - slideDown 과 사용방법 동일
+
+ 5. slideToggle
+  - 지정된 요소의 slide 상태를 변경
+  -slideToggle([duration], [complete])
+
+  100%  =  x1
+  200%  =  x2
+  50%   =  x0.5
+
+  fadeTo(duration, opcity)
+			필수	 0~1
+
+ ** 페이드 효과
+  1. fadeIn
+   - 대상을 서서히 나타나게
+   - $("대상").fadeIn([duration][complete])
+
+  2. duration(생략 가능)
+   - 애니메이션이 진행되는 시간
+   - String 타입 : "slow", "fast"
+   - Number 타입 : 1/1000s
+
+  3. complete(생략 가능)
+   - function() 타입
+   - 해당 대상이 효과를 완료했을 때 실행할 내용
+
+  4. fadeOut
+   - 대상을 서서히 사라지게
+   - fadeIn 과 사용방법 동일
+
+  5. fateTo
+   - 지정된 opacity값까지 Fade
+   - $("대상").fadeTo(duration, opacity [complete])
+   - duration : fadeIn 과 동일
+   - opacity : Number 타입, 0~1 사이의 값만 사용
+   - complete : fadein 과 동일
+
+  6. fadeToggle
+   - 지정된 대상의 opacity를 변경
+   - ㅇfadeToggle([duration][easing][complete])
+
+
+   ** fadeTo : 투명도의 최대값을 바꿈
+
+  * animate 효과
+  1. animate
+   - CSS 로 제어 가능한 속성을 변화시키는 메소드
+   - animate( properties [duration][easing][comlete])
+
+  2. properties 
+   - CSS 로 제어 가능한 속성과 값
+   - {} 사용하여 여러 속성 입력 가능
+
+  3. duration(생략 가능)
+   - 애니메이션 진행시간(기본값:400)
+   - String 타입 : "slow", "fast"
+   - Number 타입 : 1/1000s
+
+  4. easing(생략 가능)
+   - String 타입
+   - 가속효과 (기본값:swing)
+
+  5. complete(생략 가능)
+   - function() 타입
+   - 해당 대상이 효과를 완료했을 때 실행할 내용
+
+overflow:hidden = 상자 밖으로 나오지마 !!!
+   
+
+   1.1 = 110%
+
+   .parent()		부모
+   .parents(elem)	부모들
+   .children()		자식
+   .find(elem)		후손
+   .next()  
+   .prev()  
+
+   1. 인터랙션 효과 적용된 사이트 주소
+    - 주소
+	- 화면 캡쳐 후 동작 방식 작성
+	- 또는 전/후 화면 캡처
+
+	2. 또는 인터랙션 설계서
+
+	(캡쳐 -> 피피티 -> 기능 설명)
+
+	221014_김영현.pptx
+
+   
