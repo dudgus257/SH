@@ -257,8 +257,7 @@
             flex-wrap:wrap;
             justify-content:space-between
         }
-        .search_id2{
-            
+        .search_id2{            
             width: 198px;
             height: 20px;
             font-size:15px

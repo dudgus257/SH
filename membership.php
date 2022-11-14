@@ -205,18 +205,32 @@
         
         .membership3{
             border:1px solid #000;
-            width: 500px;
+            width: 800px;
             height: auto;
-            margin:auto
+            margin:auto;
+            
         }
         .membership4{
             border:1px solid #000;
-            width: 500px;
+            width: 800px;
+            height: 50px;
+            display:flex;
+            flex-direction:row;
+            flex-wrap:wrap;
+            justify-content:space-between;
+            text-align:center        
         }
         .membership5{
+            border:1px solid #000;
+            width: 395px;
+            height: auto;
             
         }
-
+        .membership6{
+            border:1px solid #000;
+            width: 395px;
+            height: auto;
+        }
 
 
 
@@ -654,8 +668,10 @@
             <div class="membership3">
                 <div class="membership4">
                     <ul>
-                        <li class="membership5">일반회원</li>
-                        <li class="membership6">어린이회원</li>                        
+                        <li class="membership5">일반회원</li>                        
+                    </ul>
+                    <ul>                        
+                        <li class="membership6">어린이회원</li>
                     </ul>
                 </div>
                 <div>
