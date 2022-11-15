@@ -213,56 +213,70 @@
         }        
         .m3{
             text-align:left;
-            border-right:1px solid #000;
+            border-right:2px solid #cbc9c9;
             width: 500px;
             height: 160px;
             text-align:center
         }
-        .m3_1{dd
-            font-size:30px;
+        .m3_1{
+            font-size:25px;
             font-weight:bold;
             margin:0 0 10px 0
         }
         .m3_2{
-            font-size:18px;
+            font-size:20px;
             font-weight:bold            
         }
-        .m3 button{
-            border:3px solid #69C8F3;
+        .m3_3{
+            font-size:20px
+        }
+        .m3_4{
+            
+            
+            border:1px solid #FC7D07;
             border-radius:40px;
-            width: 250px;
+            width: 300px;
             height: 50px;
-            background-color: #fff;
-            margin:20px 0 0 0px;
-            font-size:20px;
+            font-size:20px;        
             font-weight:bold;
-            color:#69C8F3;
+            color:#FC7D07;
+            background-color:#fff;
+            margin:20px 0 0 0;  
+            cursor:pointer                      
+         
+            
         }            
         .m4{
             text-align:center;            
             width: 500px;
             height: 160px;
         }
-        .m4 button{
-            border:3px solid #69C8F3;
+        .m4_4{
+            
+            border:1px solid #FC7D07;
             border-radius:40px;
-            width: 250px;
+            width: 300px;
             height: 50px;
-            background-color: #fff;
-            margin:20px 0 0 0px;
-            font-size:20px;
+            font-size:20px;        
             font-weight:bold;
-            color:#69C8F3;
-        }        
+            color:#FC7D07;
+            background-color:#fff;
+            margin:20px 0 0 0;  
+            cursor:pointer                      
+        }       
+            
         .m4_1{
-            font-size:30px;
-            font-weight:bold
+            font-size:25px;
+            font-weight:bold;
+            margin:0 0 10px 0
         }
         .m4_2{
             font-size:18px;
             font-weight:bold            
         }
-        
+        .m4_3{
+            font-size:20px;
+        }
         
         
 
@@ -278,16 +292,18 @@
             font-size:0px;
             text-indent:-9999px;
             border-bottom:2px solid #cbc9c9;
-            width: 1200px;
+            width: 1600px;
             margin:38px auto 20px
         }
         h3{
-            text-align:center
+            text-align:center;
+            font-size:25px
         }
         .total_member{
             margin:20px 0 0px 0;
             text-align:center;
-            font-size:15px
+            font-size:18px;
+            font-weight:bold
             
         }       
 
@@ -428,7 +444,7 @@
         }
 
         .sel{
-            background-color:#69C8F3;
+            background-color:#FC7D07;
             color:#fff
             
         }
@@ -449,16 +465,6 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>    
     <script type="text/javascript">
-        
-        function selectAll(selectAll)  {
-        const checkboxes 
-            = document.getElementsByName('apply');
-  
-        checkboxes.forEach((checkbox) => {
-        checkbox.checked = selectAll.checked;
-        })
-        }
-
         $(document).ready(function(){
         
         $(".gnb > ul > li, .nav_bg").mouseenter(function(){
@@ -479,8 +485,19 @@
             $(this).addClass("sel");
         }, function(){
             $(this).removeClass("sel")
-        });
+        });                            
 
+
+        function selectAll(selectAll)  {
+        const checkboxes 
+            = document.getElementsByName('apply');
+  
+        checkboxes.forEach((checkbox) => {
+        checkbox.checked = selectAll.checked;
+        })
+        }
+
+        
         
             
     });
@@ -572,16 +589,17 @@
         <h2 class="m">경기도 평생학습포털<br>통합 회원가입</h2>            
                 <div class="m2">                                    
                     <ul class="m3">
-                        <li class="m3_1">일반회원<br>(14세이상)</li>
+                        <li class="m3_1">일반회원<span class="m3_3">(14세 이상)</span></li>
                         <li class="m3_2">본인명의의 휴대폰 또는 아이핀으로<br> 인증합니다.</li>
-                        <li><button type="button">가입하기</button></li>
+                        <li><button type="button" class="m3_4" onclick="location.href='membership2.php'">가입하기</button></li>
                     </ul>                                   
                     <ul class="m4">                        
-                        <li class="m4_1">만 14세미만 가입자</li>
+                        <li class="m4_1">어린이회원<span class="m4_3">(만 14세 미만)</span></li>
                         <li class="m4_2">부모님의 휴대폰 또는 아이핀 인증을 한번 더<br> 거쳐야 합니다.</li>
-                        <li><button type="button">가입하기</button></li>
+                        <li><button type="button" class="m4_4">가입하기</button></li>
                     </ul>
                 </div>
+                <button type="button">즐</button>
                 
                 <p class="line3">선</p>
 

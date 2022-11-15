@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
+    <title>회원가입</title>
     <style type="text/css">
         input[type=checkbox]{
             width: 20px;
@@ -91,7 +91,7 @@
             
         .logo a{
             display:block;
-            background:url(../images/ssoc_03.jpg)no-repeat;
+            background:url(images/ssoc_03.jpg)no-repeat;
             text-indent:-9999px;
             width: 112px;
             height: 40px;
@@ -175,7 +175,7 @@
 
         .gnb8 a{
             display:block;
-            background:url(../images/more_07.jpg) no-repeat;
+            background:url(images/more_07.jpg) no-repeat;
             width: 36px;
             height: 30px;
             text-indent:-9999px;
@@ -199,6 +199,82 @@
             margin:50px 0 20px 0;
             text-align:center
         }
+
+        .select0{
+            
+            width: 1200px;
+            padding-top:37px;
+            
+            margin:auto;
+            
+        }
+        .select1{
+            background:url(images/one_2.jpg) no-repeat;
+            text-indent:-9999px;
+            width: 34px;
+            height: 34px;
+            float:left;
+            margin-left:450px
+        }
+        .next1{
+            background:url(images/next_23.jpg) no-repeat;
+            text-indent:-9999px;
+            width: 52px;
+            height: 8px;
+            float:left;
+            margin:10px 0 0 20px 
+        }
+        .select2{
+            background:url(images/two_12.jpg) no-repeat;
+            text-indent:-9999px;
+            width: 33px;
+            height: 33px;
+            float:left;
+            margin-left:30px
+        }
+        .next2{
+            background:url(images/next2_14.jpg) no-repeat;
+            text-indent:-9999px;
+            width: 50px;
+            height: 8px;
+            float:left;
+            margin:10px 0 0 20px 
+        }
+        .select3{
+            background:url(images/three_25.jpg) no-repeat;
+            text-indent:-9999px;
+            width: 34px;
+            height: 34px;
+            float:left;
+            margin-left:30px
+        }
+        .select4{
+            
+            width: 1200px;
+            margin:auto;
+            padding-bottom:120px
+        }
+        .select5{
+            color: #f37b21;
+            font-weight:bold;
+            float:left;
+            margin:50px 0 0 -320px 
+        }
+        .select6{
+            color: #d1ccc9;
+            font-weight:bold;
+            float:left;
+            margin:50px 0 0 -195px;
+            text-align:center
+        }
+        .select7{
+            color: #d1ccc9;
+            font-weight:bold;
+            float:left;
+            margin:50px 0 0 -49px;
+            text-align:center
+        }
+
         legend{
             text-indent:-9999px        
         }
@@ -209,38 +285,29 @@
             
             text-align:center
         }
-        #u_id{
-            margin:0px auto 20px;
-            border:2px solid #000;
-            border-radius:40px;
-            width: 400px;
-            height: 50px;
-            font-size:17px        
-        }
-        #pwd{
-            width: 400px;
-            height: 50px;
-            border-radius:40px;
-            border:2px solid #000;            
-            font-size:17px
-        }
+        
+        
         .login3{
             border:1px solid #FC7D07;
             border-radius:40px;
             width: 400px;
-            height: 50px;
+            height: 70px;
             font-size:20px;        
             font-weight:bold;
             color:#FC7D07;
             background-color:#fff;
             margin:20px 0 0 0;  
             cursor:pointer                      
-        }                                                        
+        }
+        .login3_1{
+            font-size:15px;
+            color:#cbc9c9;
+        }
         .membership2{
             border:1px solid #FC7D07;
             border-radius:40px;
             width: 400px;
-            height: 50px;
+            height: 70px;
             font-size:20px;        
             font-weight:bold;
             color:#FC7D07;
@@ -248,55 +315,15 @@
             margin:20px 0 0 0;  
             cursor:pointer 
         }
-        .search_id{
-            
-            border-radius:40px;
-            width: 400px;
-            height: 20px;
-            margin:20px auto 0;
-            display:flex;
-            flex-direction:row;
-            flex-wrap:wrap;
-            justify-content:space-between
-        }
-        .search_id2{            
-            width: 198px;
-            height: 20px;
-            font-size:15px
-            
-        }
-        .search_id3{
-            border-left:1px solid #000;            
-            width: 200px;
-            height: 20px;
-            font-size:15px
-            
-        }
-        .line3{
-            border-bottom:2px solid #cbc9c9;
-            width: 1600px;
-            text-indent:-9999px;
-            font-size:0px;
-            margin:20px auto 20px
-        }
-        .gseek{            
+        
+       
+        .gseek{    
+            border:1px solid #000;        
             width: 400px;
             height: auto;
             margin:50px auto 50px
         }
-        .gseek2{
-            font-size:16px;
-            font-weight:bold
-        }
-        .gseek3{
-            color:#FC7D07;
-        }
-        .gseek4{            
-            width: 400px;
-            height: auto;
-            margin:auto;
-            text-align:center
-        }
+        
         .gseek5{
             margin:50px 0 50px 0;
             font-size:25px;
@@ -320,7 +347,7 @@
         .naver2 a{
             display:block;
             
-            background:url(../images/naver.jpg)no-repeat;
+            background:url(images/naver.jpg)no-repeat;
             width: 41px;
             height: 41px;
             margin:auto            
@@ -333,7 +360,7 @@
         .kakao2 a{
             display:block;
             
-            background:url(../images/kakao.jpg) no-repeat;
+            background:url(images/kakao.jpg) no-repeat;
             width: 41px;
             height: 41px; 
             margin:auto            
@@ -346,7 +373,7 @@
         .apple2 a{
             display:block;
             
-            background:url(../images/apple.jpg) no-repeat;
+            background:url(images/apple.jpg) no-repeat;
             width: 41px;
             height: 41px;   
             margin:auto
@@ -465,7 +492,7 @@
 
         .foot0 a{
             display:block;            
-            background:url(../images/foot_51.jpg) no-repeat;
+            background:url(images/foot_51.jpg) no-repeat;
             text-indent:-9999px;
             width: 200px;
             height: 60px;
@@ -528,8 +555,8 @@
             color: #FC7D07;            
         }
     </style>
-    <script type="text/javascript" src="../jquery.js"></script>
-    <script src="../js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             
@@ -553,21 +580,7 @@
         });
                         
         })
-        function login_form_check(){
-            var u_id = document.getElementById("u_id");
-            var pwd = document.getElementById("pwd");
-
-            if(!u_id.value){
-                alert("아이디를 입력하세요.");
-                u_id.focus();
-                return false;
-            };
-            if(!pwd.value){
-                alert("비밀번호를 입력하세요.");
-                pwd.focus();
-                return false;
-            };
-        };
+        
 
            
     </script>
@@ -580,9 +593,9 @@
 
         <h2 class="user_menu">사용자 메뉴</h2>
     <ul class="user_menu1">
-        <li class="login"><a href="../login/login.php">로그인</a></li>
+        <li class="login"><a href="login/login.php">로그인</a></li>
         <li class="slash">/</li>
-        <li class="membership"><a href="../membership.php">회원가입</a></li>
+        <li class="membership"><a href="membership.php">회원가입</a></li>
     </ul>
 
     <nav class="gnb">
@@ -651,46 +664,41 @@
 </header>
         <p class="line2">선</p>
 
-    <h2 class="login2">로그인</h2>
+    <h2 class="login2">회원가입</h2>
+
+    <div class="select0">
+        <p class="select1">1</p>
+        <p class="next1">next</p>
+        <p class="select2">2</p>
+        <p class="next2">next</p>
+         <p class="select3">3</p>
+    </div>
+    <div class="select4">
+        <p class="select5">회원가입<br>방법선택</p>
+        
+        <p class="select6">정보입력<br>및 약관동의</p>
+        
+         <p class="select7">회원가입<br>완료</p>
+    </div>
+
     <form name="login_form" action="login_ok.php" method="post" onsubmit="return login_form_check()">
         <fieldset>
-            <legend>로그인</legend>
-                <p>
-                    <label for="u_id"></label>
-                    <input type="text" name="u_id" id="u_id" autofocus placeholder="&nbsp;&nbsp;&nbsp;아이디(이메일주소 또는 휴대폰번호)">
-                </p>
-                <p>
-                    <label for="pwd"></label>
-                    <input type="password" name="pwd" id="pwd" placeholder="&nbsp;&nbsp;&nbsp;비밀번호">
-                </p>
+            <legend>회원가입</legend>
+            
+                
                 <p>                    
-                    <button type="submit" class="login3">로그인</button>
-                </p>
-                <div class="search_id">
-                    <ul>
-                        <li class="search_id2"><a href="#">아이디찾기</a></li>                        
-                    </ul>
-                    <ul>
-                        <li class="search_id3"><a href="#">비밀번호 재설정</a></li>
-                    </ul>                    
-                </div>
+                    <button type="submit" class="login3">휴대폰번호로 회원가입<br><span class="login3_1">본인명의의 휴대폰번호로 본인인증을 해주세요.</span></button>
+                </p>                
                 <p>
-                    <button type="button" class="membership2" onclick="location.href='../membership.php'">회원가입</button>
+                    <button type="button" class="membership2" onclick="location.href='membership.php'">이메일 주소로 회원가입</button>
                 </p>
         </fieldset>
     </form>
 
-    <p class="line3">선</p>
+    
         
         <div class="gseek">
-            <p class="gseek2">
-                경기도 지식(GSEEK) 회원은 간단한 동의절차만 거치면<br><span class="gseek3">별도 회원가입 없이 쏙(SSOC)을 이용</span>하실 수 있습니다.
-            </p>
-        </div>
-        <div class="gseek4">
-            <p>
-                <a href="#"><image src="../images/seek.jpg"></a>                
-            </p>
+            
             <p class="gseek5">
                 SNS 간편 로그인
             </p>
@@ -715,17 +723,17 @@
         <div class="gseek7">
             <div class="gseek8">
                 <ul>
-                    <li class="naver3"><a href="#">네이버로<br>로그인</a></li>
+                    <li class="naver3"><a href="#">네이버로<br>시작하기</a></li>
                 </ul>
             </div>
             <div class="gseek9">
                 <ul>
-                    <li class="kakao3"><a href="#">카카오로<br>로그인</a></li>
+                    <li class="kakao3"><a href="#">카카오로<br>시작하기</a></li>
                 </ul>
             </div>
             <div class="gseek10">
                 <ul>
-                    <li class="apple3"><a href="#">Apple로<br>로그인</a></li>
+                    <li class="apple3"><a href="#">Apple로<br>등록</a></li>
                 </ul>
             </div>
         </div>
