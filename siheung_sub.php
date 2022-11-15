@@ -1981,6 +1981,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             float:right;
             background-color:white;
             border-radius: 50%;
+            cursor:pointer
             
             
             
@@ -2144,7 +2145,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             background:url(images/hojo.jpg) no-repeat;
             width: 780px;
             height: 388px;
-            margin-top:20px                        
+            margin-top: 20px;            
+            cursor:pointer     
         }
         .tour4{
             float:right;            
@@ -2162,13 +2164,15 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             background:url(images/tour.jpg) no-repeat;
             box-shadow: 10px 5px 5px #535353;    
             width: 376px;
-            height: 120px;   
+            height: 120px;
+            cursor:pointer
         }
         .tour6{
             background:url(images/tour2.jpg) no-repeat;
             box-shadow: 10px 5px 5px #535353;
             width: 376px;
             height: 120px;
+            cursor:pointer
             
         }
         .tour7{
@@ -2176,12 +2180,14 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             box-shadow: 10px 5px 5px #535353;
             width: 376px;
             height: 120px;
+            cursor:pointer
         }
         .park{
             background:url(images/park2.jpg) no-repeat;
             margin:auto;
             width: 1600px;
-            height: 484px;                                    
+            height: 484px;
+            cursor:pointer                                    
         }
         .bar{
             border-top:1px solid rgba(221, 221, 224, 1);
@@ -2504,9 +2510,35 @@ $(".gnb7").mouseleave(function(){
     $(".gnb7>ul").stop().slideUp("fast");
 });
 
+$("a").hover(function(){
+    $(this).addClass("sel");
+}, function(){
+    $(this).removeClass("sel")
+});
+
 });
    
+var left_value = 0;
+        
 
+        function left_func(){
+            var inner = document.getElementById("inner_div");
+            left_value = left_value - 200;
+            if(left_value <= -5474){
+                left_value = -5474;
+            }
+            inner.style.left = left_value+"px"; 
+        }
+
+        function right_func(){
+            var inner = document.getElementById("inner_div");
+            left_value = left_value + 200;
+            if(left_value > 0){
+                left_value = 0;
+            }
+            inner.style.left = left_value+"px";
+
+        }
 
 
     

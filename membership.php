@@ -599,7 +599,7 @@
                         <li><button type="button" class="m4_4">가입하기</button></li>
                     </ul>
                 </div>
-                <button type="button">즐</button>
+                
                 
                 <p class="line3">선</p>
 

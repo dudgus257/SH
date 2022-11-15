@@ -230,8 +230,8 @@
         .select2{
             background:url(images/two_11.jpg) no-repeat;
             text-indent:-9999px;
-            width: 33px;
-            height: 33px;
+            width: 34px;
+            height: 34px;
             float:left;
             margin-left:30px
         }
@@ -246,8 +246,8 @@
         .select3{
             background:url(images/three_25.jpg) no-repeat;
             text-indent:-9999px;
-            width: 32px;
-            height: 33px;
+            width: 34px;
+            height: 34px;
             float:left;
             margin-left:30px
         }
@@ -1177,12 +1177,12 @@
     <div class="wrap">
 
     <header>
-    <h1 class="logo"><a href="#">SSOC</a></h1>
+    <h1 class="logo"><a href="siheung.php">SSOC</a></h1>
         <p class="line1">선</p>
 
         <h2 class="user_menu">사용자 메뉴</h2>
     <ul class="user_menu1">
-        <li class="login"><a href="#">로그인</a></li>
+        <li class="login"><a href="login/login.php">로그인</a></li>
         <li class="slash">/</li>
         <li class="membership"><a href="#">회원가입</a></li>
     </ul>

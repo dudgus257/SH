@@ -227,8 +227,8 @@
         .select2{
             background:url(images/two_12.jpg) no-repeat;
             text-indent:-9999px;
-            width: 33px;
-            height: 33px;
+            width: 34px;
+            height: 34px;
             float:left;
             margin-left:30px
         }
@@ -274,7 +274,12 @@
             margin:50px 0 0 -49px;
             text-align:center
         }
-
+        .mem{
+            font-size:20px;
+            font-weight:bold;
+            text-align:center;
+            margin:40px 0 0px 0
+        }
         legend{
             text-indent:-9999px        
         }
@@ -317,17 +322,15 @@
         }
         
        
-        .gseek{    
-            border:1px solid #000;        
-            width: 400px;
-            height: auto;
-            margin:50px auto 50px
-        }
+        
         
         .gseek5{
-            margin:50px 0 50px 0;
-            font-size:25px;
-            font-weight:bold
+            
+            font-size:20px;
+            font-weight:bold;
+            text-align:center;
+            margin:40px 0 40px 0
+        
         }
         .gseek6{
             
@@ -680,7 +683,9 @@
         
          <p class="select7">회원가입<br>완료</p>
     </div>
-
+    <p class="mem">
+        회원가입 시 사용할 본인인증 방법을<br>선택하여 진행해 주세요.
+    </p>
     <form name="login_form" action="login_ok.php" method="post" onsubmit="return login_form_check()">
         <fieldset>
             <legend>회원가입</legend>
@@ -690,19 +695,19 @@
                     <button type="submit" class="login3">휴대폰번호로 회원가입<br><span class="login3_1">본인명의의 휴대폰번호로 본인인증을 해주세요.</span></button>
                 </p>                
                 <p>
-                    <button type="button" class="membership2" onclick="location.href='membership.php'">이메일 주소로 회원가입</button>
+                    <button type="button" class="membership2" onclick="location.href='membership3.php'">이메일 주소로 회원가입</button>
                 </p>
         </fieldset>
     </form>
 
     
         
-        <div class="gseek">
+       
             
             <p class="gseek5">
-                SNS 간편 로그인
+                SNS 계정으로 간편하게 회원가입하기
             </p>
-        </div>
+        
         <div class="gseek6">
             <div class="naver">
                 <ul>
