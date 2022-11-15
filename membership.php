@@ -195,47 +195,81 @@
         
                     /* content */
 
-        .membership2{
+        .m{
             font-size:40px;
             text-align:center;
             margin:auto;
             margin-top:38px;
             margin-bottom:16px
-        }
-        
-        .membership3{
-            border:1px solid #000;
-            width: 800px;
-            height: auto;
-            margin:auto;
-            
-        }
-        .membership4{
-            border:1px solid #000;
-            width: 800px;
-            height: 50px;
+        }        
+        .m2{            
+            width: 1004px;
+            height: 160px;
             display:flex;
             flex-direction:row;
             flex-wrap:wrap;
-            justify-content:space-between;
-            text-align:center        
+            justify-content:space-between;            
+            margin:40px auto;                 
+        }        
+        .m3{
+            text-align:left;
+            border-right:1px solid #000;
+            width: 500px;
+            height: 160px;
+            text-align:center
         }
-        .membership5{
-            border:1px solid #000;
-            width: 395px;
-            height: auto;
-            
+        .m3_1{
+            font-size:30px;
+            font-weight:bold;
+            margin:0 0 10px 0
         }
-        .membership6{
-            border:1px solid #000;
-            width: 395px;
-            height: auto;
+        .m3_2{
+            font-size:18px;
+            font-weight:bold            
         }
+        .m3 button{
+            border:3px solid #69C8F3;
+            border-radius:40px;
+            width: 250px;
+            height: 50px;
+            background-color: #fff;
+            margin:20px 0 0 0px;
+            font-size:20px;
+            font-weight:bold;
+            color:#69C8F3;
+        }            
+        .m4{
+            text-align:center;            
+            width: 500px;
+            height: 160px;
+        }
+        .m4 button{
+            border:3px solid #69C8F3;
+            border-radius:40px;
+            width: 250px;
+            height: 50px;
+            background-color: #fff;
+            margin:20px 0 0 0px;
+            font-size:20px;
+            font-weight:bold;
+            color:#69C8F3;
+        }        
+        .m4_1{
+            font-size:30px;
+            font-weight:bold
+        }
+        .m4_2{
+            font-size:18px;
+            font-weight:bold            
+        }
+        
+        
+        
 
 
 
         button{
-            border:none;
+            /* border:none; */
             cursor:pointer
         }
 
@@ -244,11 +278,18 @@
             font-size:0px;
             text-indent:-9999px;
             border-bottom:2px solid #cbc9c9;
-            width: 400px;
+            width: 1200px;
             margin:38px auto 20px
         }
-        
-                
+        h3{
+            text-align:center
+        }
+        .total_member{
+            margin:20px 0 0px 0;
+            text-align:center;
+            font-size:15px
+            
+        }       
 
         .line7{
             border-bottom:2px solid #cbc9c9;
@@ -386,6 +427,12 @@
             margin:14px 0 40px 0
         }
 
+        .sel{
+            background-color:#69C8F3;
+            color:#fff
+            
+        }
+
         .sel2{
             color: #FC7D07;
             
@@ -413,9 +460,7 @@
         }
 
         $(document).ready(function(){
-
         
-
         $(".gnb > ul > li, .nav_bg").mouseenter(function(){
 		$(".gnb ul ul, .nav_bg").stop().slideDown("fast");
 	    });
@@ -427,157 +472,18 @@
             $(this).addClass("sel2");
         }, function(){
             $(this).removeClass("sel2")
-        })
-
-
-            $(".m").click(function(){
-                $(this).addClass("sel");
-            })
-
-            $(".m").click(function(){
-                $(".f").removeClass("sel");
-            })
-
-            $(".f").click(function(){
-                $(this).addClass("sel");
-            })
-            $(".f").click(function(){
-                $(".m").removeClass("sel");
-            })
-
-            //경기도 경기도 외 지역
-
-            $(".do").click(function(){
-                $(this).addClass("sel");
-            })
-
-            $(".do").click(function(){
-                $(".do2").removeClass("sel");
-            })
-
-            $(".do2").click(function(){
-                $(this).addClass("sel");
-            })
-            $(".do2").click(function(){
-                $(".do").removeClass("sel");
-            })
-
-
-
-
-            var now = new Date();
-            var year = now.getFullYear();
-            var mon = (now.getMonth() + 1) > 9 ? ''+(now.getMonth() + 1) : '0'+(now.getMonth() + 1);
-            var day = (now.getDate()) > 9 ? ''+(now.getDate()) : '0'+(now.getDate());
-
-            //연도 selectbox 
-            for(var i = 1902 ; i <= year ; i++) {
-                $('#year').append('<option value="' + i + '">' + i + '</option>');
-            }
-
-            //월별 selectbox
-            for(var i = 1; i <= 12; i++) {
-                var mm = i > 9 ? i : "0"+i ;
-                $('#month').append('<option value="' + mm + '">' + mm + '</option>')
-            }
-
-            //일별 selectbox
-            for(var i = 1; i <= 31; i++) {
-                var dd = i > 9 ? i : "0"+i ;
-                $('#day').append('<option value="' + dd + '">' + dd + '</option>')
-            }
-            $("#year >option[value="+year+"]").attr("selected", "true");
-            $("#month >option[value="+mon+"]").attr("selected", "true");
-            $("#day >option[value="+day+"]").attr("selected", "true");
-            
-
-            
-
-            
-            
         });
 
         
+        $("button").hover(function(){
+            $(this).addClass("sel");
+        }, function(){
+            $(this).removeClass("sel")
+        });
 
-        function form_check() {
-            var id = document.getElementById("id");
-            var no = document.getElementById("no");
-            var pwd = document.getElementById("pwd");
-            var repwd = document.getElementById("repwd");
-            var name = document.getElementById("name");
-            var mobile = document.getElementById("mobile");
-            var apply = document.getElementById("apply");
-
+        
             
-            
-            if(!id.value){
-                alert("이메일 아이디를 입력하세요.")
-                /* txt.textContent = "이메일 아이디를 입력하세요."; */
-                id.focus();
-                return false;
-            };
-
-            if(!no.value){
-                alert("이메일 인증번호를 입력해주세요.")
-                /* txt.textContent = "인증번호를 입력하세요."; */
-                no.focus();
-                return false;
-            };
-
-            if(!pwd.value){
-                alert("비밀번호를 입력하세요.")
-                /* txt.textContent = "비밀번호를 입력해주세요."; */
-                pwd.focus();
-                return false;
-            };
-
-            var pw_len = pwd.value.length;
-            if(!/^(?=.*[a-zA-Z])(?=.*\d)(?=.*\W).{8,20}$/.test(pwd)){
-                alert("비밀번호는 영문과 특수문자 숫자를 포함하며 8자 이상이어야 합니다.");
-                return false;
-            };
-
-            if(pwd.value != repwd.value){
-                alert("비밀번호를 확인해 주세요.");
-                repwd.focus();
-                return false;
-            };
-
-            
-            if(!name.value){
-                alert("이름을 입력하세요.")                
-                name.focus();
-                return false;
-            };
-
-            if(!mobile.value){
-                alert("휴대전화를 입력해주세요.")
-                mobile.focus();
-                return false;
-            };
-            
-            if(!apply.checked){
-                alert("약관동의가 필요합니다.");
-                apply.focus();
-                return false;
-            };
-        };
-
-
-
-  
-    
-  /* var pwdCheck = $("#pwdCheck").val();
-    
-  // 비밀번호 일치 확인
-  if(pwd != pwdCheck){
-    alert("비밀번호가 일치하지 않습니다. 확인해주세요.");
-    $("#pwdCheck").focus();
-    return false;
-  }
-    
-  return true;
-}; */
+    });
        
     </script>
 </head>
@@ -591,7 +497,7 @@
 
         <h2 class="user_menu">사용자 메뉴</h2>
     <ul class="user_menu1">
-        <li class="login"><a href="#">로그인</a></li>
+        <li class="login"><a href="login/login.php">로그인</a></li>
         <li class="slash">/</li>
         <li class="membership"><a href="#">회원가입</a></li>
     </ul>
@@ -663,35 +569,33 @@
 
 
         <p class="line2">선</p>
-        <h2 class="membership2">경기도 평생학습포털<br>통합 회원가입</h2>
+        <h2 class="m">경기도 평생학습포털<br>통합 회원가입</h2>            
+                <div class="m2">                                    
+                    <ul class="m3">
+                        <li class="m3_1">일반회원<br>(14세이상)</li>
+                        <li class="m3_2">본인명의의 휴대폰 또는 아이핀으로<br> 인증합니다.</li>
+                        <li><button type="button">가입하기</button></li>
+                    </ul>                                   
+                    <ul class="m4">                        
+                        <li class="m4_1">만 14세미만 가입자</li>
+                        <li class="m4_2">부모님의 휴대폰 또는 아이핀 인증을 한번 더<br> 거쳐야 합니다.</li>
+                        <li><button type="button">가입하기</button></li>
+                    </ul>
+                </div>
+                
+                <p class="line3">선</p>
 
-            <div class="membership3">
-                <div class="membership4">
-                    <ul>
-                        <li class="membership5">일반회원</li>                        
-                    </ul>
-                    <ul>                        
-                        <li class="membership6">어린이회원</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li>일반회원<br>(14세이상)</li>
-                        <li>어린이회원<br>(만 14세 미만)</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><button>가입하기</button></li>
-                        <li><button>가입하기</button></li>
-                    </ul>
-                </div>
-            </div>    
+                <h3>통합회원 안내</h3>
+                <p class="total_member">
+                    시흥교육캠퍼스 쏙(SSOC)과 경기도평생학습포털 지식<br>(GSEEK)에서 제공하는 다양한 서비스를 하나의<br> 아이디로 이용하실 수 있습니다.
+                </p>
+                
+               
 
 
                     
 
-                        <p class="line3">선</p>
+                        
 
                                 <!-- form -->
 

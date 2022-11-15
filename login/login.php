@@ -162,14 +162,16 @@
             left:0;
             top:40px;
             background:#fff;
-            display:none}
+            display:none
+        }
 
         .nav_bg{
             width:100%;
             height:450px;
             background:#fff; 
             border-bottom:1px solid #cbc9c9;
-            display:none}
+            display:none
+        }
 
         .gnb8 a{
             display:block;
@@ -542,6 +544,13 @@
         }, function(){
             $(this).removeClass("sel2")
         }); 
+                
+        $(".gnb > ul > li, .nav_bg").mouseenter(function(){
+            $(".gnb ul ul, .nav_bg").stop().slideDown("fast");
+        });
+        $(".gnb > ul > li, .nav_bg").mouseleave(function(){
+            $(".gnb ul ul, .nav_bg").stop().slideUp("fast");
+        });
                         
         })
         function login_form_check(){
@@ -562,7 +571,7 @@
 
            
     </script>
-</head>
+가입하기</head>
 <body>
     <div class="wrap">
     <header>
@@ -580,7 +589,7 @@
         <h2>주요메뉴</h2>
             <ul>
                 <li class="gnb1"><a href="#">온라인학습</a>
-                    <ul>
+                    <ul class="gnb2">
                         <li><a href="#">전체</a></li>
                         <li><a href="#">외국어</a></li>
                         <li><a href="#">IT</a></li>
