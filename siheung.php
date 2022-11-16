@@ -278,7 +278,7 @@
             height:370px;
             margin:20px 0 0 0;
         }
-        .gnb1 ul ul{
+        .gnb1>li{
             width:200px;
             height:auto
         }
@@ -329,7 +329,7 @@
             display: block;
             font-weight: bold;
         }
-        .small_gnb1 ul{
+        .small_gnb1{
             position:absolute;
             text-align:left;
             left:10px;
@@ -338,7 +338,7 @@
         }
 
         
-        .gnb2 ul ul{
+        .gnb2>li{
             
             
             width:200px;
@@ -348,8 +348,7 @@
         }
         
         .gnb2_2{
-            position:absolute;
-            
+            position:absolute;            
             border-bottom:1px solid #FC7D07;
             width:150px;
             height:40px;
@@ -360,7 +359,7 @@
             display: block;
         }
         
-        .small_gnb2 ul{
+        .small_gnb2{
             position:absolute;
             top:40px;
             left:250px;
@@ -381,7 +380,7 @@
 
         }
 
-        .small_gnb3 ul{
+        .small_gnb3{
             position:absolute;
             top: 40px;
             left: 500px;
@@ -400,7 +399,7 @@
             text-align:left   
         }
         
-        .small_gnb4 ul{
+        .small_gnb4{
             position:absolute;
             top:40px;
             left:750px;
@@ -421,7 +420,7 @@
             
         }
 
-        .small_gnb5 ul{
+        .small_gnb5{
             position:absolute;
             top:40px;
             left:1000px;
@@ -430,12 +429,11 @@
         }
         
         .gnb2_6{
-            position:absolute;
-            
+            position:absolute;            
             border-bottom:1px solid #FC7D07;
             font-weight: bold;
             text-align:left;
-            width:150px;
+            width:170px;
             height:40px;
             top:200px;
             left:250px
@@ -458,7 +456,7 @@
             left:500px
         }
 
-        .small_gnb7 ul{
+        .small_gnb7{
             position:absolute;
             top:240px;
             left:500px;
@@ -478,7 +476,7 @@
             left:750px
         }
 
-        .small_gnb8 ul{
+        .small_gnb8{
             position:absolute;
             top:240px;
             left:750px;
@@ -497,7 +495,7 @@
             left:1000px
         }
 
-        .small_gnb9 ul{
+        .small_gnb9{
             position:absolute;
             top:240px;
             left:1000px;
@@ -517,7 +515,7 @@
             height:170px;
             margin:20px 0 0 -400px;   
         }
-        .gnb3 ul ul{
+        .gnb3>li{
             width:200px;
             height:200px;
         }
@@ -541,7 +539,7 @@
             top:0px;
             left:250px
         }
-        .small_gnb11 ul{
+        .small_gnb11{
             position:absolute;
             text-align:left;
             font-size:15px;
@@ -560,7 +558,7 @@
             left:500px
         }
 
-        .small_gnb12 ul{
+        .small_gnb12{
             position:absolute;
             font-size:15px;
             text-align:left;
@@ -652,12 +650,12 @@
             font-weight: bold;
             border-bottom:1px solid #FC7D07;
             text-align: left;
-            width: 180px;
+            width: 210px;
             height: 40px;
             top:0px;
             left:10px;
         }
-        .small_gnb13 ul{
+        .small_gnb13{
             position:absolute;
             font-size: 15px;
             text-align: left;
@@ -672,14 +670,14 @@
             width: 150px;
             height: 40px;
             top:0px;
-            left:250px;
+            left:270px;
         }
-        .small_gnb14 ul{
+        .small_gnb14{
             font-size:15px;
             position:absolute;
             text-align: left;
             top:40px;
-            left:250px;
+            left:270px;
             margin-left:0px
         }
         .gnb5_3{
@@ -692,7 +690,7 @@
             top:0px;
             left:500px;
         }
-        .small_gnb15 ul{
+        .small_gnb15{
             position:absolute;
             text-align: left;
             font-size:15px;
@@ -709,7 +707,7 @@
             top:0px;
             left:750px;
         }
-        .small_gnb16 ul{
+        .small_gnb16{
             position:absolute;
             font-size: 15px;
             text-align:left;
@@ -748,19 +746,18 @@
             font-weight: bold;
             border-bottom:1px solid #FC7D07;
             text-align: left;
-            width: 150px;
+            width: 160px;
             height: 40px;
             top:0px;
             left:10px
         }
-        .small_gnb17 ul{
+        .small_gnb17{
             position:absolute;
             font-size:15px;
             text-align: left;
             left:10px;
             top:40px;
-            height:370px;
-            
+            height:370px;            
         }
 
         
@@ -1916,199 +1913,160 @@
 
                                 <!-- gnb -->
 
-    <div class="nav_bg">
-        <nav class="gnb">
-            <h2 class="blind">주요메뉴</h2>
-                <ul>
-                    <li class="gnb1"><span class="a1"><a href="#">수강신청</a></span>
-                        <ul class="bg1">
-                            <li><span class="gnb1_1"><a href="#">수강신청</a></span>
-                                <ul class="small_gnb">
-                                    <li><a href="#">수강신청</a></li>
-                                    <li><a href="#">수강신청 방법</a></li>
-                                    <li><a href="#">수강취소(수강료반환)방법</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>   
-                    <li class="gnb2"><span class="a2"><a href="#">평생학습도시</a></span>
-                        <ul class="bg2">
-                            <li>
-                                <ul class="small_gnb1">
-                                    <li><span class="gnb2_1"><a href="#">학습동아리란</a></span>
-                                        <ul>
-                                            <li><a href="#">시흥시학습동아리현황</a></li>
-                                            <li><a href="#">학습동아리란</a></li>
-                                            <li><a href="#">학습동아리검색</a></li>
-                                            <li><a href="#">학습동아리 등록 신청</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb2">
-                                    <li><span class="gnb2_2"><a href="#">학습소외계층</a></span>
-                                        <ul>
-                                            <li><a href="#">성인문해교육</a></li>
-                                            <li><a href="#">장애인 평생교육</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb3">
-                                    <li><span class="gnb2_3"><a href="#">평생학습마을</a></span>
-                                        <ul>
-                                            <li><a href="#">평생학습마을이란</a></li>
-                                            <li><a href="#">평생학습마을소개</a></li>
-                                            <li><a href="#">평생학습마을지도</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb4">
-                                    <li><span class="gnb2_4"><a href="#">일터학습지원</a></span>
-                                        <ul>
-                                            <li><a href="#">강사역량 강화교육</a></li>
-                                            <li><a href="#">강사인턴</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb5">
-                                    <li><span class="gnb2_5"><a href="#">강사뱅크</a></span>
-                                        <ul>
-                                            <li><a href="#">강사뱅크란</a></li>
-                                            <li><a href="#">강사뱅크 등록 및 현황</a></li>
-                                            <li><a href="#">강사모집 게시판</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb6">
-                                    <li><span class="gnb2_6"><a href="#">평생학습네트워크</a></span></li>
-                                </ul>
-                                <ul class="small_gnb7">
-                                    <li><span class="gnb2_7"><a href="#">평생학습축제</a></span>
-                                        <ul>
-                                            <li><a href="#">평생학습축제 소개</a></li>
-                                            <li><a href="#">축제 게시판</a></li>
-                                            <li><a href="#">축제사진갤러리</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb8">
-                                    <li><span class="gnb2_8"><a href="#">학습재능기부</a></span>
-                                        <ul>
-                                            <li><a href="#">재능기부란</a></li>
-                                            <li><a href="#">학습재능기부(나눔)</a></li>
-                                            <li><a href="#">학습재능기부(받음)</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb9">
-                                    <li><span class="gnb2_9"><a href="#">ESD인증</a></span>
-                                        <ul>
-                                            <li><a href="#">학습동아리 활성화</a></li>
-                                            <li><a href="#">평생학습네트워크 활성화</a></li>
-                                            <li><a href="#">평생학습마을 육성</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="gnb3"><span class="a3"><a href="#">시흥아카데미</a></span>
-                        <ul class="bg3">
-                            <li>
-                                <ul class="small_gnb10">
-                                    <li><span class="gnb3_1"><a href="#">아카데미 소개</a></span></li>
-                                </ul>
-                                <ul class="small_gnb11">
-                                    <li><span class="gnb3_2"><a href="#">지난 강의 목록</a></span>
-                                        <ul>
-                                            <li><a href="#">참살이 학부</a></li>
-                                            <li><a href="#">꿈모작 학부</a></li>
-                                            <li><a href="#">교양 학부</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>    
-                                <ul class="small_gnb12">
-                                    <li><span class="gnb3_3"><a href="#">콘텐츠 모음집</a></span>
-                                        <ul>
-                                            <li><a href="#">콘텐츠 모음집</a></li>
-                                            <li><a href="#">학교별 목록</a></li>
-                                            <li><a href="#">주제별 목록</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
-                        <ul class="bg4">
-                            <li><span class="gnb4_1"><a href="admin/notice/list.php">공지사항</a></span></li>
-                            <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
-                            <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
-                            <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
-                            <li><span class="gnb4_5"><a href="#">사이버 학습관</a></span></li>
-                        </ul> 
-                    </li>
-                    <li class="gnb5"><span class="a5"><a href="#">평생학습기관</a></span>
-                        <ul class="bg5">
-                            <li>
-                                <ul class="small_gnb13">
-                                    <li><span class="gnb5_1"><a href="#">시흥ABC행복학습타운</a></span>
-                                        <ul>
-                                            <li><a href="#">학습타운소개</a></li>
-                                            <li><a href="#">시설배치도</a></li>
-                                            <li><a href="#">시설소개</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>    
-                                <ul class="small_gnb14">
-                                    <li><span class="gnb5_2"><a href="#">청년협업마을</a></span>
-                                        <ul>
-                                            <li><a href="#">청년협업마을 소개</a></li>
-                                            <li><a href="#">시설배치도</a></li>
-                                            <li><a href="#">프로그램소개</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb15">
-                                    <li><span class="gnb5_3"><a href="#">대야평생학습관</a></span>
-                                        <ul>
-                                            <li><a href="#">대야평생학습관 소개</a></li>
-                                            <li><a href="#">프로그램 소개</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul class="small_gnb16">
-                                    <li><span class="gnb5_4"><a href="#">정왕평생학습관</a></span>
-                                        <ul>
-                                            <li><a href="#">정왕평생학습관 소개</a></li>
-                                            <li><a href="#">프로그램 소개</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li><span class="gnb5_5"><a href="#">청년스테이션</a></span></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="gnb6"><span class="a6"><a href="#">평생교육원</a></span>
-                        <ul class="bg6">
-                            <li>
-                                <ul class="small_gnb17">
-                                    <li><span class="gnb6_1"><a href="#">평생교육원 소개</a></span>
-                                        <ul>
-                                            <li><a href="#">인사말</a></li>
-                                            <li><a href="#">연혁</a></li>
-                                            <li><a href="#">조직도</a></li>
-                                            <li><a href="#">직원 업무 안내</a></li> 
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-        </nav>
-    </div>
+        <div class="nav_bg">
+            <nav class="gnb">
+                <h2 class="blind">주요메뉴</h2>
+                    <ul>
+                        <li class="gnb1"><span class="a1"><a href="#">수강신청</a></span>
+                            <ul class="bg1">
+                                <li><span class="gnb1_1"><a href="#">수강신청</a></span>
+                                    <ul class="small_gnb">
+                                        <li><a href="#">수강신청</a></li>
+                                        <li><a href="#">수강신청 방법</a></li>
+                                        <li><a href="#">수강취소(수강료반환)방법</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>   
+                        <li class="gnb2"><span class="a2"><a href="#">평생학습도시</a></span>
+                            <ul class="bg2">                                                                
+                                <li><span class="gnb2_1"><a href="#">학습동아리란</a></span>
+                                    <ul class="small_gnb1">
+                                        <li><a href="#">시흥시학습동아리현황</a></li>
+                                        <li><a href="#">학습동아리란</a></li>
+                                        <li><a href="#">학습동아리검색</a></li>
+                                        <li><a href="#">학습동아리 등록 신청</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb2_2"><a href="#">학습소외계층</a></span>
+                                    <ul class="small_gnb2">
+                                        <li><a href="#">성인문해교육</a></li>
+                                        <li><a href="#">장애인 평생교육</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb2_3"><a href="#">평생학습마을</a></span>
+                                    <ul class="small_gnb3">
+                                        <li><a href="#">평생학습마을이란</a></li>
+                                        <li><a href="#">평생학습마을소개</a></li>
+                                        <li><a href="#">평생학습마을지도</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb2_4"><a href="#">일터학습지원</a></span>
+                                    <ul class="small_gnb4">
+                                        <li><a href="#">강사역량 강화교육</a></li>
+                                        <li><a href="#">강사인턴</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb2_5"><a href="#">강사뱅크</a></span>
+                                    <ul class="small_gnb5">
+                                        <li><a href="#">강사뱅크란</a></li>
+                                        <li><a href="#">강사뱅크 등록 및 현황</a></li>
+                                        <li><a href="#">강사모집 게시판</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="gnb2_6"><a href="#">평생학습네트워크</a></span>
+                                    <ul class="small_gnb6"></ul>
+                                </li>                                                                            
+                                <li><span class="gnb2_7"><a href="#">평생학습축제</a></span>
+                                    <ul class="small_gnb7">
+                                        <li><a href="#">평생학습축제 소개</a></li>
+                                        <li><a href="#">축제 게시판</a></li>
+                                        <li><a href="#">축제사진갤러리</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb2_8"><a href="#">학습재능기부</a></span>
+                                    <ul class="small_gnb8">
+                                        <li><a href="#">재능기부란</a></li>
+                                        <li><a href="#">학습재능기부(나눔)</a></li>
+                                        <li><a href="#">학습재능기부(받음)</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb2_9"><a href="#">ESD인증</a></span>
+                                    <ul class="small_gnb9">
+                                        <li><a href="#">학습동아리 활성화</a></li>
+                                        <li><a href="#">평생학습네트워크 활성화</a></li>
+                                        <li><a href="#">평생학습마을 육성</a></li>
+                                    </ul>
+                                </li>                                                                   
+                            </ul>
+                        </li>
+                        <li class="gnb3"><span class="a3"><a href="#">시흥아카데미</a></span>
+                            <ul class="bg3">
+                                <li><span class="gnb3_1"><a href="#">아카데미 소개</a></span>
+                                    <ul class="small_gnb10">                                        
+                                    </ul>
+                                </li>
+                                <li><span class="gnb3_2"><a href="#">지난 강의 목록</a></span>
+                                    <ul class="small_gnb11">
+                                        <li><a href="#">참살이 학부</a></li>
+                                        <li><a href="#">꿈모작 학부</a></li>
+                                        <li><a href="#">교양 학부</a></li>
+                                    </ul>
+                                </li>
+                                <li><span class="gnb3_3"><a href="#">콘텐츠 모음집</a></span>
+                                    <ul class="small_gnb12">
+                                        <li><a href="#">콘텐츠 모음집</a></li>
+                                        <li><a href="#">학교별 목록</a></li>
+                                        <li><a href="#">주제별 목록</a></li>
+                                    </ul>
+                                </li>                                                                                                                                                
+                            </ul>
+                        </li>
+                        <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
+                            <ul class="bg4">
+                                <li><span class="gnb4_1"><a href="notice/list.php">공지사항</a></span></li>
+                                <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
+                                <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
+                                <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
+                                <li><span class="gnb4_5"><a href="#">사이버 학습관</a></span></li>
+                            </ul> 
+                        </li>
+                        <li class="gnb5"><span class="a5"><a href="#">평생학습기관</a></span>
+                            <ul class="bg5">
+                                <li><span class="gnb5_1"><a href="#">시흥ABC행복학습타운</a></span>
+                                    <ul class="small_gnb13">
+                                        <li><a href="#">학습타운소개</a></li>
+                                        <li><a href="#">시설배치도</a></li>
+                                        <li><a href="#">시설소개</a></li>
+                                    </ul>
+                                </li>                                                                                                                                                    
+                                <li><span class="gnb5_2"><a href="#">청년협업마을</a></span>
+                                    <ul class="small_gnb14">
+                                        <li><a href="#">청년협업마을 소개</a></li>
+                                        <li><a href="#">시설배치도</a></li>
+                                        <li><a href="#">프로그램소개</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb5_3"><a href="#">대야평생학습관</a></span>
+                                    <ul class="small_gnb15">
+                                        <li><a href="#">대야평생학습관 소개</a></li>
+                                        <li><a href="#">프로그램 소개</a></li>
+                                    </ul>
+                                </li>                                                                        
+                                <li><span class="gnb5_4"><a href="#">정왕평생학습관</a></span>
+                                    <ul class="small_gnb16">
+                                        <li><a href="#">정왕평생학습관 소개</a></li>
+                                        <li><a href="#">프로그램 소개</a></li>
+                                    </ul>
+                                </li>                                                                    
+                                <li><span class="gnb5_5"><a href="#">청년스테이션</a></span></li>                                                                    
+                            </ul>
+                        </li>
+                        <li class="gnb6"><span class="a6"><a href="#">평생교육원</a></span>
+                            <ul class="bg6">                                                                
+                                <li><span class="gnb6_1"><a href="#">평생교육원 소개</a></span>
+                                    <ul class="small_gnb17">
+                                        <li><a href="#">인사말</a></li>
+                                        <li><a href="#">연혁</a></li>
+                                        <li><a href="#">조직도</a></li>
+                                        <li><a href="#">직원 업무 안내</a></li> 
+                                    </ul>
+                                </li>                                                                    
+                            </ul>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
 </header>
 
                 <!-- main -->
@@ -2301,7 +2259,7 @@
                     </p>
                 </div>
             </div>
-        <a href="#" class="notice10">전체 공지사항 &#8640;</a>
+        <a href="notice/list.php" class="notice10">전체 공지사항 &#8640;</a>
         <p class="notice11">|</p>
     </div>
     

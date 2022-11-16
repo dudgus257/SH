@@ -381,7 +381,7 @@ if($e_pageNum > $total_page){
             height:370px;
             margin:20px 0 0 0;
         }
-        .gnb1 ul ul{
+        .gnb1>li{
             width:200px;
             height:auto
         }
@@ -432,7 +432,7 @@ if($e_pageNum > $total_page){
             display: block;
             font-weight: bold;
         }
-        .small_gnb1 ul{
+        .small_gnb1{
             position:absolute;
             text-align:left;
             left:10px;
@@ -441,7 +441,7 @@ if($e_pageNum > $total_page){
         }
 
         
-        .gnb2 ul ul{
+        .gnb2>li{
             
             
             width:200px;
@@ -451,8 +451,7 @@ if($e_pageNum > $total_page){
         }
         
         .gnb2_2{
-            position:absolute;
-            
+            position:absolute;            
             border-bottom:1px solid #FC7D07;
             width:150px;
             height:40px;
@@ -463,7 +462,7 @@ if($e_pageNum > $total_page){
             display: block;
         }
         
-        .small_gnb2 ul{
+        .small_gnb2{
             position:absolute;
             top:40px;
             left:250px;
@@ -484,7 +483,7 @@ if($e_pageNum > $total_page){
 
         }
 
-        .small_gnb3 ul{
+        .small_gnb3{
             position:absolute;
             top: 40px;
             left: 500px;
@@ -503,7 +502,7 @@ if($e_pageNum > $total_page){
             text-align:left   
         }
         
-        .small_gnb4 ul{
+        .small_gnb4{
             position:absolute;
             top:40px;
             left:750px;
@@ -524,7 +523,7 @@ if($e_pageNum > $total_page){
             
         }
 
-        .small_gnb5 ul{
+        .small_gnb5{
             position:absolute;
             top:40px;
             left:1000px;
@@ -533,12 +532,11 @@ if($e_pageNum > $total_page){
         }
         
         .gnb2_6{
-            position:absolute;
-            
+            position:absolute;            
             border-bottom:1px solid #FC7D07;
             font-weight: bold;
             text-align:left;
-            width:150px;
+            width:170px;
             height:40px;
             top:200px;
             left:250px
@@ -561,7 +559,7 @@ if($e_pageNum > $total_page){
             left:500px
         }
 
-        .small_gnb7 ul{
+        .small_gnb7{
             position:absolute;
             top:240px;
             left:500px;
@@ -581,7 +579,7 @@ if($e_pageNum > $total_page){
             left:750px
         }
 
-        .small_gnb8 ul{
+        .small_gnb8{
             position:absolute;
             top:240px;
             left:750px;
@@ -600,7 +598,7 @@ if($e_pageNum > $total_page){
             left:1000px
         }
 
-        .small_gnb9 ul{
+        .small_gnb9{
             position:absolute;
             top:240px;
             left:1000px;
@@ -620,7 +618,7 @@ if($e_pageNum > $total_page){
             height:170px;
             margin:20px 0 0 -400px;   
         }
-        .gnb3 ul ul{
+        .gnb3>li{
             width:200px;
             height:200px;
         }
@@ -644,7 +642,7 @@ if($e_pageNum > $total_page){
             top:0px;
             left:250px
         }
-        .small_gnb11 ul{
+        .small_gnb11{
             position:absolute;
             text-align:left;
             font-size:15px;
@@ -663,7 +661,7 @@ if($e_pageNum > $total_page){
             left:500px
         }
 
-        .small_gnb12 ul{
+        .small_gnb12{
             position:absolute;
             font-size:15px;
             text-align:left;
@@ -755,12 +753,12 @@ if($e_pageNum > $total_page){
             font-weight: bold;
             border-bottom:1px solid #FC7D07;
             text-align: left;
-            width: 180px;
+            width: 210px;
             height: 40px;
             top:0px;
             left:10px;
         }
-        .small_gnb13 ul{
+        .small_gnb13{
             position:absolute;
             font-size: 15px;
             text-align: left;
@@ -775,14 +773,14 @@ if($e_pageNum > $total_page){
             width: 150px;
             height: 40px;
             top:0px;
-            left:250px;
+            left:270px;
         }
-        .small_gnb14 ul{
+        .small_gnb14{
             font-size:15px;
             position:absolute;
             text-align: left;
             top:40px;
-            left:250px;
+            left:270px;
             margin-left:0px
         }
         .gnb5_3{
@@ -795,7 +793,7 @@ if($e_pageNum > $total_page){
             top:0px;
             left:500px;
         }
-        .small_gnb15 ul{
+        .small_gnb15{
             position:absolute;
             text-align: left;
             font-size:15px;
@@ -812,7 +810,7 @@ if($e_pageNum > $total_page){
             top:0px;
             left:750px;
         }
-        .small_gnb16 ul{
+        .small_gnb16{
             position:absolute;
             font-size: 15px;
             text-align:left;
@@ -851,12 +849,12 @@ if($e_pageNum > $total_page){
             font-weight: bold;
             border-bottom:1px solid #FC7D07;
             text-align: left;
-            width: 150px;
+            width: 160px;
             height: 40px;
             top:0px;
             left:10px
         }
-        .small_gnb17 ul{
+        .small_gnb17{
             position:absolute;
             font-size:15px;
             text-align: left;
@@ -866,15 +864,22 @@ if($e_pageNum > $total_page){
         }
 
                             /* content */
-
         .notice{
+            display:block;
+            border:1px solid #000;
+            margin:auto;
+            width: 1200px;
+            height: 500px;
+        }
+
+        .notice2{
             margin:20px auto 20px;
-            text-align:center
+            text-align:left
             
         }      
-        hr{
-            margin:auto;
-            width: 1600px;
+        .hr{
+            margin:20px auto 20px;
+            width:1200px;
         }
     </style>
     <script type="text/javascript" src="../../jquery.js"></script>
@@ -941,327 +946,288 @@ $(".gnb6").mouseleave(function(){
 <body>
 <div class="wrap">
 
-<!-- header -->
+    <!-- header -->
 
-<header id="header" class="header">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-<h2 class="screen_out">사용자 메뉴</h2>
-    <div class="top">
-        <ul class="top_menu">
-            <li class="top1"><a href="#">시흥시청</a></li>
-            <li class="top2"><a href="../../siheung.php">평생학습</a></li>
-            <li class="top3"><a href="../../siheung_sub.php">분야별</a></li>
-            <li class="top4"><a href="#">일자리경제</a></li>
-            <li class="top5"><a href="#">통합예약</a></li>
-            <li class="top6"><a href="#">아동친화도시</a></li>
-            <li class="top7"><a href="#">시흥시의회</a></li>
-            <li class="top8"><a href="../../login/login.php">로그인</a></li>
-            <li class="top9">|</li>
-            <li class="top10"><a href="../../membership.php">회원가입</a></li>
-        </ul>
-    </div>
-    <h1 class="logo"><a href="../../siheung.php">시흥</a></h1>
+    <header id="header" class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <h2 class="screen_out">사용자 메뉴</h2>
+            <div class="top">
+                <ul class="top_menu">
+                    <li class="top1"><a href="#">시흥시청</a></li>
+                    <li class="top2"><a href="../../siheung.php">평생학습</a></li>
+                    <li class="top3"><a href="../../siheung_sub.php">분야별</a></li>
+                    <li class="top4"><a href="#">일자리경제</a></li>
+                    <li class="top5"><a href="#">통합예약</a></li>
+                    <li class="top6"><a href="#">아동친화도시</a></li>
+                    <li class="top7"><a href="#">시흥시의회</a></li>
+                    <li class="top8"><a href="../../login/login.php">로그인</a></li>
+                    <li class="top9">|</li>
+                    <li class="top10"><a href="../../membership.php">회원가입</a></li>
+                </ul>
+            </div>
+        <h1 class="logo"><a href="../../siheung.php">시흥</a></h1>
 
                             <!-- gnb -->
 
-<div class="nav_bg">
-    <nav class="gnb">
-        <h2 class="blind">주요메뉴</h2>
-            <ul>
-                <li class="gnb1"><span class="a1"><a href="#">수강신청</a></span>
-                    <ul class="bg1">
-                        <li><span class="gnb1_1"><a href="#">수강신청</a></span>
-                            <ul class="small_gnb">
-                                <li><a href="#">수강신청</a></li>
-                                <li><a href="#">수강신청 방법</a></li>
-                                <li><a href="#">수강취소(수강료반환)방법</a></li>
+        <div class="nav_bg">
+            <nav class="gnb">
+                <h2 class="blind">주요메뉴</h2>
+                    <ul>
+                        <li class="gnb1"><span class="a1"><a href="#">수강신청</a></span>
+                            <ul class="bg1">
+                                <li><span class="gnb1_1"><a href="#">수강신청</a></span>
+                                    <ul class="small_gnb">
+                                        <li><a href="#">수강신청</a></li>
+                                        <li><a href="#">수강신청 방법</a></li>
+                                        <li><a href="#">수강취소(수강료반환)방법</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                </li>   
-                <li class="gnb2"><span class="a2"><a href="#">평생학습도시</a></span>
-                    <ul class="bg2">
-                        <li>
-                            <ul class="small_gnb1">
+                        </li>   
+                        <li class="gnb2"><span class="a2"><a href="#">평생학습도시</a></span>
+                            <ul class="bg2">                                                                
                                 <li><span class="gnb2_1"><a href="#">학습동아리란</a></span>
-                                    <ul>
+                                    <ul class="small_gnb1">
                                         <li><a href="#">시흥시학습동아리현황</a></li>
                                         <li><a href="#">학습동아리란</a></li>
                                         <li><a href="#">학습동아리검색</a></li>
                                         <li><a href="#">학습동아리 등록 신청</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb2">
+                                </li>                                                                        
                                 <li><span class="gnb2_2"><a href="#">학습소외계층</a></span>
-                                    <ul>
+                                    <ul class="small_gnb2">
                                         <li><a href="#">성인문해교육</a></li>
                                         <li><a href="#">장애인 평생교육</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb3">
+                                </li>                                                                        
                                 <li><span class="gnb2_3"><a href="#">평생학습마을</a></span>
-                                    <ul>
+                                    <ul class="small_gnb3">
                                         <li><a href="#">평생학습마을이란</a></li>
                                         <li><a href="#">평생학습마을소개</a></li>
                                         <li><a href="#">평생학습마을지도</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb4">
+                                </li>                                                                        
                                 <li><span class="gnb2_4"><a href="#">일터학습지원</a></span>
-                                    <ul>
+                                    <ul class="small_gnb4">
                                         <li><a href="#">강사역량 강화교육</a></li>
                                         <li><a href="#">강사인턴</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb5">
+                                </li>                                                                        
                                 <li><span class="gnb2_5"><a href="#">강사뱅크</a></span>
-                                    <ul>
+                                    <ul class="small_gnb5">
                                         <li><a href="#">강사뱅크란</a></li>
                                         <li><a href="#">강사뱅크 등록 및 현황</a></li>
                                         <li><a href="#">강사모집 게시판</a></li>
                                     </ul>
                                 </li>
-                            </ul>
-                            <ul class="small_gnb6">
-                                <li><span class="gnb2_6"><a href="#">평생학습네트워크</a></span></li>
-                            </ul>
-                            <ul class="small_gnb7">
+                                <li><span class="gnb2_6"><a href="#">평생학습네트워크</a></span>
+                                    <ul class="small_gnb6"></ul>
+                                </li>                                                                            
                                 <li><span class="gnb2_7"><a href="#">평생학습축제</a></span>
-                                    <ul>
+                                    <ul class="small_gnb7">
                                         <li><a href="#">평생학습축제 소개</a></li>
                                         <li><a href="#">축제 게시판</a></li>
                                         <li><a href="#">축제사진갤러리</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb8">
+                                </li>                                                                        
                                 <li><span class="gnb2_8"><a href="#">학습재능기부</a></span>
-                                    <ul>
+                                    <ul class="small_gnb8">
                                         <li><a href="#">재능기부란</a></li>
                                         <li><a href="#">학습재능기부(나눔)</a></li>
                                         <li><a href="#">학습재능기부(받음)</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb9">
+                                </li>                                                                        
                                 <li><span class="gnb2_9"><a href="#">ESD인증</a></span>
-                                    <ul>
+                                    <ul class="small_gnb9">
                                         <li><a href="#">학습동아리 활성화</a></li>
                                         <li><a href="#">평생학습네트워크 활성화</a></li>
                                         <li><a href="#">평생학습마을 육성</a></li>
                                     </ul>
-                                </li>
+                                </li>                                                                   
                             </ul>
                         </li>
-                    </ul>
-                </li>
-                <li class="gnb3"><span class="a3"><a href="#">시흥아카데미</a></span>
-                    <ul class="bg3">
-                        <li>
-                            <ul class="small_gnb10">
-                                <li><span class="gnb3_1"><a href="#">아카데미 소개</a></span></li>
-                            </ul>
-                            <ul class="small_gnb11">
+                        <li class="gnb3"><span class="a3"><a href="#">시흥아카데미</a></span>
+                            <ul class="bg3">
+                                <li><span class="gnb3_1"><a href="#">아카데미 소개</a></span>
+                                    <ul class="small_gnb10">                                        
+                                    </ul>
+                                </li>
                                 <li><span class="gnb3_2"><a href="#">지난 강의 목록</a></span>
-                                    <ul>
+                                    <ul class="small_gnb11">
                                         <li><a href="#">참살이 학부</a></li>
                                         <li><a href="#">꿈모작 학부</a></li>
                                         <li><a href="#">교양 학부</a></li>
                                     </ul>
                                 </li>
-                            </ul>    
-                            <ul class="small_gnb12">
                                 <li><span class="gnb3_3"><a href="#">콘텐츠 모음집</a></span>
-                                    <ul>
+                                    <ul class="small_gnb12">
                                         <li><a href="#">콘텐츠 모음집</a></li>
                                         <li><a href="#">학교별 목록</a></li>
                                         <li><a href="#">주제별 목록</a></li>
                                     </ul>
-                                </li>
+                                </li>                                                                                                                                                
                             </ul>
                         </li>
-                    </ul>
-                </li>
-                <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
-                    <ul class="bg4">
-                        <li><span class="gnb4_1"><a href="list.php">공지사항</a></span></li>
-                        <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
-                        <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
-                        <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
-                        <li><span class="gnb4_5"><a href="#">사이버 학습관</a></span></li>
-                    </ul> 
-                </li>
-                <li class="gnb5"><span class="a5"><a href="#">평생학습기관</a></span>
-                    <ul class="bg5">
-                        <li>
-                            <ul class="small_gnb13">
+                        <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
+                            <ul class="bg4">
+                                <li><span class="gnb4_1"><a href="list.php">공지사항</a></span></li>
+                                <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
+                                <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
+                                <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
+                                <li><span class="gnb4_5"><a href="#">사이버 학습관</a></span></li>
+                            </ul> 
+                        </li>
+                        <li class="gnb5"><span class="a5"><a href="#">평생학습기관</a></span>
+                            <ul class="bg5">
                                 <li><span class="gnb5_1"><a href="#">시흥ABC행복학습타운</a></span>
-                                    <ul>
+                                    <ul class="small_gnb13">
                                         <li><a href="#">학습타운소개</a></li>
                                         <li><a href="#">시설배치도</a></li>
                                         <li><a href="#">시설소개</a></li>
                                     </ul>
-                                </li>
-                            </ul>    
-                            <ul class="small_gnb14">
+                                </li>                                                                                                                                                    
                                 <li><span class="gnb5_2"><a href="#">청년협업마을</a></span>
-                                    <ul>
+                                    <ul class="small_gnb14">
                                         <li><a href="#">청년협업마을 소개</a></li>
                                         <li><a href="#">시설배치도</a></li>
                                         <li><a href="#">프로그램소개</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb15">
+                                </li>                                                                        
                                 <li><span class="gnb5_3"><a href="#">대야평생학습관</a></span>
-                                    <ul>
+                                    <ul class="small_gnb15">
                                         <li><a href="#">대야평생학습관 소개</a></li>
                                         <li><a href="#">프로그램 소개</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul class="small_gnb16">
+                                </li>                                                                        
                                 <li><span class="gnb5_4"><a href="#">정왕평생학습관</a></span>
-                                    <ul>
+                                    <ul class="small_gnb16">
                                         <li><a href="#">정왕평생학습관 소개</a></li>
                                         <li><a href="#">프로그램 소개</a></li>
                                     </ul>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li><span class="gnb5_5"><a href="#">청년스테이션</a></span></li>
+                                </li>                                                                    
+                                <li><span class="gnb5_5"><a href="#">청년스테이션</a></span></li>                                                                    
                             </ul>
                         </li>
-                    </ul>
-                </li>
-                <li class="gnb6"><span class="a6"><a href="#">평생교육원</a></span>
-                    <ul class="bg6">
-                        <li>
-                            <ul class="small_gnb17">
+                        <li class="gnb6"><span class="a6"><a href="#">평생교육원</a></span>
+                            <ul class="bg6">                                                                
                                 <li><span class="gnb6_1"><a href="#">평생교육원 소개</a></span>
-                                    <ul>
+                                    <ul class="small_gnb17">
                                         <li><a href="#">인사말</a></li>
                                         <li><a href="#">연혁</a></li>
                                         <li><a href="#">조직도</a></li>
                                         <li><a href="#">직원 업무 안내</a></li> 
                                     </ul>
-                                </li>
+                                </li>                                                                    
                             </ul>
                         </li>
                     </ul>
-                </li>
-            </ul>
-    </nav>
-</div>
-</header>
+            </nav>
+        </div>
+    </header>
     
     <!-- 콘텐트 -->
+    <div class="notice">
+        <h2 class="notice2">공지사항</h2>
 
-    <h2 class="notice">공지사항</h2>
+            <hr class="hr">
 
-    <hr>
-
-    <?php if($s_id == "admin"){ ?>
-    <p class="write_area">
-        <span>전체 <?php echo $total; ?>개</span>
-        <span><a href="write.php">글쓰기</a></span>
-    </p>
-    <?php } else{ ?>
-    <p>전체 <?php echo $total; ?>개</p>
-    <?php }; ?>
-    <table class="notice_list_set">
-        <tr class="notice_list_title">
-            <th class="no">no</th>
-            <th class="n_title">title</th>
-            <th class="writer">writer</th>
-            <th class="w_date">date</th>
-            <th class="cnt">조회수</th>
-        </tr>
-        <?php
-            /* for($i = 1; $i <= $total; $i++){ */
-
-            // DB에서 데이터 가져오기
-            //$i = 1;
-            //start : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 -1) * 페이지 당 보여질 데이터 수
-            $start = ($page -1) * $list_num;
-
-            //paging : 쿼리 작성 - limit 몇번부터, 몇개 
-            $sql = "select * from notice order by idx desc limit $start, $list_num;";
-
-            //paging : 쿼리 전송
-            $result = mysqli_query($dbcon,$sql);
-
-            //paging : 글번호(역순)
-            // 전체데이터 - ((현재 페이지 -1) * 페이지당 목록 수)
-            // 1page ex) 13 - ((1-1)*5) = 13
-            // 2page ex) 13 - ((2-1)*5) = 8
-            $cnt = $total - $start;
-            while($array = mysqli_fetch_array($result)){
-            
-            // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 -1) * 페이지 당 보여질 목록 수
-            $start = ($page - 1) * $list_num;
-
-            // paging : 시작번호부터 페이지 당 보여질 목록 수 만큼 데이터 구하는 쿼리 작성
-            //limit 몇 번부터, 몇 개                                    
-        ?>
-
-            <tr class="notice_list_content">
-                <td><?php echo $cnt; ?></td>
-                <td>
-                    <a href="view.php?n_idx=<?php echo $array["idx"]; ?>">
-                        <?php echo $array["n_title"]; ?>
-                    </a>
-                </td>
-                <td><?php echo $array["writer"]; ?></td>                    
-
-                <!-- 시간 자르기 -->
-
+        <?php if($s_id == "admin"){ ?>
+            <p class="write_area">
+                <span>전체 <?php echo $total; ?>개</span>
+                <span><a href="write.php">글쓰기</a></span>
+            </p>
+        <?php } else{ ?>
+            <p>전체 <?php echo $total; ?>개</p>
+        <?php }; ?>
+            <table class="notice_list_set">
+                <tr class="notice_list_title">
+                    <th class="no">no</th>
+                    <th class="n_title">title</th>
+                    <th class="writer">writer</th>
+                    <th class="w_date">date</th>
+                    <th class="cnt">조회수</th>
+                </tr>
                 <?php
-                    $w_date = substr($array["w_date"], 0, 10);
+                    /* for($i = 1; $i <= $total; $i++){ */
+                    
+                    // DB에서 데이터 가져오기
+                    //$i = 1;
+                    //start : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 -1) * 페이지 당 보여질 데이터 수
+                    $start = ($page -1) * $list_num;
+                    
+                    //paging : 쿼리 작성 - limit 몇번부터, 몇개 
+                    $sql = "select * from notice order by idx desc limit $start, $list_num;";
+                    
+                    //paging : 쿼리 전송
+                    $result = mysqli_query($dbcon,$sql);
+                    
+                    //paging : 글번호(역순)
+                    // 전체데이터 - ((현재 페이지 -1) * 페이지당 목록 수)
+                    // 1page ex) 13 - ((1-1)*5) = 13
+                    // 2page ex) 13 - ((2-1)*5) = 8
+                    $cnt = $total - $start;
+                    while($array = mysqli_fetch_array($result)){
+                    
+                    // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 -1) * 페이지 당 보여질 목록 수
+                    $start = ($page - 1) * $list_num;
+                    
+                    // paging : 시작번호부터 페이지 당 보여질 목록 수 만큼 데이터 구하는 쿼리 작성
+                    //limit 몇 번부터, 몇 개                                    
                 ?>
 
-                <td><?php echo $w_date; ?></td>
-                <td><?php echo $array["cnt"]; ?></td>
-                <td>
-                    <a href="modify.php?n_idx=<?php echo $array["idx"]; ?>">[수정]</a>
-                    <a href="#" onclick="remove_notice(<?php echo $array['idx']; ?>)">[삭제]</a>
-                </td>
-            </tr>
-        <?php
-                $cnt--;
-            }; 
-        ?>
-    </table>
+                <tr class="notice_list_content">
+                    <td><?php echo $cnt; ?></td>
+                    <td>
+                        <a href="view.php?n_idx=<?php echo $array["idx"]; ?>">
+                            <?php echo $array["n_title"]; ?>
+                        </a>
+                    </td>
+                    <td><?php echo $array["writer"]; ?></td>                    
 
-    <p class="pager">
-        <?php
-            //pager: 이전 페이지
-            if($page <= 1){
-        ?>
-        <a href="list.php?page=1">이전</a>
-        <?php } else{?>
-        <a href="list.php?page=<?php echo ($page-1);?>">이전</a>
-        <?php };?>
-        <?php
-            /* pager : 페이지 번호 출력 */
-            for($print_page = $s_pageNum; $print_page <= $e_pageNum; $print_page++){
-        ?>
-        <a href="list.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
-        <?php };?>
-        <?php
-        /* paging : 다음 페이지 */
-        if($page >= $total_page){
-        ?>
-        <a href="list.php?page=<?php echo $total_page; ?>">다음</a>
-        <?php } else{ ?>
-        <a href="list.php?page=<?php echo ($page+1); ?>">다음</a>
-        <?php };?>
-    </p>
+                                <!-- 시간 자르기 -->
+
+                        <?php
+                            $w_date = substr($array["w_date"], 0, 10);
+                        ?>
+
+                    <td><?php echo $w_date; ?></td>
+                    <td><?php echo $array["cnt"]; ?></td>
+                    <td>
+                        <a href="modify.php?n_idx=<?php echo $array["idx"]; ?>">[수정]</a>
+                        <a href="#" onclick="remove_notice(<?php echo $array['idx']; ?>)">[삭제]</a>
+                    </td>
+                </tr>
+                        <?php
+                                $cnt--;
+                            }; 
+                        ?>
+            </table>
+
+            <p class="pager">
+                <?php
+                    //pager: 이전 페이지
+                    if($page <= 1){
+                ?>
+                <a href="list.php?page=1">이전</a>
+                <?php } else{?>
+                <a href="list.php?page=<?php echo ($page-1);?>">이전</a>
+                <?php };?>
+                <?php
+                    /* pager : 페이지 번호 출력 */
+                    for($print_page = $s_pageNum; $print_page <= $e_pageNum; $print_page++){
+                ?>
+                <a href="list.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
+                <?php };?>
+                <?php
+                /* paging : 다음 페이지 */
+                if($page >= $total_page){
+                ?>
+                <a href="list.php?page=<?php echo $total_page; ?>">다음</a>
+                <?php } else{ ?>
+                <a href="list.php?page=<?php echo ($page+1); ?>">다음</a>
+                <?php };?>
+            </p>
+    </div>        
 </div>
 </body>
 </html>

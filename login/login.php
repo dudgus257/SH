@@ -575,7 +575,7 @@
 <body>
     <div class="wrap">
     <header>
-    <h1 class="logo"><a href="#">SSOC</a></h1>
+    <h1 class="logo"><a href="../siheung.php">SSOC</a></h1>
         <p class="line1">선</p>
 
         <h2 class="user_menu">사용자 메뉴</h2>
