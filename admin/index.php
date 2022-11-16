@@ -35,7 +35,7 @@ if($s_id != "admin"){
     </div>
     <hr>
     <div class="nav">
-        <a href="./">[홈으로]</a>
+        <a href="../index.php">[홈으로]</a>
         <a href="members/list.php">[회원관리]</a>
         <a href="notice/list.php">[공지사항]</a>
         <a href="event/list.php">[이벤트]</a>
