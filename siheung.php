@@ -2040,7 +2040,7 @@
                     </li>
                     <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
                         <ul class="bg4">
-                            <li><span class="gnb4_1"><a href="#">공지사항</a></span></li>
+                            <li><span class="gnb4_1"><a href="admin/notice/list.php">공지사항</a></span></li>
                             <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
                             <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
                             <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>

@@ -125,7 +125,7 @@ if($e_pageNum > $total_page){
             font-size:16px
         }
         .notice_list_set{
-            width:1620px
+            width:1200px
         }
         .notice_list_title{
             border-top:2px solid #999;
@@ -151,7 +151,9 @@ if($e_pageNum > $total_page){
         .write_area{
             width: 860px;
             display:flex;
-            justify-content:space-between
+            justify-content:space-between;
+            /* text-align:center */
+            
         }
         
         .wrap{
@@ -294,7 +296,7 @@ if($e_pageNum > $total_page){
         }
         .logo a{            
             display:block;
-            background:url(../images/logo_03.jpg) no-repeat;
+            background:url(../../images/logo_03.jpg) no-repeat;
             text-indent:-9999px;
             width:225px;
             height:99px;
@@ -860,12 +862,23 @@ if($e_pageNum > $total_page){
             text-align: left;
             left:10px;
             top:40px;
-            height:370px;
+            height:370px;            
+        }
+
+                            /* content */
+
+        .notice{
+            margin:20px auto 20px;
+            text-align:center
             
+        }      
+        hr{
+            margin:auto;
+            width: 1600px;
         }
     </style>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <script src="../../js/jquery-3.6.1.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
 
@@ -937,18 +950,18 @@ $(".gnb6").mouseleave(function(){
     <div class="top">
         <ul class="top_menu">
             <li class="top1"><a href="#">시흥시청</a></li>
-            <li class="top2"><a href="#">평생학습</a></li>
-            <li class="top3"><a href="siheung_sub.php">분야별</a></li>
+            <li class="top2"><a href="../../siheung.php">평생학습</a></li>
+            <li class="top3"><a href="../../siheung_sub.php">분야별</a></li>
             <li class="top4"><a href="#">일자리경제</a></li>
             <li class="top5"><a href="#">통합예약</a></li>
             <li class="top6"><a href="#">아동친화도시</a></li>
             <li class="top7"><a href="#">시흥시의회</a></li>
-            <li class="top8"><a href="../login/login.php">로그인</a></li>
+            <li class="top8"><a href="../../login/login.php">로그인</a></li>
             <li class="top9">|</li>
-            <li class="top10"><a href="../membership.php">회원가입</a></li>
+            <li class="top10"><a href="../../membership.php">회원가입</a></li>
         </ul>
     </div>
-    <h1 class="logo"><a href="#">시흥</a></h1>
+    <h1 class="logo"><a href="../../siheung.php">시흥</a></h1>
 
                             <!-- gnb -->
 
@@ -1076,7 +1089,7 @@ $(".gnb6").mouseleave(function(){
                 </li>
                 <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
                     <ul class="bg4">
-                        <li><span class="gnb4_1"><a href="#">공지사항</a></span></li>
+                        <li><span class="gnb4_1"><a href="list.php">공지사항</a></span></li>
                         <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
                         <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
                         <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
@@ -1148,7 +1161,10 @@ $(".gnb6").mouseleave(function(){
 </header>
     
     <!-- 콘텐트 -->
-    <h2>공지사항</h2>
+
+    <h2 class="notice">공지사항</h2>
+
+    <hr>
 
     <?php if($s_id == "admin"){ ?>
     <p class="write_area">
@@ -1160,10 +1176,10 @@ $(".gnb6").mouseleave(function(){
     <?php }; ?>
     <table class="notice_list_set">
         <tr class="notice_list_title">
-            <th class="no">번호</th>
-            <th class="n_title">제목</th>
-            <th class="writer">작성자</th>
-            <th class="w_date">날짜</th>
+            <th class="no">no</th>
+            <th class="n_title">title</th>
+            <th class="writer">writer</th>
+            <th class="w_date">date</th>
             <th class="cnt">조회수</th>
         </tr>
         <?php
