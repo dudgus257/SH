@@ -127,32 +127,50 @@ if($e_pageNum > $total_page){
         .notice_list_title{
             border-top:2px solid #999;
             border-bottom:1px solid #999;
-            text-align:center
+            
         }
         .notice_list_content{
             border-bottom:1px solid #999;
         }
-        .no{width:40px}
-        .u_name{width:80px}
-        .u_id{width:120px}
-        .mobile{width:160px}
-        .birth{width:120px}
-        .email{width:200px}
-        .address{width:400px}
-        .gender{width:40px}
+        .no{width:20px; text-align:left}
+        .n_title{width: 800px;}
+        .writer{width: 50px;}
+        .w_date{width: 85px;text-align:center}
+        .cnt{width: 10px;text-align:center;}
         .reg_date{width:120px}
         .modify{width:160px}
         
         a:hover{color:rgb(255, 128, 0)}
         
         .write_area{
-            width: 860px;
+            width: 1200px;
             display:flex;
             justify-content:space-between;
             /* text-align:center */
-            
+            margin:0 0 20px 0;
+            font-weight:bold            
         }
-        
+        .search{
+            border:1px solid grey;
+            border-radius:5px;
+            width: 100px;
+            height: 30px;
+        }
+        .search2{
+            border:1px solid grey;
+            border-radius:5px;
+            width: 200px;
+            height: 25px;
+        }
+        .search3{
+            border:none;
+            border-radius:5px;            
+            width: 50px;
+            height: 30px;
+            background-color:#FC7D07;
+            color:#fff;            
+            cursor:pointer
+        }
         .wrap{
             min-width:1600px
         }
@@ -861,23 +879,225 @@ if($e_pageNum > $total_page){
         }
 
                             /* content */
-        .notice{
-            display:block;
-            border:1px solid #000;
+            .notice{
+            display:block;            
             margin:auto;
             width: 1200px;
             height: 500px;
         }
 
         .notice2{
+            display:block;
             margin:20px auto 20px;
-            text-align:left
+            text-align:center;
+            
+
             
         }      
         .hr{
             margin:20px auto 20px;
             width:1200px;
         }
+        .pager{
+            text-align:center;
+            margin:20px 0 0 0
+        }
+
+        /* 하단메뉴 */
+        .footer{
+            position:relative;
+            z-index:5
+        }
+
+        .bottom_menu{
+            border:1px solid #FC7D07;
+            background-color: #FC7D07;
+            box-shadow: 6px 6px 6px lightgray; 
+            width: 1200px;
+            height: 85px;
+            margin:auto
+        }
+        .bottom1{
+            text-indent:-9999px
+        }
+        .bottom2 a{
+            display:block;
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 100px 
+        }
+        .bottom3{
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 109px 
+        }
+        .bottom4 a{
+            display:block;
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 132px 
+        }
+        .bottom5{
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 134px 
+        }
+        .bottom6 a{
+            display:block;
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 122px 
+        }
+        .bottom7{
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 100px 
+        }
+        .bottom8 a{
+            display:block;
+            font-weight:900;
+            color: rgba(255, 255, 255, 1);
+            float:left;
+            margin:-10px 0 0 100px 
+        }
+
+                                /* 약관 및 정책 */
+
+        .foot{
+            
+            width: 1200px;
+            height: 444px;
+            margin:17px auto
+            
+        }
+        .footer_logo{
+            
+            float:left
+        }
+        .footer_logo a{
+            display:block;
+            background:url(../images/logo2_67.jpg) no-repeat;
+            text-indent:-9999px;
+            width: 247px;
+            height: 109px;
+            
+        }
+        .policy0{
+            text-indent:-9999px
+        }
+        .policy{
+            
+            width: 850px;
+            float:left;
+            margin:-25px 0 0 52px 
+        }
+        .policy1{
+            
+            height: 20px;
+            width: 850px;
+        }
+        .policy2 a{
+            display:block;
+            font-weight:900;
+            
+            float:left
+        }
+        .policy3{
+            font-weight:900;
+            color: rgba(221, 221, 224, 1);
+            margin:0 0 0 17px;
+            float:left
+        }
+        .policy4 a{
+            display:block;
+            font-weight:900;
+            margin:0 0 0 16px;
+            float:left
+        }
+        .policy5{
+            font-weight:900;
+            color: rgba(221, 221, 224, 1);
+            margin:0 0 0 16px;
+            float:left
+        }
+        .policy6 a{
+            display:block;
+            font-weight:900;
+            margin:0 0 0 16px;
+            float:left
+        }
+        .policy7{
+            font-weight:900;
+            color: rgba(221, 221, 224, 1);
+            margin:0 0 0 16px;
+            float:left
+        }
+        .policy8 a{
+            display:block;
+            font-weight:900;
+            margin:0 0 0 16px;
+            float:left
+        }
+        .policy9{
+            font-weight:900;
+            color: rgba(221, 221, 224, 1);
+            margin:0 0 0 16px;
+            float:left
+        }
+        .policy10 a{
+            display:block;
+            font-weight:900;
+            margin:0 0 0 15px;
+            float:left
+        }
+        .address1{
+            text-indent:-9999px;
+            font-size:36px
+        }
+        .address2{
+            line-height:30px
+        }
+        .address3{
+            font-weight:900;
+            float:left
+        }
+        .copy{
+            font-size:12px;
+            font-weight:900
+        }
+        .footer_bar{
+            color: rgba(221, 221, 224, 1);
+        }
+
+        .sel{color: #FC7D07}
+
+        /* .gnb1_1{
+            background:#FF0606 ; color: #fff
+        } */
+
+        /* .small{
+            margin:auto;
+            width: 1600px;
+        } */
+
+        /* .gnb1 > ul{
+            width:auto;
+            position:absolute;
+            margin:auto    
+        } */
+
+        /* .big{
+            border:1px solid #000;
+            background:#000;
+            width:1600px;
+            height:auto;
+        } */
     </style>
     <script type="text/javascript" src="../jquery.js"></script>
     <script src="../js/jquery-3.6.1.min.js"></script>
@@ -1120,88 +1340,171 @@ $(".gnb6").mouseleave(function(){
             </nav>
         </div>
     </header>
+   
+                                    <!-- 콘텐트 -->
 
-    <?php include "../inc/sub_header.html"; ?>
-    <!-- 콘텐트 -->
-    <h2>공지사항</h2>
-    <?php if($s_id == "admin"){ ?>
-    <p class="write_area">
-        <span>전체 <?php echo $total; ?>개</span>
-        <span><a href="write.php">[글쓰기]</a></span>
-    </p>
-    <?php } else{ ?>
-    <p>전체 <?php echo $total; ?>개</p>
-    <?php }; ?>
-    <table class="notice_list_set">
-        <tr class="notice_list_title">
-            <th class="no">번호</th>
-            <th class="n_title">제목</th>
-            <th class="writer">작성자</th>
-            <th class="w_date">날짜</th>
-            <th class="cnt">조회수</th>
-        </tr>
-        <?php
-            // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
-            $start = ($page - 1) * $list_num;
+    <div class="notice">
+        <h2 class="notice2">공지사항</h2>
+        <?php if($s_id == "admin"){ ?>
+        
+        <div class="write_area">
+            <span>전체 <?php echo $total; ?>개</span>
+            
+            <div id="search_box">
+                <form action="search_result.php" method="get">
+                        <select name="category" class="search" onchange="sel_cate()">
+                            <option value="title">제목</option>
+                            <option value="writer">작성자</option>
+                            <option value="content">내용</option>
+                        </select>
+                        <input type="text" name="search" class="search2" required="required">
+                        <button type="button" class="search3">검색</button>
+                </form>
+            </div>
+            
+        </div>
 
-            // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
-            // limit 몇번부터, 몇 개
-            $sql = "select * from notice order by idx desc limit $start, $list_num;";
-            // echo $sql;
-            /* exit; */
+        <?php } else{ ?>
+        <p>전체 <?php echo $total; ?>개</p>
+        <?php }; ?>
+        <table class="notice_list_set">
+            <tr class="notice_list_title">
+                <th class="no">no</th>
+                <th class="n_title">title</th>
+                <th class="writer">writer</th>
+                <th class="w_date">date</th>
+                <th class="cnt">count</th>
+            </tr>
+            <?php
+                // paging : 해당 페이지의 글 시작 번호 = (현재 페이지 번호 - 1) * 페이지 당 보여질 목록 수
+                $start = ($page - 1) * $list_num;
 
-            // DB에 데이터 전송
-            $result = mysqli_query($dbcon, $sql);
+                // paging : 시작번호부터 페이지 당 보여질 목록수 만큼 데이터 구하는 쿼리 작성
+                // limit 몇번부터, 몇 개
+                $sql = "select * from notice order by idx desc limit $start, $list_num;";
+                // echo $sql;
+                /* exit; */
 
-            // DB에서 데이터 가져오기
-            // pager : 글번호(역순)
-            // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
-            $i = $total - (($page - 1) * $list_num);
-            while($array = mysqli_fetch_array($result)){
-        ?>
-        <tr class="notice_list_content">
-            <td><?php echo $i; ?></td>
-            <td class="notice_content_title">
-                <a href="view.php?n_idx=<?php echo $array["idx"]; ?>">
-                <?php echo $array["n_title"]; ?>
-                </a>
-            </td>
-            <td><?php echo $array["writer"]; ?></td>
-            <?php $w_date = substr($array["w_date"], 0, 10); ?>
-            <td><?php echo $w_date; ?></td>
-            <td><?php echo $array["cnt"]; ?></td>
-        </tr>
-        <?php
-                $i--;
-            }; 
-        ?>
-    </table>
-    <p class="pager">
-    <?php
-    // pager : 이전 페이지
-    if($page <= 1){
-    ?>
-    <a href="list.php?page=1">이전</a>
-    <?php } else{ ?>
-    <a href="list.php?page=<?php echo ($page - 1); ?>">이전</a>
-    <?php }; ?>
+                // DB에 데이터 전송
+                $result = mysqli_query($dbcon, $sql);
 
-    <?php
-    // pager : 페이지 번호 출력
-    for($print_page = $s_pageNum;  $print_page <= $e_pageNum; $print_page++){
-    ?>
-    <a href="list.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
-    <?php }; ?>
+                // DB에서 데이터 가져오기
+                // pager : 글번호(역순)
+                // 전체데이터 - ((현재 페이지 번호 -1) * 페이지 당 목록 수)
+                $i = $total - (($page - 1) * $list_num);
+                while($array = mysqli_fetch_array($result)){
+            ?>
+            <tr class="notice_list_content">
+                <td><?php echo $i; ?></td>
+                <td class="notice_content_title">
+                    <a href="view.php?n_idx=<?php echo $array["idx"]; ?>">
+                    <?php echo $array["n_title"]; ?>
+                    </a>
+                </td>
+                <td><?php echo $array["writer"]; ?></td>
+                <?php $w_date = substr($array["w_date"], 0, 10); ?>
+                <td><?php echo $w_date; ?></td>
+                <td><?php echo $array["cnt"]; ?></td>
+            </tr>
+            <?php
+                    $i--;
+                }; 
+            ?>
+        </table>
+        <p class="pager">
+            <?php
+            // pager : 이전 페이지
+            if($page <= 1){
+            ?>
+            <a href="list.php?page=1">이전</a>
+            <?php } else{ ?>
+            <a href="list.php?page=<?php echo ($page - 1); ?>">이전</a>
+            <?php }; ?>
 
-    <?php
-    // pager : 다음 페이지
-    if($page >= $total_page){
-    ?>
-    <a href="list.php?page=<?php echo $total_page; ?>">다음</a>
-    <?php } else{ ?>
-    <a href="list.php?page=<?php echo ($page + 1); ?>">다음</a>
-    <?php }; ?>
-    </p>
+            <?php
+            // pager : 페이지 번호 출력
+            for($print_page = $s_pageNum;  $print_page <= $e_pageNum; $print_page++){
+            ?>
+            <a href="list.php?page=<?php echo $print_page; ?>"><?php echo $print_page; ?></a>
+            <?php }; ?>
+            
+            <?php
+            // pager : 다음 페이지
+            if($page >= $total_page){
+            ?>
+            <a href="list.php?page=<?php echo $total_page; ?>">다음</a>
+            <?php } else{ ?>
+            <a href="list.php?page=<?php echo ($page + 1); ?>">다음</a>
+            <?php }; ?>
+        </p>
+    </div>
+
+    <footer id="footer" class="footer">
+            <div class="bottom_menu">
+                <h2 class="bottom1">사용자 하단메뉴</h2>
+                    <ul>
+                        <li class="bottom2"><a href="#">관련누리집</a></li>
+                        <li class="bottom3">|</li>
+                        <li class="bottom4"><a href="#">시민</a></li>
+                        <li class="bottom5">|</li>
+                        <li class="bottom6"><a href="#">사업자</a></li>
+                        <li class="bottom7">|</li>
+                        <li class="bottom8"><a href="#">관광객</a></li>
+                    </ul>
+                </div>
+            
+<div class="foot">
+            <p class="footer_logo"><a href="#">사이트 이용안내(시흥)</a></p>
+
+
+            <h3 class="policy0">약관 및 정책</h3>
+
+
+            <div class="policy">
+                <ul class="policy1">
+                    <li class="policy2"><a href="#">개인정보처리방침</a></li>
+                    <li class="policy3">|</li>
+                    <li class="policy4"><a href="#">영상정보처리기기운영방침</a></li>
+                    <li class="policy5">|</li>
+                    <li class="policy6"><a href="#">저작권정책</a></li>
+                    <li class="policy7">|</li>
+                    <li class="policy8"><a href="#">누리집 지도</a></li>
+                    <li class="policy9">|</li>
+                    <li class="policy10"><a href="#">오시는길</a></li>
+                </ul>
+
+                <p class="address1">주소 및 전화 & 팩스번호</p>
+                    <ul class="address2">
+                        <li>
+                            <p class="address3">시흥시 평생교육원</p>
+                                <address>(14902) 경기도 시흥시 소래산길 11(시흥ABC행복학습타운)<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></address>
+                                <p>TEL: 031-310-2063<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></p>
+                                <p>FAX: 031-380-5366</p>
+                        </li>
+                        <li>
+                            <p class="address3">대야평생학습관(구 평생학습센터)</p>
+                                <address>(14914)경기도 시흥시 은행로 173번길14<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></address>
+                                <p>TEL:031-310-2511~4<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></p>
+                                <p>FAX:031-380-5367</p>
+                        </li>
+                        <li>
+                        <p class="address3">정왕평생학습관(구 여성비전센터)</p>
+                            <address>(15055)경기도 시흥시 정왕대로 233번길 21<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></address>
+                            <p>TEL: 031-310-6001~6<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></p>
+                            <p>FAX: 031-380-5374</p>
+                        </li>
+                        <li>
+                            <p class="address3">정왕평생학습관(구 여성비전센터)수영장</p>
+                            <p>　</p>
+                            <p>TEL: 031-8084-0150<span class="footer_bar">&nbsp;&nbsp;&nbsp;|</span></p>
+                        </li>
+                    </ul>
+                        <p class="copy">
+                            COPYRIGHT ⓒ 2019.SIHEUNG CITY.ALL RIGHTS RESERVED
+                        </p>
+                </div>
+            </div>
+        </footer>
 </div>
 </body>
 </html>
