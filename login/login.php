@@ -582,7 +582,7 @@
     <ul class="user_menu1">
         <li class="login"><a href="../login/login.php">로그인</a></li>
         <li class="slash">/</li>
-        <li class="membership"><a href="../membership.php">회원가입</a></li>
+        <li class="membership"><a href="../members/membership.php">회원가입</a></li>
     </ul>
 
     <nav class="gnb">
@@ -675,7 +675,7 @@
                     </ul>                    
                 </div>
                 <p>
-                    <button type="button" class="membership2" onclick="location.href='../membership.php'">회원가입</button>
+                    <button type="button" class="membership2" onclick="location.href='../members/membership.php'">회원가입</button>
                 </p>
         </fieldset>
     </form>

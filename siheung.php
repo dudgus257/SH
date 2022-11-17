@@ -1912,7 +1912,7 @@
                 <li class="top6"><a href="#">아동친화도시</a></li>        
                 <li class="top7"><a href="login/login.php">로그인</a></li>
                 <li class="top8">|</li>
-                <li class="top9"><a href="membership.php">회원가입</a></li>
+                <li class="top9"><a href="members/membership.php">회원가입</a></li>
             </ul>
         </div>
         <h1 class="logo"><a href="#">시흥</a></h1>

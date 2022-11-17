@@ -94,7 +94,7 @@
             
         .logo a{
             display:block;
-            background:url(images/ssoc_03.jpg)no-repeat;
+            background:url(../images/ssoc_03.jpg)no-repeat;
             text-indent:-9999px;
             width: 112px;
             height: 40px;
@@ -176,7 +176,7 @@
 
         .gnb8 a{
             display:block;
-            background:url(images/more_07.jpg) no-repeat;
+            background:url(../images/more_07.jpg) no-repeat;
             width: 36px;
             height: 30px;
             text-indent:-9999px;
@@ -212,7 +212,7 @@
             
         }
         .select1{
-            background:url(images/check_11.jpg) no-repeat;
+            background:url(../images/check_11.jpg) no-repeat;
             text-indent:-9999px;
             width: 32px;
             height: 33px;
@@ -220,7 +220,7 @@
             margin-left:450px
         }
         .next1{
-            background:url(images/next_23.jpg) no-repeat;
+            background:url(../images/next_23.jpg) no-repeat;
             text-indent:-9999px;
             width: 52px;
             height: 8px;
@@ -228,7 +228,7 @@
             margin:10px 0 0 20px 
         }
         .select2{
-            background:url(images/two_11.jpg) no-repeat;
+            background:url(../images/two_11.jpg) no-repeat;
             text-indent:-9999px;
             width: 34px;
             height: 34px;
@@ -236,7 +236,7 @@
             margin-left:30px
         }
         .next2{
-            background:url(images/next2_14.jpg) no-repeat;
+            background:url(../images/next2_14.jpg) no-repeat;
             text-indent:-9999px;
             width: 50px;
             height: 8px;
@@ -244,7 +244,7 @@
             margin:10px 0 0 20px 
         }
         .select3{
-            background:url(images/three_25.jpg) no-repeat;
+            background:url(../images/three_25.jpg) no-repeat;
             text-indent:-9999px;
             width: 34px;
             height: 34px;
@@ -343,7 +343,7 @@
             font-weight: bold;
         }
         input[type=email] {
-            width:251px;
+            width:389px;
             height: 41px;
             font-size:15px;
             border-color: #cbc9c9;
@@ -922,7 +922,7 @@
 
         .foot0 a{
             display:block;            
-            background:url(images/foot_51.jpg) no-repeat;
+            background:url(../images/foot_51.jpg) no-repeat;
             text-indent:-9999px;
             width: 200px;
             height: 60px;
@@ -990,8 +990,8 @@
 
 
     </style>
-    <script type="text/javascript" src="jquery.js"></script>
-    <script src="js/jquery-3.6.1.min.js"></script>    
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>    
     <script type="text/javascript">
         
         function selectAll(selectAll)  {
@@ -1090,15 +1090,16 @@
 
         
 
-        function form_check() {
+        function form_check(){
             var id = document.getElementById("id");
             var no = document.getElementById("no");
             var pwd = document.getElementById("pwd");
+            //var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
             var repwd = document.getElementById("repwd");
             var name = document.getElementById("name");
             var mobile = document.getElementById("mobile");
             var apply = document.getElementById("apply");
-
+            
             
             
             if(!id.value){
@@ -1108,12 +1109,12 @@
                 return false;
             };
 
-            if(!no.value){
+            /* if(!no.value){
                 alert("이메일 인증번호를 입력해주세요.")
-                /* txt.textContent = "인증번호를 입력하세요."; */
+                txt.textContent = "인증번호를 입력하세요.";
                 no.focus();
                 return false;
-            };
+            }; */
 
             if(!pwd.value){
                 alert("비밀번호를 입력하세요.")
@@ -1122,12 +1123,25 @@
                 return false;
             };
 
-            var pw_len = pwd.value.length;
-            if(!/^(?=.*[a-zA-Z])(?=.*\d)(?=.*\W).{8,20}$/.test(pwd)){
-                alert("비밀번호는 영문과 특수문자 숫자를 포함하며 8자 이상이어야 합니다.");
-                return false;
-            };
+                                        //비밀번호 정규식
 
+            
+                
+            /* if(inputtxt.value.match(decimal))
+            {
+                alert("비밀번호를 한 번 더 입력해주세요.")
+            return true;
+            };
+            else
+            {
+                alert("비밀번호는 최소 1개의 소문자, 1개의 대문자, 1개의 숫자 및 1개의 특수문자를 포함한 8~15자 이상이어야합니다.")
+            return false;
+            }; */
+            
+
+            //----------------------------------------------------------------------------------
+
+            
             if(pwd.value != repwd.value){
                 alert("비밀번호를 확인해 주세요.");
                 repwd.focus();
@@ -1153,7 +1167,7 @@
                 return false;
             };
         };
-
+    
 
 
   
@@ -1177,12 +1191,12 @@
     <div class="wrap">
 
     <header>
-    <h1 class="logo"><a href="siheung.php">SSOC</a></h1>
+    <h1 class="logo"><a href="../siheung.php">SSOC</a></h1>
         <p class="line1">선</p>
 
         <h2 class="user_menu">사용자 메뉴</h2>
     <ul class="user_menu1">
-        <li class="login"><a href="login/login.php">로그인</a></li>
+        <li class="login"><a href="../login/login.php">로그인</a></li>
         <li class="slash">/</li>
         <li class="membership"><a href="#">회원가입</a></li>
     </ul>
@@ -1284,27 +1298,18 @@
                                 <!-- form -->
 
                                 
-        <form name="join_form" action="insert.php" method="get" onsubmit="return form_check()" onbutton="return form_check()" >
+        <form name="join_form" action="insert.php" method="post" onsubmit="return form_check()">
             <fieldset>
                 <legend>회원가입</legend>
                     <p>
                         <label for="u_id" class="c_title">
                             이메일 아이디<span class="star1">★</span>
                         </label><br>
-
-                        <input type="email" name="id" id="id" placeholder="이메일을 입력해주세요.">
-                        <button type="submit" onclick="mail_post()">인증메일 발송</button><br>
+                        <input type="email" name="id" id="id" placeholder="이메일을 입력해주세요.">                        
                         <span id="err_id" class="err_txt"></span>
                     </p>
                     
-                    <p>
-                        <label for="no" class="no">
-                            인증번호 확인<span class="star2">★</span>
-                        </label><br>
-                        <input type="text" name="no" id="no" placeholder="인증번호를 입력해주세요.">
-                        <button type="button" id="nochk" class="nochk">인증번호 확인</button><br>
-                        <span id="err_no" class="err_txt"></span>
-                    </p>
+                    
                     <p>
                         <label for="pwd" class="pw">
                             비밀번호<span class="star3">★</span>
@@ -1496,6 +1501,10 @@
                     </p>
             </fieldset>
         </form>  
+
+        
+
+            
 
         <p class="line7">선</p>
         <div id="center">

@@ -1477,7 +1477,7 @@ include "inc/session.php";
             box-shadow: 6px 6px 6px lightgray; 
             width: 1200px;
             height: 70px;
-            margin:595px auto
+            margin:595px auto 
         }
         .bottom1{
             text-indent:-9999px
@@ -1933,7 +1933,7 @@ include "inc/session.php";
                             </li>
                             <li class="top9">|</li>
                             <li class="top10">
-                                <a href="membership.php">회원가입</a>                    
+                                <a href="members/membership.php">회원가입</a>                    
                             </li>
                         <?php } else if($s_id == "admin"){ ?>
                         <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span><br>

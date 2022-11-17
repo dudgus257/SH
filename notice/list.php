@@ -1191,7 +1191,7 @@ $(".gnb6").mouseleave(function(){
                                 </li>
                                 <li class="top9">|</li>
                                 <li class="top10">
-                                    <a href="../membership.php">회원가입</a>
+                                    <a href="../members/membership.php">회원가입</a>
                                 </li>
                             <?php } else if($s_id == "admin"){ ?>
                                 <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span><br>
