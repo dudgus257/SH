@@ -1094,7 +1094,7 @@
             var id = document.getElementById("id");
             var no = document.getElementById("no");
             var pwd = document.getElementById("pwd");
-            //var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+            var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
             var repwd = document.getElementById("repwd");
             var name = document.getElementById("name");
             var mobile = document.getElementById("mobile");
@@ -1127,16 +1127,11 @@
 
             
                 
-            /* if(inputtxt.value.match(decimal))
-            {
-                alert("비밀번호를 한 번 더 입력해주세요.")
-            return true;
-            };
-            else
-            {
+            if(!decimal.test(pwd.value)){
                 alert("비밀번호는 최소 1개의 소문자, 1개의 대문자, 1개의 숫자 및 1개의 특수문자를 포함한 8~15자 이상이어야합니다.")
-            return false;
-            }; */
+                pwd.focus();
+                return false;
+            };
             
 
             //----------------------------------------------------------------------------------
@@ -1321,7 +1316,7 @@
                         <br>
                     <p class="pw2">
                         <span class="star4">◆</span>
-                       영어 소문자, 숫자, 특수문자를 모두 사용하여 8자 이상으로  입력해주세요.<span class="use">&nbsp;&nbsp;(사용가능 특수문자:~!@#$%^&*()_+|?:{})</span></p>
+                        <span class="use">비밀번호는 최소 1개의 소문자, 1개의 대문자, 1개의 숫자 및 1개의 특수문자를 포함한 8~15자 이상이어야합니다.</span></p>
                     
                        <input type="password" name="repwd" id="repwd" placeholder="비밀번호를 한 번 더 입력해주세요.">
                     </p>
