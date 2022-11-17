@@ -1079,6 +1079,12 @@ if($e_pageNum > $total_page){
         .gnb>li{
             float:left
         }
+
+        .login{
+            font-weight:bold;
+            font-size:16px;
+            float:right
+        }
     </style>
     <script type="text/javascript" src="../../jquery.js"></script>
     <script src="../../js/jquery-3.6.1.min.js"></script>
@@ -1158,9 +1164,28 @@ $(".gnb6").mouseleave(function(){
                     <li class="top5"><a href="#">통합예약</a></li>
                     <li class="top6"><a href="#">아동친화도시</a></li>
                     <li class="top7"><a href="#">시흥시의회</a></li>
-                    <li class="top8"><a href="../../login/login.php">로그인</a></li>
-                    <li class="top9">|</li>
-                    <li class="top10"><a href="../../membership.php">회원가입</a></li>
+                    <li>
+                    <ul class="login">
+                            <?php if(!$s_idx){ ?>
+                                <li class="top8">
+                                    <a href="../login/login.php">로그인</a>
+                                </li>
+                                <li class="top9">|</li>
+                                <li class="top10">
+                                    <a href="../membership.php">회원가입</a>
+                                </li>
+                            <?php } else if($s_id == "admin"){ ?>
+                                <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span><br>
+                                <a href="../admin/index.php">[관리자 페이지]</a><br>
+                                <a href="../login/logout.php">로그아웃</a>
+                                <a href="../members/member_info.php">내 정보</a>
+                            <?php } else{ ?>
+                                <br><?php echo $s_name; ?>님, 안녕하세요.<br>
+                                <a href="../login/logout.php">로그아웃</a>
+                                <a href="../members/member_info.php">내 정보</a>
+                            <?php }; ?>
+                        </ul>
+                    </li>                                        
                 </ul>
             </div>
         <h1 class="logo"><a href="../../siheung.php">시흥</a></h1>
@@ -1400,7 +1425,7 @@ $(".gnb6").mouseleave(function(){
                             }; 
                         ?>
             </table>
-
+            <br>
             <p class="pager">
                 <?php
                     //pager: 이전 페이지

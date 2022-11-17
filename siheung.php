@@ -1644,6 +1644,12 @@
         .gnb>li{
             float:left
         }
+        
+        .login{
+            float:right;
+            font-size:16px;
+            font-weight:bold;
+        }
     </style>    
     <script type="text/javascript" src="jquery.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>    

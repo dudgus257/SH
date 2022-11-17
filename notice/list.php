@@ -1194,14 +1194,14 @@ $(".gnb6").mouseleave(function(){
                                     <a href="../membership.php">회원가입</a>
                                 </li>
                             <?php } else if($s_id == "admin"){ ?>
-                                <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span>
-                                <a href="admin/index.php">[관리자 페이지]</a><br>
-                                <a href="login/logout.php">로그아웃</a>
-                                <a href="members/member_info.php">내 정보</a>
+                                <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span><br>
+                                <a href="../admin/index.php">[관리자 페이지]</a><br>
+                                <a href="../login/logout.php">로그아웃</a>
+                                <a href="../members/member_info.php">내 정보</a>
                             <?php } else{ ?>
                                 <br><?php echo $s_name; ?>님, 안녕하세요.<br>
                                 <a href="../login/logout.php">로그아웃</a>
-                                <a href="members/member_info.php">내 정보</a>
+                                <a href="../members/member_info.php">내 정보</a>
                             <?php }; ?>
                         </ul>                                                                                                                
                     </li>                                                            
@@ -1378,7 +1378,7 @@ $(".gnb6").mouseleave(function(){
             
             <div id="search_box">
                 <form action="search_result.php" method="get">
-                        <select name="category" class="search" onchange="sel_cate()">
+                        <select name="catgo" class="search">
                             <option value="title">제목</option>
                             <option value="writer">작성자</option>
                             <option value="content">내용</option>

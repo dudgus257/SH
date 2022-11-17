@@ -1477,7 +1477,7 @@ include "inc/session.php";
             box-shadow: 6px 6px 6px lightgray; 
             width: 1200px;
             height: 70px;
-            margin:40px auto
+            margin:595px auto
         }
         .bottom1{
             text-indent:-9999px
@@ -1539,7 +1539,7 @@ include "inc/session.php";
             
         }
         .footer_logo{
-            
+            margin:-550px 0 0 0;
             float:left
         }
         .footer_logo a{
@@ -1549,15 +1549,15 @@ include "inc/session.php";
             width: 247px;
             height: 109px;
             
+            
         }
         .policy0{
             text-indent:-9999px
         }
-        .policy{
-            
+        .policy{            
             width: 850px;
             float:left;
-            margin:-25px 0 0 52px 
+            margin:-580px 0 0 300px 
         }
         .policy1{
             
@@ -1936,7 +1936,7 @@ include "inc/session.php";
                                 <a href="membership.php">회원가입</a>                    
                             </li>
                         <?php } else if($s_id == "admin"){ ?>
-                        <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span>
+                        <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span><br>
                             <a href="admin/index.php">[관리자 페이지]</a><br>
                             <a href="login/logout.php">로그아웃</a>
                             <a href="members/member_info.php">내 정보</a>
@@ -2054,7 +2054,13 @@ include "inc/session.php";
                         </li>
                         <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
                             <ul class="bg4">
-                                <li><span class="gnb4_1"><a href="notice/list.php">공지사항</a></span></li>
+                                <li>
+                                    <?php if($s_id == "admin"){ ?>
+                                        <span class="gnb4_1"><a href="admin/notice/list.php">공지사항</a></span>
+                                    <?php } else{ ?>
+                                        <span class="gnb4_1"><a href="notice/list.php">공지사항</a></span>                                    
+                                    <?php }; ?>                                                                                                                
+                                </li>
                                 <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
                                 <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
                                 <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
@@ -2299,7 +2305,14 @@ include "inc/session.php";
                     </p>
                 </div>
             </div>
-        <a href="notice/list.php" class="notice10">전체 공지사항 &#8640;</a>
+            <div>
+                <?php if($s_id == "admin"){ ?>
+                    <a href="admin/notice/list.php" class="notice10">전체 공지사항 &#8640;</a>       
+                <?php } else{ ?>
+                    <a href="notice/list.php" class="notice10">전체 공지사항 &#8640;</a>                                  
+                <?php }; ?>             
+            <div>
+
         <p class="notice11">|</p>
     </div>
     
@@ -2408,17 +2421,17 @@ include "inc/session.php";
 
 
             <div class="policy">
-            <ul class="policy1">
-                <li class="policy2"><a href="#">개인정보처리방침</a></li>
-                <li class="policy3">|</li>
-                <li class="policy4"><a href="#">영상정보처리기기운영방침</a></li>
-                <li class="policy5">|</li>
-                <li class="policy6"><a href="#">저작권정책</a></li>
-                <li class="policy7">|</li>
-                <li class="policy8"><a href="#">누리집 지도</a></li>
-                <li class="policy9">|</li>
-                <li class="policy10"><a href="#">오시는길</a></li>
-            </ul>
+                <ul class="policy1">
+                    <li class="policy2"><a href="#">개인정보처리방침</a></li>
+                    <li class="policy3">|</li>
+                    <li class="policy4"><a href="#">영상정보처리기기운영방침</a></li>
+                    <li class="policy5">|</li>
+                    <li class="policy6"><a href="#">저작권정책</a></li>
+                    <li class="policy7">|</li>
+                    <li class="policy8"><a href="#">누리집 지도</a></li>
+                    <li class="policy9">|</li>
+                    <li class="policy10"><a href="#">오시는길</a></li>
+                </ul>
 
                 <p class="address1">주소 및 전화 & 팩스번호</p>
                     <ul class="address2">
