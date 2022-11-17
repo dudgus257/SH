@@ -111,15 +111,15 @@
         }
         .login{
             float:left;
-            margin:-29px 0 0 1246px 
+            margin:-38px 0 0px 1246px 
         }
         .slash{
             float:left;
-            margin:-29px 0 0 1309px 
+            margin:-38px 0 0 1309px 
         }
         .membership{
             float:left;
-            margin:-29px 0 0 1328px 
+            margin:-38px 0 0 1328px 
         }
         .line1{
             font-size:0px;

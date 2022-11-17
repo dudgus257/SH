@@ -101,7 +101,7 @@ include "inc/session.php";
             margin:25px 36px 26px 0px
         }
         .top1 > a{
-            width:72px;
+            width:80px;
             height:70px;
             font-weight:900;
             display:block
@@ -112,7 +112,7 @@ include "inc/session.php";
             margin:25px 34px 26px 0;    
         }
         .top2 a{
-            width:72px;
+            width:80px;
             height:70px;
             display:block;
             font-weight:900;
@@ -124,7 +124,7 @@ include "inc/session.php";
             margin:25px 36px 26px 0 
         }
         .top3 a {
-            width:54px;
+            width:60px;
             height:18px;
             display:block;
             font-weight:900;
@@ -134,7 +134,7 @@ include "inc/session.php";
             margin:25px 35px 36px 0 
         }
         .top4 a {
-            width:90px;
+            width:100px;
             height:18px;
             display:block;
             font-weight:900
@@ -144,37 +144,47 @@ include "inc/session.php";
             margin:25px 35px 36px 0 
         }
         .top5 a {
-            width:72px;
+            width:80px;
             height:18px;
             display:block;
             font-weight:900
         }
         .top6 {
             float:left;
-            margin:25px 380px 36px 0 
+            margin:25px 16px 36px 0 
         }
         .top6 a {
-            width:108px;
+            width:120px;
             height:18px;
             display:block;
             font-weight:900
         }
-        .admin_login{
+        .login{
+            float:right;
             font-size:16px;
-            font-weight:bold;
-            
+            font-weight:bold;            
         }
         .top7 {
             float:left;
-            margin:25px 16px 36px 0 
+            margin:25px 115px 36px 0 
         }
         .top7 a {
-            width:54px;
+            width:100px;
             height:18px;
             display:block;
             font-weight:900
         }
-        .top8{
+        .top8 {
+            float:left;
+            margin:25px 16px 36px 0 
+        }
+        .top8 a {
+            width:60px;
+            height:18px;
+            display:block;
+            font-weight:900
+        }
+        .top9{
             float:left;
             margin:25px 16px 36px 0;
             width:5px;
@@ -182,11 +192,11 @@ include "inc/session.php";
             display:block;
             font-weight:900
         }
-        .top9 {
+        .top10 {
             float:left;
             margin:25px 0 36px 0 
         }
-        .top9 a {
+        .top10 a {
             width:82px;
             height:18px;
             display:block;
@@ -1913,15 +1923,16 @@ include "inc/session.php";
                 <li class="top3"><a href="siheung_sub.php">분야별</a></li>
                 <li class="top4"><a href="#">일자리경제</a></li>
                 <li class="top5"><a href="#">통합예약</a></li>
-                <li class="top6"><a href="#">아동친화도시</a></li>  
+                <li class="top6"><a href="#">아동친화도시</a></li>
+                <li class="top7"><a href="#">시흥시의회</a></li>
                 <li>
-                    <ul class="admin_login">
+                    <ul class="login">
                         <?php if(!$s_idx){ ?>
-                            <li class="top7">                    
+                            <li class="top8">                    
                                 <a href="login/login.php">로그인</a>
                             </li>
-                            <li class="top8">|</li>
-                            <li class="top9">
+                            <li class="top9">|</li>
+                            <li class="top10">
                                 <a href="membership.php">회원가입</a>                    
                             </li>
                         <?php } else if($s_id == "admin"){ ?>
@@ -1930,7 +1941,7 @@ include "inc/session.php";
                             <a href="login/logout.php">로그아웃</a>
                             <a href="members/member_info.php">내 정보</a>
                         <?php } else{ ?>
-                            <?php echo $s_name; ?>님, 안녕하세요.
+                            <br><?php echo $s_name; ?>님, 안녕하세요.<br>
                             <a href="login/logout.php">로그아웃</a>
                             <a href="members/member_info.php">내 정보</a>
                         <?php }; ?>

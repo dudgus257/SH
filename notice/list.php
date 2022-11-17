@@ -1077,6 +1077,13 @@ if($e_pageNum > $total_page){
 
         .sel{color: #FC7D07}
 
+        .login{
+            font-size:16px;
+            font-weight:bold;
+            float:right
+            
+        }
+
         /* .gnb1_1{
             background:#FF0606 ; color: #fff
         } */
@@ -1174,11 +1181,30 @@ $(".gnb6").mouseleave(function(){
                     <li class="top3"><a href="../siheung_sub.php">분야별</a></li>
                     <li class="top4"><a href="#">일자리경제</a></li>
                     <li class="top5"><a href="#">통합예약</a></li>
-                    <li class="top6"><a href="#">아동친화도시</a></li>
+                    <li class="top6"><a href="#">아동친화도시</a></li>                                        
                     <li class="top7"><a href="#">시흥시의회</a></li>
-                    <li class="top8"><a href="../login/login.php">로그인</a></li>
-                    <li class="top9">|</li>
-                    <li class="top10"><a href="../membership.php">회원가입</a></li>
+                    <li>
+                        <ul class="login">
+                            <?php if(!$s_idx){ ?>
+                                <li class="top8">
+                                    <a href="../login/login.php">로그인</a>
+                                </li>
+                                <li class="top9">|</li>
+                                <li class="top10">
+                                    <a href="../membership.php">회원가입</a>
+                                </li>
+                            <?php } else if($s_id == "admin"){ ?>
+                                <span class="admin_hello"><?php echo $s_name; ?>님, 안녕하세요.</span>
+                                <a href="admin/index.php">[관리자 페이지]</a><br>
+                                <a href="login/logout.php">로그아웃</a>
+                                <a href="members/member_info.php">내 정보</a>
+                            <?php } else{ ?>
+                                <br><?php echo $s_name; ?>님, 안녕하세요.<br>
+                                <a href="../login/logout.php">로그아웃</a>
+                                <a href="members/member_info.php">내 정보</a>
+                            <?php }; ?>
+                        </ul>                                                                                                                
+                    </li>                                                            
                 </ul>
             </div>
         <h1 class="logo"><a href="../siheung.php">시흥</a></h1>
@@ -1345,7 +1371,7 @@ $(".gnb6").mouseleave(function(){
 
     <div class="notice">
         <h2 class="notice2">공지사항</h2>
-        <?php if($s_id == "admin"){ ?>
+        <?php if('$u_id'){ ?>
         
         <div class="write_area">
             <span>전체 <?php echo $total; ?>개</span>
