@@ -7,7 +7,7 @@
     <title>membership3</title>
     
     <style type="text/css">
-        input[type=checkbox]{
+        input[type="checkbox"]{
             width: 20px;
             height: 20px; 
             }
@@ -350,7 +350,7 @@
             border-radius: 5px;
             
         }
-        input[type=text] {
+        input[type="text"] {
             width:251px;
             height: 41px;
             font-size:15px;
@@ -471,25 +471,26 @@
             font-size:10px;
             margin:0 0 0 0px 
         }
-        input[type="radio"] {
-            display:none;
-            
-        }
-        .m_f{
-            
+        
+        .m_f{            
             margin:16px 0 39px -10px;
-            text-align:center
+            
         }
+        input[type="radio"]{
+            display:none
+        }
+
         .m{
+            appearance:none;
             display:inline-block;
             padding: 15px 10px;
             border:1px solid #cbc9c9;
             color: #cbc9c9;
             text-align:center;
             font-weight: bold;
-            width: 175px;
-            cursor:pointer;
-            border-radius: 5px;
+            width: 175px;            
+            border-radius: 5px;            
+            cursor:pointer
         }
         .f{
             display:inline-block;
@@ -501,17 +502,13 @@
             width: 175px;
             cursor:pointer;
             border-radius: 5px;
-        }
-        input[type="radio"]:checked+span{
-            background-color:#000;
-            color:#f37b21
-        }
+        }                                                       
         .sel{background:#9199c3;color:#fff;font-weight:bold}
 
-        .birth{
-            
+        .birth{            
             font-weight: bold;
-            margin:0 0 0 -10px 
+            margin:0 0 0 -330px;
+            
         }
         .star8{
             color :#f37b21;
@@ -521,6 +518,14 @@
         #yymmdd{
             text-align:center;
             margin:0 0 39px 0 
+        }
+        input[type="date"] {
+            width:389px;
+            height: 41px;
+            font-size:18px;
+            border-color: #cbc9c9;
+            border-radius: 5px;
+            margin:16px 0 16px 0
         }
         #year{
             width: 150px; padding: .8em .5em;
@@ -555,7 +560,7 @@
             font-size:10px;
             margin:0 0 0 5px 
         }
-        input[type=tel] {
+        input[type="tel"] {
             width:389px;
             height: 41px;
             font-size:18px;
@@ -571,12 +576,12 @@
         .area{
             display:block;
             font-weight: bold;
-            margin: 39px 0 -9px -10px;
+            margin: 29px 0 -9px -10px;
             
         }
         .do0{
             
-            margin:16px 0 16px -10px;
+            margin:0px 0 16px -10px;
             text-align:center
         }
         .do{
@@ -600,10 +605,7 @@
             width: 175px;
             cursor:pointer;
             border-radius: 5px;
-        }
-        
-
-
+        }        
         #area3{
             border: 1px solid #cbc9c9; 
             border-radius: 5px;
@@ -611,10 +613,16 @@
             width: 400px;
             padding: .8em .5em;
             font-size:18px;
-            margin:0 0 39px -5px;
-            
+            margin:0 0 16px -5px;            
         }
-        
+        #addr_d{
+            width:400px;
+            height: 41px;
+            font-size:18px;
+            border-color: #cbc9c9;
+            border-radius: 5px;
+            margin:0px 0 39px -5px
+        }
         .info{
             font-weight: bold;
             margin:0 0 16px -10px; 
@@ -700,20 +708,20 @@
         .line5{
             text-indent:-9999px;
             border-bottom:2px solid #cbc9c9;
-            margin:0 0 18px 0 
+            margin:0 0 18px 0
         }
 
-        #apply{
-            
+        .apply{            
             width:200px;
             padding:0 0 18px 0
         }
 
         #apply0{
-            float:left
+            float:left;
+            margin:5px 0 0 -5px
         }
         
-        #apply1{
+        #apply{
             float:left;
             margin:2px 0 0 10px;
             font-weight: bold;
@@ -1017,28 +1025,42 @@
         $("a").hover(function(){
             $(this).addClass("sel2");
         }, function(){
-            $(this).removeClass("sel2")
-        })
+            $(this).removeClass("sel2");
+        });
 
 
             $(".m").click(function(){
                 $(this).addClass("sel");
-            })
-
-            $(".m").click(function(){
                 $(".f").removeClass("sel");
-            })
+                $(".m input[type=radio]").attr("checked",true);
+                $(".f input[type=radio]").attr("checked",false);
+            });
 
             $(".f").click(function(){
                 $(this).addClass("sel");
-            })
-            $(".f").click(function(){
                 $(".m").removeClass("sel");
-            })
+                $(".f input[type=radio]").attr("checked",true);
+                $(".m input[type=radio]").attr("checked",false);
+            });
+
+            $(".do").click(function(){
+                $(this).addClass("sel");
+                $(".do2").removeClass("sel");
+                $(".do input[type=radio]").attr("checked",true);
+                $(".do2 input[type=radio]").attr("checked",false);
+            });
+
+            $(".do2").click(function(){
+                $(this).addClass("sel");
+                $(".do").removeClass("sel");
+                $(".do2 input[type=radio]").attr("checked",true);
+                $(".do input[type=radio]").attr("checked",false);
+            });
+
 
             //경기도 경기도 외 지역
 
-            $(".do").click(function(){
+            /* $(".do").click(function(){
                 $(this).addClass("sel");
             })
 
@@ -1052,7 +1074,7 @@
             $(".do2").click(function(){
                 $(".do").removeClass("sel");
             })
-
+ */
 
 
 
@@ -1097,8 +1119,12 @@
             var decimal= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
             var repwd = document.getElementById("repwd");
             var name = document.getElementById("name");
+            var sex1 = document.getElementById("sex1");
+            var sex2 = document.getElementById("sex2");          
             var mobile = document.getElementById("mobile");
-            var apply = document.getElementById("apply");
+            var ps_code1 = document.getElementById("ps_code1");
+            var ps_code2 = document.getElementById("ps_code2");            
+            var apply0 = document.getElementById("apply0");
             
             
             
@@ -1150,15 +1176,28 @@
                 return false;
             };
 
+            
+            if(sex1.checked != true && sex2.checked != true){
+                alert("성별을 선택해주세요.")
+                sex1.focus();
+                return false;
+            };                        
+
             if(!mobile.value){
                 alert("휴대전화를 입력해주세요.")
                 mobile.focus();
                 return false;
+            };                        
+
+            if(ps_code1.checked != true && ps_code2.checked != true){
+                alert("지역을 선택해주세요.")
+                ps_code1.focus();
+                return false;
             };
-            
-            if(!apply.checked){
+
+            if(!apply0.checked){
                 alert("약관동의가 필요합니다.");
-                apply.focus();
+                apply0.focus();
                 return false;
             };
         };
@@ -1299,9 +1338,10 @@
                     <p>
                         <label for="u_id" class="c_title">
                             이메일 아이디<span class="star1">★</span>
-                        </label><br>
-                        <input type="email" name="id" id="id" placeholder="이메일을 입력해주세요.">                        
+                        <br>
+                        <input type="email" name="u_id" id="id" placeholder="이메일을 입력해주세요.">                        
                         <span id="err_id" class="err_txt"></span>
+                        </label>
                     </p>
                     
                     
@@ -1321,41 +1361,45 @@
                        <input type="password" name="repwd" id="repwd" placeholder="비밀번호를 한 번 더 입력해주세요.">
                     </p>
 
-                    <p>
-                        <label for="name" class="name">
-                            이름<span class="star5">★</span>
-                        </label><br>
-                        <input type="text" name="name" id="name"><br>
-                        <p class="name_under">
-                            <span class="star6">◆</span>
-                             수료증에 표기되는 이름으로, 회원가입 후 수정 불가능합니다.</p>
-                        <span id="err_name" class="err_txt"></span>
-                    </p>
+                    <div>
+                        <label for="u_name" class="name">
+                                이름<span class="star5">★</span>
+                            <br>
+                            <input type="text" name="u_name" id="name"><br>
+                        </label>
+                            <p class="name_under">
+                                <span class="star6">◆</span>
+                                 수료증에 표기되는 이름으로, 회원가입 후 수정 불가능합니다.
+                            </p>
+                            <span id="err_name" class="err_txt"></span>                        
+                    </div>
                     
-                    <p>
+                <div>
                         <label for="sex" class="sex">성별</label>
                         <span class="star7">★</span>
                         <br>
                         
                     <div class="m_f">
-                        <lable>
-                            <input type="radio" id="sex1" name="sex" value="M">
-                            <span class="m">남성</span>
-                        </lable>
-                        
-                        <lable>
-                            <input type="radio" id="sex2" name="sex" value="F">
-                            <span class="f">여성</span>
-                        </lable>
+                        <label for="sex1" class="m">
+                            <input type="radio" id="sex1" name="gender" value="m">
+                            남성
+                        </label>                        
+                        <label for="sex2" class="f">
+                            <input type="radio" id="sex2" name="gender" value="f">
+                            여성
+                        </label>
                     </div>
-                    </p>
+                </div>
 
-                    <p class="birth">생년월일<span class="star8">★</span></p>
-                    <p id="yymmdd">
-                        <select name="yy" id="year" value="year"></select>
-                        <select name="mm" id="month" value="month"></select>
-                        <select name="dd" id="day" value="day"></select>
-                    </p>
+                    <div id="yymmdd">
+                        <label for="birth" class="birth">생년월일
+                            <span class="star8">★</span><br>
+                            <input type="date" name="birth">
+                            <!-- <select name="yy" id="year" value="year"></select>
+                            <select name="mm" id="month" value="month"></select>
+                            <select name="dd" id="day" value="day"></select> -->
+                        </label>
+                    </div>
 
                     
                     <div class="phone">
@@ -1367,56 +1411,61 @@
                         <br><span class="phone2">"-" 없이 숫자만 입력</span>
                     </p>
 
-                    <p>
-                        <label for="area" class="area">지역</label><br>
+                    <div>
+                        <span class="area">지역</span><br>
                         <div class="do0">
-                            <lable>
-                                <input type="radio" id="area" name="area" value="do">
-                                <span class="do">경기도</span>
-                            </lable>
+                            <label for="ps_code1" class="do">
+                                <input type="radio" id="ps_code1" name="ps_code" value="경기도">
+                                경기도
+                            </label>
                             
-                            <lable>
-                                <input type="radio" id="area2" name="area2" value="do2">
-                                <span class="do2">경기도 외 지역</span>
-                            </lable>
+                            <label for="ps_code2" class="do2">
+                                <input type="radio" id="ps_code2" name="ps_code" value="경기도 외 지역">
+                                경기도 외 지역
+                            </label>
                         </div>
-                    </p>
+                    </div>
                     
-                    <select name="area2" id="area3">
-                        <option>행정구역 선택</option>
-                        <option>가평군</option>
-                        <option>고양시</option>
-                        <option>과천시</option>
-                        <option>광명시</option>
-                        <option>광주시</option>
-                        <option>구리시</option>
-                        <option>군포시</option>
-                        <option>김포시</option>
-                        <option>남양주시</option>
-                        <option>동두천시</option>
-                        <option>부천시</option>
-                        <option>성남시</option>
-                        <option>수원시</option>
-                        <option>시흥시</option>
-                        <option>안산시</option>
-                        <option>안성시</option>
-                        <option>안양시</option>
-                        <option>양주시</option>
-                        <option>양평군</option>
-                        <option>여주시</option>
-                        <option>연천군</option>
-                        <option>오산시</option>
-                        <option>용인시</option>
-                        <option>의왕시</option>
-                        <option>의정부시</option>
-                        <option>이천시</option>
-                        <option>파주시</option>
-                        <option>평택시</option>
-                        <option>포천시</option>
-                        <option>하남시</option>
-                        <option>화성시</option>
-                        
-                    </select>
+                    <label for="addr_b">
+                        <select name="addr_b" id="area3">
+                            <option>행정구역 선택</option>
+                            <option>가평군</option>
+                            <option>고양시</option>
+                            <option>과천시</option>
+                            <option>광명시</option>
+                            <option>광주시</option>
+                            <option>구리시</option>
+                            <option>군포시</option>
+                            <option>김포시</option>
+                            <option>남양주시</option>
+                            <option>동두천시</option>
+                            <option>부천시</option>
+                            <option>성남시</option>
+                            <option>수원시</option>
+                            <option>시흥시</option>
+                            <option>안산시</option>
+                            <option>안성시</option>
+                            <option>안양시</option>
+                            <option>양주시</option>
+                            <option>양평군</option>
+                            <option>여주시</option>
+                            <option>연천군</option>
+                            <option>오산시</option>
+                            <option>용인시</option>
+                            <option>의왕시</option>
+                            <option>의정부시</option>
+                            <option>이천시</option>
+                            <option>파주시</option>
+                            <option>평택시</option>
+                            <option>포천시</option>
+                            <option>하남시</option>
+                            <option>화성시</option>                        
+                        </select>
+                    </label>
+
+                    <label for="addr_d">
+                        <input type="text" name="addr_d" id="addr_d" placeholder="상세주소를 입력하세요.">
+                    </label>
 
                     <p class="info">정보 수신 여부</p>
                     <p id="info0">
@@ -1444,10 +1493,11 @@
 
                     <h3>약관 동의</h3>
 
-                    <p id="apply">
-                        <input type="checkbox" name="apply" id="apply0" value="y" onclick="selectAll(this)">
-                        <label for="apply" id="apply1">전체 동의하기</label>
-                    </p>
+                    <div class="apply">                        
+                        <label for="apply" id="apply">&nbsp;&nbsp;전체 동의하기
+                            <input type="checkbox" name="apply" id="apply0" value="y" onclick="selectAll(this)">
+                        </label>
+                    </div>
 
                 <p class="line5">선</p>
 

@@ -695,7 +695,7 @@
                     <button type="submit" class="login3">휴대폰번호로 회원가입<br><span class="login3_1">본인명의의 휴대폰번호로 본인인증을 해주세요.</span></button>
                 </p>                
                 <p>
-                    <button type="button" class="membership2" onclick="location.href='membership3.php'">이메일 주소로 회원가입</button>
+                    <button type="button" class="membership2" onclick="location.href='sendmail.php'">이메일 주소로 회원가입</button>
                 </p>
         </fieldset>
     </form>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+input[type="radio"] {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        border: 2px solid #1FBED6;
+        background-color: white;
+        -webkit-appearance: none; /*to disable the default appearance of radio button*/
+        -moz-appearance: none;
+      }
+      
+      input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+        outline: none; /*to remove the square border on focus*/
+      }
+      
+      input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+        background-color: #1FBED6;
+      }
+      
+      input[type="radio"]:checked ~ span:first-of-type {
+        color: white;
+      }
+      
+      label span:first-of-type {
+        position: relative;
+        left: -27px;
+        font-size: 15px;
+        color: #1FBED6;
+      }
+      
+      label span {
+        position: relative;
+        top: -12px;
+      }
+    </style>
+</head>
+<body>
+    
+      <label>
+        <input type="radio" name="options"/>
+        <span>A</span>
+      </label>
+      <br/>
+      <label>
+        <input type="radio" name="options"/>
+        <span>B</span><span>Option B</span>
+      </label>
+      <br/>
+      <label>
+        <input type="radio" name="options"/>
+        <span>C</span><span>Option C</span>
+      </label>
+      <br/>
+      <label>
+        <input type="radio" name="options"/>
+        <span>D</span><span>Option D</span>
+      </label>
+</body>
+</html>
