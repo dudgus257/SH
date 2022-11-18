@@ -84,8 +84,7 @@ if($e_pageNum > $total_page){
         .u_name{width:80px}
         .u_id{width:120px}
         .mobile{width:160px}
-        .birth{width:120px}
-        .email{width:200px}
+        .birth{width:120px}        
         .address{width:400px}
         .gender{width:40px}
         .reg_date{width:120px}
@@ -115,8 +114,7 @@ if($e_pageNum > $total_page){
             <th class="u_name">이름</th>
             <th class="u_id">아이디</th>
             <th class="mobile">전화번호</th>
-            <th class="birth">생년월일</th>
-            <th class="email">이메일</th>
+            <th class="birth">생년월일</th>            
             <th class="address">주소</th>
             <th class="gender">성별</th>
             <th class="reg_date">가입일</th>
@@ -157,8 +155,7 @@ if($e_pageNum > $total_page){
             <td><?php echo $array["u_name"]; ?></td>
             <td><?php echo $array["u_id"]; ?></td>
             <td><?php echo $array["mobile"]; ?></td>
-            <td><?php echo $array["birth"]; ?></td>
-            <td><?php echo $array["email"]; ?></td>
+            <td><?php echo $array["birth"]; ?></td>            
             <?php
                 $address = $array["ps_code"]." ".$array["addr_b"]." ".$array["addr_d"];
             ?>

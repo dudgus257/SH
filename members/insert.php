@@ -1,18 +1,22 @@
 <?php
 // 이전 페이지에서 값 가져오기
-$u_name = $_POST["u_name"];
 $u_id = $_POST["u_id"];
 $pwd = $_POST["pwd"];
-$mobile = $_POST["mobile"];
-$email_id = $_POST["email_id"];
-$email_dns = $_POST["email_dns"];
-$email = $email_id."@".$email_dns;
+$u_name = $_POST["u_name"];
+$gender = $_POST["gender"];
 $birth = $_POST["birth"];
+$mobile = $_POST["mobile"];
 $ps_code = $_POST["ps_code"];
 $addr_b = $_POST["addr_b"];
 $addr_d = $_POST["addr_d"];
 $addr = $ps_code." ".$addr_b." ".$addr_d;
-$gender = $_POST["gender"];
+
+/* $email_id = $_POST["email_id"];
+$email_dns = $_POST["email_dns"];
+$email = $email_id."@".$email_dns; */
+
+
+
 $apply = $_POST["apply"];
 
 // 시간 구하기
@@ -73,15 +77,15 @@ include "../inc/dbcon.php";
 
 
 $sql = "insert into members(";
-$sql .= "u_name, u_id, pwd, ";
-$sql .= "mobile, birth, email, ";
+$sql .= "u_id, pwd, u_name, ";
+$sql .= "gender, birth, mobile, ";
 $sql .= "ps_code, addr_b, addr_d,";
-$sql .= "gender, reg_date";
+$sql .= "reg_date";
 $sql .= ") values(";
-$sql .= "'$u_name', '$u_id', '$pwd',";
-$sql .= "'$mobile', '$birth', '$email',";
+$sql .= "'$u_id', '$pwd', '$u_name',";
+$sql .= "'$gender', '$birth', '$mobile',";
 $sql .= "'$ps_code', '$addr_b', '$addr_d',";
-$sql .= "'$gender', '$reg_date');";
+$sql .= "'$reg_date');";
 
 // echo $sql;
 
