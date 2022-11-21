@@ -217,6 +217,11 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             width:225px;
             height:99px;
         }
+        .logo a:hover{
+            background:url(images/logo2_68.jpg)no-repeat;
+            width:225px;
+            height:99px;
+        }
         /* .gnb{
             border:3px solid #cbcbcb
         } */
@@ -1425,6 +1430,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
 
                         /* 검색창 */
         .content{
+            
             position:relative;
             z-index:1
         }
@@ -1605,29 +1611,70 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             z-index:2
         }
         .child_welfare{            
-            position:absolute;
-            background:url(images/welfare.jpg) no-repeat;
+            position:absolute;            
+            background:url(images/welfare3.jpg) no-repeat;
             width: 800px;
             height:396px;
             margin:-380px 0 0 500px;
             z-index:1;
+            cursor:pointer            
         }
-        .child_welfare2{
+        .woman_welfare{            
+            position:absolute;            
+            background:url(images/woman_welfare.jpg) no-repeat;
+            width: 800px;
+            height:396px;
+            margin:-380px 0 0 500px;
+            z-index:1;
+            cursor:pointer;
+            display:none;
+        }
+        .invalid_welfare{            
+            position:absolute;            
+            background:url(images/invalid_welfare.jpg) no-repeat;
+            width: 800px;
+            height:396px;
+            margin:-380px 0 0 500px;
+            z-index:1;
+            cursor:pointer;
+            display:none
+        }
+        .elders_welfare{            
+            position:absolute;            
+            background:url(images/elders_welfare.jpg) no-repeat;
+            width: 800px;
+            height:396px;
+            margin:-380px 0 0 500px;
+            z-index:1;
+            cursor:pointer;
+            display:none
+        }
+        .famliy_welfare{            
+            position:absolute;            
+            background:url(images/famliy_welfare.jpg) no-repeat;
+            width: 800px;
+            height:396px;
+            margin:-380px 0 0 500px;
+            z-index:1;
+            cursor:pointer;
+            display:none
+        }
+        /* .child_welfare2{
             position:absolute;
             margin:30px 0 0 20px;
             font-size:50px;                        
             font-family: 'Nanum Pen Script', cursive;
             color:white
-        }
+        } */
         
-        .child_welfare3{
+        /* .child_welfare3{
             position:absolute;
             font-size:30px;
             margin:350px 0 0 650px;
             font-weight: bold;
             font-family: 'Nanum Pen Script', cursive;  
             cursor:pointer          
-        }
+        } */
 
                         /* direct_menu */
                     
@@ -2451,24 +2498,18 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         
         .footer_logo{
-            position:relative;
+            background:url(images/logo2_67.jpg)no-repeat;
             display:block;
             float:left;
             text-indent:-9999px;
             width: 247px;
             height: 109px;
+            cursor:pointer
         }
-        .footer_logo2{
-            position:relative;
+        .footer_logo:hover{
+            background:url(images/logo_05.jpg)no-repeat;
             width: 247px;
             height: 109px;
-        }
-        .footer_logo3{
-            position:absolute;
-            display:none
-        }
-        .footer_logo2:hover .footer_logo3{
-            display:block
         }
         .policy0{
             text-indent:-9999px
@@ -2667,6 +2708,25 @@ $("#bear0 > div:gt(0)").hide();
 setInterval(function(){
     $('#bear0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#bear0');
 }, 3000);
+$("#wel > div:gt(0)").hide();
+setInterval(function(){
+    $('#wel > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#wel');
+}, 3000);
+$(".welfare2").click(function(){
+    $('.child_welfare').stop().show();
+});
+$(".welfare3").click(function(){
+    $('.woman_welfare').stop().show();
+});
+$(".welfare4").click(function(){
+    $('.invalid_welfare').stop().show();
+});
+$(".welfare5").click(function(){
+    $('.elders_welfare').stop().show();
+});
+$(".welfare6").click(function(){
+    $('.famliy_welfare').stop().show();
+});
 });
 
    
@@ -3334,12 +3394,15 @@ var left_value = 0;
                         </li>
                         <li class="welfare6">
                                 <span class="welfare6_1">다문화가정</span>
-                        </li>
-                        <li class="child_welfare">
-                            <span class="child_welfare2">아이들이 살기 좋은<br> 도시를 만들어 가겠습니다.</span>
-                            <span class="child_welfare3">자세히보기 →</span>
-                        </li>
+                        </li>                        
                     </ul>
+                    <div id="wel">
+                        <div class="child_welfare"></div>
+                        <div class="woman_welfare"></div>
+                        <div class="invalid_welfare"></div>
+                        <div class="elders_welfare"></div>
+                        <div class="famliy_welfare"></div>
+                    </div>
                 </div>                
                 <div class="direct_menu">
                     <ul class="direct_menu2">
@@ -3425,7 +3488,10 @@ var left_value = 0;
                             <div class="godang3"></div>
                             <div class="godang4"></div>                            
                         </div>
-                            <div class="godang_bar"><span>LIVE</span></div>
+                            <div class="godang_bar">
+                                <div class="prev"><</div>
+                                <div class="next">></div>
+                            </div>
                         <div id="bear0">
                             <div class="bear"></div>
                             <div class="bear2"></div>                            
@@ -3659,8 +3725,7 @@ var left_value = 0;
     
 <div class="foot">
     <div class="footer_logo">
-        <img src="images/logo2_67.jpg" alt="logo" class="footer_logo2">
-        <img src="images/logo_03.jpg" alt="logo" class="footer_logo3">
+        
     </div>
 
 
