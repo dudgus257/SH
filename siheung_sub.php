@@ -1659,7 +1659,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer;                                              
         }
         .di:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
         }
         .dir{
             position:absolute;
@@ -2443,24 +2443,32 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
 
                                 /* 약관 및 정책 */
 
-        .foot{
-            
+        .foot{            
             width: 1200px;
             height: 444px;
             margin:17px auto
             
         }
+        
         .footer_logo{
-            
-            float:left
-        }
-        .footer_logo a{
+            position:relative;
             display:block;
-            background:url(images/logo2_67.jpg) no-repeat;
+            float:left;
             text-indent:-9999px;
             width: 247px;
             height: 109px;
-            
+        }
+        .footer_logo2{
+            position:relative;
+            width: 247px;
+            height: 109px;
+        }
+        .footer_logo3{
+            position:absolute;
+            display:none
+        }
+        .footer_logo2:hover .footer_logo3{
+            display:block
         }
         .policy0{
             text-indent:-9999px
@@ -3650,7 +3658,10 @@ var left_value = 0;
         </div>
     
 <div class="foot">
-    <p class="footer_logo"><a href="#">사이트 이용안내(시흥)</a></p>
+    <div class="footer_logo">
+        <img src="images/logo2_67.jpg" alt="logo" class="footer_logo2">
+        <img src="images/logo_03.jpg" alt="logo" class="footer_logo3">
+    </div>
 
 
     <h3 class="policy0">약관 및 정책</h3>
