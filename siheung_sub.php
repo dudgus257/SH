@@ -229,7 +229,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             position:relative;
             margin:auto;
             width: 1200px;
-            height: auto;                        
+            height: auto;                                  
         }
         .nav_bg{            
             width:1200px;
@@ -261,8 +261,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
 
         .gnb1>ul{
             display:none;
-            height: auto;
-            
+            height: auto;            
         }
         .gnb2>ul{
             display:none
@@ -288,14 +287,23 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         .a1{
             font-weight: bold;
         }
+        
         .bg1{
-            position:relative;
+            /* position:relative; */
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:700px;
-            margin:20px 0 0 0;
+            margin:20px 0px 0 0px;           
         }
+        /* .bg1_1{
+            position:absolute;            
+            background-color: #fff;
+            width:1200px;
+            height:700px;
+            margin:0 0 0 0px
+        } */
         .gnb1>li{width: 200px;height: auto;}
         .gnb1 ul ul{            
             width:200px;
@@ -539,7 +547,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-weight: bold;
         }
         .bg2{
-            position:relative;
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
@@ -758,7 +766,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             
         }
         .bg3{
-            position:relative;
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
@@ -857,7 +865,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-weight: bold;
         }
         .bg4{
-            position:relative;
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
@@ -1038,7 +1046,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-weight: bold;
         }
         .bg5{
-            position:relative;
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
@@ -1171,7 +1179,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-weight: bold;
         }
         .bg6{
-            position:relative;
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
@@ -1335,7 +1343,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-weight: bold;
         }
         .bg7{
-            position:relative;
+            position:absolute;
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
@@ -2785,7 +2793,7 @@ var left_value = 0;
                         <ul>
                             <li class="gnb1"><span class="a1"><a href="#">복지</a></span>
                                 <ul class="bg1">
-                                    <li>
+                                    <li class="bg1_1">
                                         <ul class="small_gnb">
                                             <li><span class="gnb1_1"><a href="#">시흥등불SOS센터</a></span></li>
                                         </ul>
