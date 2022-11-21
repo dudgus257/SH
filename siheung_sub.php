@@ -237,13 +237,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             left:-9999px;
             top:-9999px;
         }        
-        /* .gnb>ul{
-            width:100%;
-            height: 40px;
-            margin:30px auto;
-            font-size:18px;
-            color:#000
-        } */
+       
 
         .gnb>ul>li{
             float:left;
@@ -297,18 +291,11 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height:700px;
             margin:20px 0 0 0;
         }
-        .gnb1 ul ul{
-            
+        .gnb1>li{width: 200px;height: auto;}
+        .gnb1 ul ul{            
             width:200px;
-            height:700px;
-            
-        }
-        /* .small_gnb ul{
-            position:absolute;
-            text-align:left;            
-            font-size:15px;
-            height:250px;
-        } */
+            height:700px;            
+        }        
         .gnb1_1{
             /* float:left; */
             text-align:left;
@@ -1452,6 +1439,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-size:0px
         }
         .search{            
+            position:relative;
             border:2px solid #36AE58;            
             width: 850px;
             height: 50px;
@@ -1486,16 +1474,18 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             color :#c2bfbf
             
         }
-        .search_button{
+        .search_button{            
             width: 100px;
-            height: 50px;
+            height: 53px;
             background-color:#36AE58;
             color : #fff;
             font-weight: bold;
             font-size:20px;
             border:none;
-            margin:0 0 0 4px;
-            border-radius: 10px 0 10px 0;            
+            float:right;
+            margin:-1px 0 0 4px;
+            border-radius: 10px 0 10px 0;
+            cursor:pointer          
         }
         
                         /* 복지메뉴 */
@@ -1535,8 +1525,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             text-align:center;
             margin:32px 0 0 300px;
             border-radius: 15px 0 0 0;
-            z-index:2
-                                    
+            z-index:2;
+            cursor:pointer           
         }
         .welfare2_1{
             position:absolute;            
@@ -1554,8 +1544,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             text-align:center;
             margin:16px 0 0 300px;
             border-radius: 15px 0 0 0;
-            z-index:2
-                                    
+            z-index:2;
+            cursor:pointer               
         }
         .welfare3_1{
             position:absolute;            
@@ -1571,8 +1561,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             text-align:center;
             margin:16px 0 0 300px;
             border-radius: 15px 0 0 0;
-            z-index:2
-                                    
+            z-index:2;
+            cursor:pointer              
         }
         .welfare4_1{
             position:absolute;            
@@ -1588,8 +1578,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             text-align:center;
             margin:16px 0 0 300px;
             border-radius: 15px 0 0 0;
-            z-index:2
-                                    
+            z-index:2;
+            cursor:pointer              
         }
         .welfare5_1{
             position:absolute;            
@@ -1605,8 +1595,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             text-align:center;
             margin:16px 0 0 300px;
             border-radius: 15px 0 0 0;
-            z-index:2
-                                    
+            z-index:2;
+            cursor:pointer              
         }
         .welfare6_1{
             position:absolute;            
@@ -1635,7 +1625,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-size:30px;
             margin:350px 0 0 650px;
             font-weight: bold;
-            font-family: 'Nanum Pen Script', cursive;            
+            font-family: 'Nanum Pen Script', cursive;  
+            cursor:pointer          
         }
 
                         /* direct_menu */
@@ -1665,8 +1656,10 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 0 0 0;
-            cursor:pointer
-                                    
+            cursor:pointer;                                              
+        }
+        .di:hover {
+            transform:rotateY(180deg);            
         }
         .dir{
             position:absolute;
@@ -1674,7 +1667,10 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             color:#535353;
             margin:100px 0 0 0;
             text-align:center;
-            
+            cursor:pointer                        
+        }
+        .dir:hover{
+            color:black;
             
         }
         .di2{
@@ -1684,17 +1680,22 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 103px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
+        }
+        .di2:hover {
+            transform:rotateY(180deg);            
         }
         .dir2{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 105px;
-            text-align:center;
+            text-align:center;    
+            cursor:pointer        
+        }
+        .dir2:hover{
+            color:black;
             
-
         }
         .di3{
             position:absolute;
@@ -1703,15 +1704,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 206px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
+        }
+        .di3:hover {
+            transform:rotateY(180deg);            
         }
         .dir3{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 190px;
-            text-align:center        
+            text-align:center;
+            cursor:pointer                  
+        }
+        .dir3:hover{
+            color:black;            
         }
         .di4{
             position:absolute;
@@ -1720,8 +1727,10 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 309px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
+        }
+        .di4:hover {
+            transform:rotateY(180deg);            
         }
         .dir4{
             position:absolute;
@@ -1730,7 +1739,10 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:100px 0 0 300px;
             text-align:center;
             font-size:15px;
-            
+            cursor:pointer            
+        }
+        .dir4:hover{
+            color:black;            
         }
         .di5{
             position:absolute;
@@ -1739,15 +1751,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 412px;
-            cursor:pointer
-                                    
-        }
+            cursor:pointer                                    
+        }        
         .dir5{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 405px;
-            text-align:center        
+            text-align:center;
+            cursor:pointer
+        }
+        .di5:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir5:hover{
+            color:black;            
         }
         .di6{
             position:absolute;
@@ -1756,15 +1774,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 515px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir6{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 510px;
-            text-align:center
+            text-align:center;
+            cursor:pointer
+        }
+        .di6:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir6:hover{
+            color:black;            
         }
         .di7{
             position:absolute;
@@ -1773,15 +1797,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 618px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir7{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 620px;
-            text-align:center        
+            text-align:center;
+            cursor:pointer
+        }
+        .di7:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir7:hover{
+            color:black;
         }
         .di8{
             position:absolute;
@@ -1790,15 +1820,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 721px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir8{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 725px;
-            text-align:center      
+            text-align:center;
+            cursor:pointer
+        }
+        .di8:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir8:hover{
+            color:black;
         }
         .di9{
             position:absolute;
@@ -1807,15 +1843,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 824px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir9{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 820px;
-            text-align:center     
+            text-align:center;
+            cursor:pointer
+        }
+        .di9:hover {
+            transform:rotateY(180deg);                        
+        }
+        .dir9:hover{
+            color:black;
         }
         .di10{
             position:absolute;
@@ -1824,15 +1866,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 927px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir10{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 925px;
-            text-align:center         
+            text-align:center;
+            cursor:pointer
+        }
+        .di10:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir10:hover{
+            color:black;
         }
         .di11{
             position:absolute;
@@ -1841,15 +1889,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 1030px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir11{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 1015px;
-            text-align:center       
+            text-align:center;
+            cursor:pointer
+        }
+        .di11:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir11hover{
+            color:black;
         }
         .di12{
             position:absolute;
@@ -1858,15 +1912,21 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 65px;
             border-radius:50%;
             margin:19px 36px 0 1133px;
-            cursor:pointer
-                                    
+            cursor:pointer                                    
         }
         .dir12{
             position:absolute;
             font-weight: bold;
             color:#535353;
             margin:100px 0 0 1120px;
-            text-align:center            
+            text-align:center;
+            cursor:pointer
+        }
+        .di12:hover {
+            transform:rotateY(180deg);            
+        }
+        .dir12:hover{
+            color:black;
         }
         .news h2{                                    
             margin:0 0 20px 0;
@@ -1888,8 +1948,33 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             background:url(images/godang.jpg) no-repeat;
             width: 780px;
             height: 398px;
+            cursor:pointer
         }
         .godang2{
+            position:absolute;
+            background:url(images/godang2.jpg) no-repeat;
+            width: 780px;
+            height: 398px;
+            display:none;
+            cursor:pointer
+        }
+        .godang3{
+            position:absolute;
+            background:url(images/godang3.jpg) no-repeat;
+            width: 780px;
+            height: 398px;
+            display:none;
+            cursor:pointer
+        }
+        .godang4{
+            position:absolute;
+            background:url(images/godang4.jpg) no-repeat;
+            width: 780px;
+            height: 398px;
+            display:none;
+            cursor:pointer 
+        }
+        .godang_bar{
             position:absolute;            
             background-color: #c4c3c3;
             height: 40px;
@@ -1897,20 +1982,37 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:397px 0 0 0;
             border-radius: 0 0 10px 10px;                        
         }
+        .godang_bar span{
+            text-align:right;
+            font-weight:bold
+        }
         .bear{            
             position:absolute;
             background:url(images/bear.jpg) no-repeat;
             width: 376px;
             height: 398px;
-            margin:0 0 0 824px        
+            margin:0 0 0 824px;
+            cursor:pointer
         }
         .bear2{
+            position:absolute;
+            background:url(images/bear2.jpg) no-repeat;
+            width: 376px;
+            height: 398px;
+            margin:0 0 0 824px;
+            cursor:pointer;
+            display:none
+        }
+        .bear_bar{
             position:absolute;          
             background-color: #c4c3c3;
             height: 40px;
             width: 376px;
             margin:397px 0 0 824px;
             border-radius: 0 0 10px 10px;            
+        }
+        .bear_bar span{
+            font-weight:bold
         }
         .information{            
             position:relative;            
@@ -1920,7 +2022,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .notice{
             margin-bottom:20px;
-            color:#535353
+            color:#36AE58
         }
         .notice2{
             position:absolute;
@@ -2128,8 +2230,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             width: 1600px;
             height: 500px;            
         }
-        .tour_title{            
-            
+        .tour_title{
             margin:20px 0 0 200px;
             width: 200px;                                    
         }
@@ -2140,7 +2241,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:10px 0 0 200px;
                
         }
-        .tour3{
+        .hojo3{
             float:left;
             background:url(images/hojo.jpg) no-repeat;
             width: 780px;
@@ -2446,8 +2547,12 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .footer_bar{
             color: rgba(221, 221, 224, 1);
-        }
+        }        
         .sel{color: #36AE58}
+        .sel2{color:white;background-color:#36AE58}
+        .sel3{color:white;}
+
+        
     </style> 
     <script type="text/javascript" src="jquery.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>    
@@ -2516,7 +2621,46 @@ $("a").hover(function(){
     $(this).removeClass("sel")
 });
 
+$(".welfare2").hover(function(){
+    $(this).addClass("sel2");
+}, function(){
+    $(this).removeClass("sel2")
 });
+$(".welfare3").hover(function(){
+    $(this).addClass("sel2");
+}, function(){
+    $(this).removeClass("sel2")
+});
+$(".welfare4").hover(function(){
+    $(this).addClass("sel2");
+}, function(){
+    $(this).removeClass("sel2")
+});
+$(".welfare5").hover(function(){
+    $(this).addClass("sel2");
+}, function(){
+    $(this).removeClass("sel2")
+});
+$(".welfare6").hover(function(){
+    $(this).addClass("sel2");
+}, function(){
+    $(this).removeClass("sel2")
+});
+$(".child_welfare3").hover(function(){
+    $(this).addClass("sel3")
+}, function(){
+    $(this).removeClass("sel3")
+});
+$("#godang0 > div:gt(0)").hide();
+setInterval(function(){
+    $('#godang0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#godang0');     
+}, 3000);
+$("#bear0 > div:gt(0)").hide();
+setInterval(function(){
+    $('#bear0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#bear0');
+}, 3000);
+});
+
    
 var left_value = 0;
         
@@ -3150,22 +3294,17 @@ var left_value = 0;
             <form name="search2" id="search2" action="search" method="post" onsubmit="return form_check()" onbutton="return form_check()">
                 <fieldset>
                     <div class="search">
-                    <legend>검색</legend>
-                        <select name="total_search" id="total_search">
-                            <option>통합검색</option>
-                            <option>웹페이지검색</option>
-                            <option>게시판검색</option>
-                            <option>콘텐츠검색</option>
-                            <option>파일검색</option>
-                            <option>직원검색</option>
-                        </select>
-                    
+                        <legend>검색</legend>
+                            <select name="total_search" id="total_search">
+                                <option>통합검색</option>
+                                <option>웹페이지검색</option>
+                                <option>게시판검색</option>
+                                <option>콘텐츠검색</option>
+                                <option>파일검색</option>
+                                <option>직원검색</option>
+                            </select>                    
                         <input type="text" class="search3" placeholder="검색어를 입력하세요.">
-                        <button class="search_button" type="submit">검색
-
-                            
-
-                        </button>
+                        <button class="search_button" type="submit">검색</button>
                     </div>
                     
                 </fieldset>
@@ -3173,30 +3312,20 @@ var left_value = 0;
                 <div class="welfare">
                     <h2>복지 메뉴</h2>
                     <ul>
-                        <li class="welfare2">
-                            <a href="#">                            
-                                <span class="welfare2_1">아동복지</span>
-                            </a>
+                        <li class="welfare2">                               
+                                <span class="welfare2_1">아동복지</span>    
                         </li>
                         <li class="welfare3">
-                            <a href="#">
                                 <span class="welfare3_1">여성복지</span>                        
-                            </a>
                         </li>
                         <li class="welfare4">
-                            <a href="#">
                                 <span class="welfare4_1">장애인복지</span>
-                            </a>
                         </li>
                         <li class="welfare5">
-                            <a href="#">
                                 <span class="welfare5_1">어르신복지</span>
-                            </a>
                         </li>
                         <li class="welfare6">
-                            <a href="#">
                                 <span class="welfare6_1">다문화가정</span>
-                            </a>
                         </li>
                         <li class="child_welfare">
                             <span class="child_welfare2">아이들이 살기 좋은<br> 도시를 만들어 가겠습니다.</span>
@@ -3282,14 +3411,18 @@ var left_value = 0;
                 </div>                    
                 <div class="news">
                     <h2 class="sosik">시흥소식</h2>                        
-                        <ul>
-                            <li class="godang"></li>
-                            <li class="godang2"></li>                     
-                        </ul>
-                        <ul>
-                            <li class="bear"></li>
-                            <li class="bear2"></li>
-                        </ul>
+                        <div id="godang0">
+                            <div class="godang"></div>
+                            <div class="godang2"></div>
+                            <div class="godang3"></div>
+                            <div class="godang4"></div>                            
+                        </div>
+                            <div class="godang_bar"><span>LIVE</span></div>
+                        <div id="bear0">
+                            <div class="bear"></div>
+                            <div class="bear2"></div>                            
+                        </div>
+                            <div class="bear_bar"><span>LIVE</span></div>
                 </div>
                 <div class="information">                    
                     <h2 class="notice">분야별 공지사항</h2>
@@ -3408,12 +3541,8 @@ var left_value = 0;
                     <h2 class="tour_title">시흥관광정보</h2>
                     <div class="tour2">
                         <div>
-                            <ul>
-                                <li class="tour3">
-                                    <a href="#"></a>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="hojo3"></div>
+                        </div>                        
                         <div>
                             <ul class="tour4">
                                 <li class="tour5">

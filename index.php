@@ -2132,7 +2132,7 @@ include "inc/session.php";
                     <option>어르신</option>
                 </select>
                 <select name="how" id="how">
-                    <option>분야별</option>
+                    <option>교육분야별</option>
                     <option>방과후학교</option>
                     <option>직업능력</option>
                     <option>인문교양</option>
