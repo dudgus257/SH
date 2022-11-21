@@ -75,8 +75,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
 
         .header{
             height:271px;
-            width:1600px;
-            border-bottom:1px solid #DDDDE0;
+            /* border-bottom:1px solid #DDDDE0; */
             margin:auto;
             position:relative;
             z-index:10
@@ -84,7 +83,6 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         /* header */
         .top{
             border-bottom:2px solid #36AE58;
-            width:1600px;
             height:70px;            
             margin: auto
         }
@@ -235,7 +233,9 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             width:1200px;
             height:auto;
             background:#8484aa;
-            margin:auto
+            margin:auto;
+            position:relative;
+            z-index:5
         }        
         .gnb h2{
             position:absolute;
@@ -1715,6 +1715,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .di:hover {
             transform:rotateY(180deg);
+            transition: all 0.5s linear;
         }
         .dir{
             position:absolute;
@@ -1738,7 +1739,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer                                    
         }
         .di2:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;          
         }
         .dir2{
             position:absolute;
@@ -1762,7 +1764,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer                                    
         }
         .di3:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);   
+            transition: all 0.5s linear;         
         }
         .dir3{
             position:absolute;
@@ -1785,7 +1788,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer                                    
         }
         .di4:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);    
+            transition: all 0.5s linear;        
         }
         .dir4{
             position:absolute;
@@ -1817,7 +1821,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di5:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);     
+            transition: all 0.5s linear;       
         }
         .dir5:hover{
             color:black;            
@@ -1840,7 +1845,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di6:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;
         }
         .dir6:hover{
             color:black;            
@@ -1863,7 +1869,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di7:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;         
         }
         .dir7:hover{
             color:black;
@@ -1886,7 +1893,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di8:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;  
         }
         .dir8:hover{
             color:black;
@@ -1909,7 +1917,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di9:hover {
-            transform:rotateY(180deg);                        
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;              
         }
         .dir9:hover{
             color:black;
@@ -1932,7 +1941,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di10:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;    
         }
         .dir10:hover{
             color:black;
@@ -1955,7 +1965,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di11:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;   
         }
         .dir11hover{
             color:black;
@@ -1978,7 +1989,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             cursor:pointer
         }
         .di12:hover {
-            transform:rotateY(180deg);            
+            transform:rotateY(180deg);
+            transition: all 0.5s linear;    
         }
         .dir12:hover{
             color:black;
@@ -2609,12 +2621,32 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         .sel2{color:white;background-color:#36AE58}
         .sel3{color:white;}
 
+        .gnb_full_bg{
+            width:100%;
+            height:1000px;
+            background:#fff;
+            position:absolute;
+            left:0;
+            top:270px;
+            z-index:1;
+            display:none;
+            border-bottom:1px solid #36AE58;
+        }
         
     </style> 
     <script type="text/javascript" src="jquery.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>    
     <script type="text/javascript">
         $(document).ready(function(){
+
+$(".gnb > ul > li, .gnb_full_bg").hover(function(){
+    $(this).find("ul").stop().slideDown("fast");
+    $(".gnb_full_bg").stop().slideDown("fast");
+}, function(){
+    $(this).find("ul").hide();
+    $(".gnb_full_bg").hide();
+})
+/* 
 
 $(".gnb1").mouseenter(function(){
     $(".gnb1>ul").stop().slideDown("fast");
@@ -2670,7 +2702,7 @@ $(".gnb7").mouseenter(function(){
 
 $(".gnb7").mouseleave(function(){
     $(".gnb7>ul").stop().slideUp("fast");
-});
+}); */
 
 $("a").hover(function(){
     $(this).addClass("sel");
@@ -2716,23 +2748,23 @@ $("#bear0 > div:gt(0)").hide();
 setInterval(function(){
     $('#bear0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#bear0');
 }, 3000);
-$("#wel > div:gt(0)").hide();
+/* $("#wel > div:gt(0)").hide();
 setInterval(function(){
     $('#wel > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#wel');
-}, 3000);
-$(".welfare2").click(function(){
-    $('.child_welfare').stop().show();
+}, 3000); */
+$(".welfare2").on('click', function(){
+    $('.child_welfare').stop().show();    
 });
-$(".welfare3").click(function(){
+$(".welfare3").on('click', function(){
     $('.woman_welfare').stop().show();
 });
-$(".welfare4").click(function(){
+$(".welfare4").on('click', function(){
     $('.invalid_welfare').stop().show();
 });
-$(".welfare5").click(function(){
+$(".welfare5").on('click', function(){
     $('.elders_welfare').stop().show();
 });
-$(".welfare6").click(function(){
+$(".welfare6").on('click', function(){
     $('.famliy_welfare').stop().show();
 });
 });
@@ -3362,7 +3394,8 @@ var left_value = 0;
                             </li>
                         </ul>
                 </nav>
-            </div>                              
+            </div>               
+            <div class="gnb_full_bg"></div>  
         </header>
                                         <!-- main -->
 
