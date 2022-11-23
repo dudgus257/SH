@@ -2050,8 +2050,22 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:397px 0 0 0;
             border-radius: 0 0 10px 10px;                        
         }
-        .godang_bar span{
-            text-align:right;
+        .stop{
+            float:left;
+            cursor:pointer;
+            font-size:25px;
+            font-weight:bold
+        }
+        .stop:hover{
+            color:green
+        }
+        .play:hover{
+            color:green
+        }
+        .play{
+            float:right;
+            cursor:pointer;
+            font-size:25px;
             font-weight:bold
         }
         .bear{            
@@ -2299,29 +2313,27 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             height: 500px;            
         }
         .tour_title{
-            margin:20px 0 0 200px;
+            margin:10px 0 0 200px;
             width: 200px;                                    
         }
         .tour2{
             position:relative;            
             width: 1200px;
             height: 400px;
-            margin:10px 0 0 200px;
+            margin:5px 0 0 200px;
                
         }
         .hojo3{
             float:left;
             background:url(images/hojo.jpg) no-repeat;
             width: 780px;
-            height: 388px;
-            margin-top: 20px;            
+            height: 388px;                      
             cursor:pointer     
         }
         .tour4{
             float:right;            
             height: 390px;
-            width: 376px;
-            margin-top:20px;
+            width: 376px;            
             display:flex;
             flex-direction:column;
             flex-wrap: wrap;
@@ -2753,34 +2765,107 @@ $(".child_welfare3").hover(function(){
 }, function(){
     $(this).removeClass("sel3")
 });
+
+
 $("#godang0 > div:gt(0)").hide();
 setInterval(function(){
     $('#godang0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#godang0');     
 }, 3000);
+
 $("#bear0 > div:gt(0)").hide();
 setInterval(function(){
     $('#bear0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#bear0');
 }, 3000);
+
+$("#godang0").hover(function(){
+    $("#godang0").stop();
+});
+
+
 /* $("#wel > div:gt(0)").hide();
 setInterval(function(){
     $('#wel > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#wel');
 }, 3000); */
+
+            /* welfare menu */
+
 $(".welfare2").on('click', function(){
-    $('.child_welfare').stop().show();    
+    $('.child_welfare').stop().show();
+});
+$(".welfare2").on('click', function(){
+    $('.woman_welfare').stop().hide();
+});
+$(".welfare2").on('click', function(){
+    $('.invalid_welfare').stop().hide();
+});
+$(".welfare2").on('click', function(){
+    $('.elders_welfare').stop().hide();
+});
+$(".welfare2").on('click', function(){
+    $('.famliy_welfare').stop().hide();
 });
 $(".welfare3").on('click', function(){
     $('.woman_welfare').stop().show();
 });
+$(".welfare3").on('click', function(){
+    $('.child_welfare').stop().hide();
+});
+$(".welfare3").on('click', function(){
+    $('.invalid_welfare').stop().hide();
+});
+$(".welfare3").on('click', function(){
+    $('.elders_welfare').stop().hide();
+});
+$(".welfare3").on('click', function(){
+    $('.famliy_welfare').stop().hide();
+});
 $(".welfare4").on('click', function(){
     $('.invalid_welfare').stop().show();
+});
+$(".welfare4").on('click', function(){
+    $('.child_welfare').stop().hide();
+});
+$(".welfare4").on('click', function(){
+    $('.woman_welfare').stop().hide();
+});
+$(".welfare4").on('click', function(){
+    $('.elders_welfare').stop().hide();
+});
+$(".welfare4").on('click', function(){
+    $('.famliy_welfare').stop().hide();
 });
 $(".welfare5").on('click', function(){
     $('.elders_welfare').stop().show();
 });
+$(".welfare5").on('click', function(){
+    $('.child_welfare').stop().hide();
+});
+$(".welfare5").on('click', function(){
+    $('.woman_welfare').stop().hide();
+});
+$(".welfare5").on('click', function(){
+    $('.invalid_welfare').stop().hide();
+});
+$(".welfare5").on('click', function(){
+    $('.famliy_welfare').stop().hide();
+});
 $(".welfare6").on('click', function(){
     $('.famliy_welfare').stop().show();
 });
+$(".welfare6").on('click', function(){
+    $('.child_welfare').stop().hide();
 });
+$(".welfare6").on('click', function(){
+    $('.woman_welfare').stop().hide();
+});
+$(".welfare6").on('click', function(){
+    $('.invalid_welfare').stop().hide();
+});
+$(".welfare6").on('click', function(){
+    $('.elders_welfare').stop().hide();
+});
+});
+
 
    
 var left_value = 0;
@@ -3546,14 +3631,13 @@ var left_value = 0;
                             <div class="godang4"></div>                            
                         </div>
                             <div class="godang_bar">
-                                <div class="prev"><</div>
-                                <div class="next">></div>
+                                
                             </div>
                         <div id="bear0">
                             <div class="bear"></div>
                             <div class="bear2"></div>                            
                         </div>
-                            <div class="bear_bar"><span>LIVE</span></div>
+                            <div class="bear_bar"></div>
                 </div>
                 <div class="information">                    
                     <h2 class="notice">분야별 공지사항</h2>
@@ -3669,6 +3753,7 @@ var left_value = 0;
                     </div>
                 </div>
                 <div class="tour">
+                    <br>
                     <h2 class="tour_title">시흥관광정보</h2>
                     <div class="tour2">
                         <div>
