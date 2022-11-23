@@ -75,12 +75,14 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
 
         .header{
             height:271px;
-            /* border-bottom:1px solid #DDDDE0; */
+            border-bottom:1px solid #DDDDE0;
             margin:auto;
             position:relative;
             z-index:10
         }
         /* header */
+        
+
         .top{
             border-bottom:2px solid #36AE58;
             height:70px;            
@@ -295,7 +297,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:700px;
-            margin:20px 0px 0 0px;           
+            margin:0px 0px 0 0px;           
         }
         /* .bg1_1{
             position:absolute;            
@@ -552,7 +554,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:950px;
-            margin:20px 0 0 -171px;
+            margin:0px 0 0 -171px;
         }
         .small_gnb15{
             position:absolute;
@@ -771,7 +773,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:350px;
-            margin:20px 0 0 -342px
+            margin:0px 0 0 -342px
         }
         
         .small_gnb27{
@@ -870,7 +872,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:550px;
-            margin:20px 0 0 -513px
+            margin:0px 0 0 -513px
         }     
         .small_gnb32{
             position:absolute;
@@ -1051,7 +1053,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:450px;
-            margin:20px 0 0 -684px
+            margin:0px 0 0 -684px
         }
         .small_gnb42{
             position:absolute;
@@ -1184,7 +1186,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:650px;
-            margin:20px 0 0 -855px
+            margin:0px 0 0 -855px
         }
         .small_gnb49{
             position:absolute;
@@ -1348,7 +1350,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border-bottom:1px solid #D9D7D7;
             width:1200px;
             height:250px;
-            margin:20px 0 0 -1026px
+            margin:0px 0 0 -1026px
         }
         .small_gnb58{
             position:absolute;
@@ -1452,13 +1454,13 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             text-indent: -9999px;
             font-size:0px
         }
-        .search{            
+        .search{                    
             position:relative;
             border:2px solid #36AE58;            
-            width: 850px;
+            width: 750px;
             height: 50px;
             margin:20px auto 20px;
-            border-radius: 15px 0 15px 0;
+            border-radius: 20px;
             box-shadow: 10px 5px 5px #535353
                      
         }
@@ -1471,7 +1473,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .search3{
             border:none;
-            width: 494px;
+            width: 450px;
             height: 48px;
             padding-left:50px;
             font-weight: bold;
@@ -1489,18 +1491,17 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             
         }
         .search_button{            
-            width: 100px;
-            height: 53px;
-            background-color:#36AE58;
-            color : #fff;
-            font-weight: bold;
-            font-size:20px;
+            width: 60px;
+            height: 40px;
+            background-color:#fff; 
             border:none;
             float:right;
-            margin:-1px 0 0 4px;
-            border-radius: 10px 0 10px 0;
+            margin:-45px 0 0 0;
+            border-radius: 50%;
             cursor:pointer          
         }
+        
+        
         
                         /* 복지메뉴 */
 
@@ -2329,19 +2330,27 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
        
         .tour5{
+            
             background:url(images/tour.jpg) no-repeat;
             box-shadow: 10px 5px 5px #535353;    
             width: 376px;
             height: 120px;
             cursor:pointer
         }
+        .tour5:hover{
+            transform:rotateY(180deg);
+            transition: all 1s linear;
+        }
         .tour6{
             background:url(images/tour2.jpg) no-repeat;
             box-shadow: 10px 5px 5px #535353;
             width: 376px;
             height: 120px;
-            cursor:pointer
-            
+            cursor:pointer            
+        }
+        .tour6:hover{
+            transform:rotateY(180deg);
+            transition: all 1s linear;
         }
         .tour7{
             background:url(images/tour3.jpg) no-repeat;
@@ -2349,6 +2358,10 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             width: 376px;
             height: 120px;
             cursor:pointer
+        }
+        .tour7:hover{
+            transform:rotateY(180deg);
+            transition: all 1s linear;
         }
         .park{
             background:url(images/park2.jpg) no-repeat;
@@ -2623,7 +2636,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
 
         .gnb_full_bg{
             width:100%;
-            height:1000px;
+            height:950px;
             background:#fff;
             position:absolute;
             left:0;
@@ -2800,6 +2813,7 @@ var left_value = 0;
     <div class="wrap">
                                             <!-- header -->
         <header id="header" class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <h2 class="screen_out">사용자 메뉴</h2>
                 <div class="top">
                     <ul class="top_menu">
@@ -3413,7 +3427,9 @@ var left_value = 0;
                                 <option>직원검색</option>
                             </select>                    
                         <input type="text" class="search3" placeholder="검색어를 입력하세요.">
-                        <button class="search_button" type="submit">검색</button>
+                        <button class="search_button" type="submit">
+                            <i class="fas fa-search" style='font-size:35px; color:#36AE58;'></i>
+                        </button>
                     </div>
                     
                 </fieldset>

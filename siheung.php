@@ -126,7 +126,7 @@
         #how{border: 2px solid #FC7D07;border-radius:10px;font-weight: bold;color:#646366;width: 300px;padding: 10px;font-size:18px;margin:0 20px 0 0;}
         .search_txt{border:2px solid #FC7D07;border-radius: 10px;font-weight:bold;font-size:18px;color:#646366;width: 450px;padding: 10px;        }                                                                                                                       
         .search_text{font-size:28px;margin:-80px 0 0 10px;color:#D9D7D7;float:left;border:none;font-weight:bold;}
-        .search_button{float:right;color:#fff;background:#FC7D07;border:none;border-radius: 20px;width: 50px;height: 47px;margin:0 20px 0 0;font-size:20px;cursor: pointer;        }                                
+        .search_button{float:right;color:#fff;background:#FC7D07;border:none;border-radius: 20px;width:50px;height:47px;margin:0 20px 0 0;font-size:20px;cursor:pointer;}
                              /* academy */        
         .academy{position:relative;width:1200px;height:538px;margin:auto;}
         .academy3{position:absolute;width:290px;height:265px;float:left}
