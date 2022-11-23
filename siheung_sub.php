@@ -224,13 +224,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         /* .gnb{
             border:3px solid #cbcbcb
-        } */
-        .gnb{
-            position:relative;
-            margin:auto;
-            width: 1200px;
-            height: auto;                                  
-        }
+        } */        
         .nav_bg{            
             width:1200px;
             height:auto;
@@ -238,7 +232,13 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:auto;
             position:relative;
             z-index:5
-        }        
+        }      
+        .gnb{
+            position:relative;
+            margin:auto;
+            width: 1200px;
+            height: auto;                                  
+        }  
         .gnb h2{
             position:absolute;
             left:-9999px;
@@ -296,16 +296,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             background-color: #fff;
             border-bottom:1px solid #D9D7D7;
             width:1200px;
-            height:700px;
-            margin:0px 0px 0 0px;           
-        }
-        /* .bg1_1{
-            position:absolute;            
-            background-color: #fff;
-            width:1200px;
-            height:700px;
-            margin:0 0 0 0px
-        } */
+            height:700px;            
+        }        
         .gnb1>li{width: 200px;height: auto;}
         .gnb1 ul ul{            
             width:200px;
@@ -1619,14 +1611,15 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             font-weight: bold;
             z-index:2
         }
-        .child_welfare{            
+        .child_welfare{  
             position:absolute;            
             background:url(images/welfare3.jpg) no-repeat;
             width: 800px;
             height:396px;
             margin:-380px 0 0 500px;
             z-index:1;
-            cursor:pointer            
+            cursor:pointer;
+            box-shadow: 10px 5px 5px #535353
         }
         .woman_welfare{            
             position:absolute;            
@@ -1637,6 +1630,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             z-index:1;
             cursor:pointer;
             display:none;
+            box-shadow: 10px 5px 5px #535353
         }
         .invalid_welfare{            
             position:absolute;            
@@ -1646,7 +1640,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:-380px 0 0 500px;
             z-index:1;
             cursor:pointer;
-            display:none
+            display:none;
+            box-shadow: 10px 5px 5px #535353
         }
         .elders_welfare{            
             position:absolute;            
@@ -1656,7 +1651,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:-380px 0 0 500px;
             z-index:1;
             cursor:pointer;
-            display:none
+            display:none;
+            box-shadow: 10px 5px 5px #535353
         }
         .famliy_welfare{            
             position:absolute;            
@@ -1666,7 +1662,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             margin:-380px 0 0 500px;
             z-index:1;
             cursor:pointer;
-            display:none
+            display:none;
+            box-shadow: 10px 5px 5px #535353
         }
         /* .child_welfare2{
             position:absolute;
@@ -2116,59 +2113,116 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         .notice3{
             float:left;
             font-weight: bold;
-            font-size:25px
+            font-size:25px;            
+            margin:10px 0 0 10px
+        }
+        .notice3:hover{
+            box-shadow: 10px 5px 5px #535353;
+            border-bottom:2px solid #36AE58;
+            cursor:pointer;
+            color:#36AE58
+            
         }
         .notice4{
             /* display:none; */
             position:absolute;
-            margin:50px 0 0 10px;
-            border:1px solid #000;
+            margin:45px 0 0 10px;
+            line-height:35px;
+            width: 750px;        
             height: 220px;
-            font-size:20px;
-            font-weight: bold;
-            
-            
+            font-size:18px;
+            font-weight: bold;            
+        }
+        .n_center{
+            text-align:center
+        }
+        .n_date{
+            float : right;            
         }
         .notice5{
             float:left;
             font-weight: bold;
             font-size: 25px;
-            margin-left:20px
+            margin:10px 0 0 20px;
+            border:1px solid #fff
+        }
+        .notice5:hover{
+            box-shadow: 10px 5px 5px #535353;
+            border-bottom:2px solid #36AE58;
+            cursor:pointer;
+            color:#36AE58
         }
         .notice6{
             display:none;
+            position:absolute;
+            margin:45px 0 0 10px;
+            line-height:35px;
+            width: 750px;        
+            height: 220px;
+            font-size:18px;
+            font-weight: bold;            
         }
         .notice7{
             float:left;
             font-weight: bold;
             font-size: 25px;
-            margin-left:20px
+            margin:10px 0 0 20px;
+            border:1px solid #fff
+        }
+        .notice7:hover{
+            box-shadow: 10px 5px 5px #535353;
+            border-bottom:2px solid #36AE58;
+            cursor:pointer;
+            color:#36AE58
         }
         .notice8{
-            display:none
+            display:none;
+            position:absolute;
+            margin:45px 0 0 10px;
+            line-height:35px;
+            width: 750px;        
+            height: 220px;
+            font-size:18px;
+            font-weight: bold;            
         }
         .notice9{
             float:left;
             font-weight: bold;
             font-size: 25px;
-            margin-left:20px
+            margin:10px 0 0 20px;
+        }
+        .notice9:hover{
+            box-shadow: 10px 5px 5px #535353;
+            border-bottom:2px solid #36AE58;
+            cursor:pointer;
+            color:#36AE58
         }
         .notice10{
-            display:none
+            display:none;
+            position:absolute;
+            margin:45px 0 0 10px;
+            line-height:35px;
+            width: 750px;        
+            height: 220px;
+            font-size:18px;
+            font-weight: bold;            
         }
         .more button{
             border:1px solid #fff;
             color : #000;
             width: 50px;
             height: 50px;
-            font-size:50px;        
+            font-size:45px;        
             float:right;
             background-color:white;
             border-radius: 50%;
-            cursor:pointer
-            
-            
-            
+            cursor:pointer;
+            margin-top:0px 
+        }
+        .more button:hover{
+         
+            color:#36AE58
+        
         }
         .hospital{
             position:absolute;
@@ -2190,7 +2244,10 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             border:1px solid #e2e2e2;            
             width: 170px;
             height: 85px;
-            box-shadow: 10px 5px 5px #535353            
+            cursor:pointer
+        }
+        .hospital3:hover{
+            box-shadow: 10px 5px 5px #535353
         }
         .hospital4{
             position:absolute;
@@ -2199,14 +2256,16 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
                        
         }
         .hospital4_1{
-            color:#4e92ec;            
+            color:#4e92ec;
         }
         .hospital5{
-            border:1px solid #e2e2e2;
-            
+            border:1px solid #e2e2e2;            
             width: 170px;
             height: 85px;
-            box-shadow: 10px 5px 5px #535353;         
+            cursor:pointer
+        }
+        .hospital5:hover{
+            box-shadow: 10px 5px 5px #535353
         }
         .hospital6{
             position:absolute;
@@ -2218,11 +2277,12 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .hospital7{
             border:1px solid #e2e2e2;
-            
+            cursor:pointer;
             width: 170px;
             height: 85px;
-            box-shadow: 10px 5px 5px #535353;
-                
+        }
+        .hospital7:hover{
+            box-shadow: 10px 5px 5px #535353
         }
         .hospital8{
             position:absolute;
@@ -2235,11 +2295,12 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .hospital9{
             border:1px solid #e2e2e2;
-            
+            cursor:pointer;
             width: 170px;
-            height: 85px;
-            box-shadow: 10px 5px 5px #535353;
-                      
+            height: 85px;                                  
+        }
+        .hospital9:hover{
+            box-shadow: 10px 5px 5px #535353
         }
         .hospital10{
             position:absolute;
@@ -2252,11 +2313,12 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .hospital11{
             border:1px solid #e2e2e2;
-            ;
+            cursor:pointer;
             width: 170px;
-            height: 85px;
-            box-shadow: 10px 5px 5px #535353;
-                    
+            height: 85px;                                
+        }
+        .hospital11:hover{
+            box-shadow: 10px 5px 5px #535353
         }
         .hospital12{
             position:absolute;
@@ -2270,11 +2332,11 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         .hospital13{                        
             position: relative;
             width: 170px;
-            height: 85px;
-            box-shadow: 10px 5px 5px #535353;  
-            
-            
-                                   
+            height: 85px;            
+            cursor:pointer
+        }
+        .hospital13:hover{
+            box-shadow: 10px 5px 5px #535353
         }
         .hospital13::before{            
             content: "";
@@ -2290,7 +2352,7 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         .hospital14{
             position:relative;
-            font-size:20px;
+            font-size:25px;
             font-weight: bold;
             
             
@@ -2328,7 +2390,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             background:url(images/hojo.jpg) no-repeat;
             width: 780px;
             height: 388px;                      
-            cursor:pointer     
+            cursor:pointer;
+            box-shadow: 10px 5px 5px #535353
         }
         .tour4{
             float:right;            
@@ -2864,6 +2927,56 @@ $(".welfare6").on('click', function(){
 $(".welfare6").on('click', function(){
     $('.elders_welfare').stop().hide();
 });
+
+                    /* notice */
+$(".notice3").on('click', function(){
+    $(".notice4").stop().show();
+});
+$(".notice3").on('click', function(){
+    $(".notice6").stop().hide();
+});
+$(".notice3").on('click', function(){
+    $(".notice8").stop().hide();
+});
+$(".notice3").on('click', function(){
+    $(".notice10").stop().hide();
+});
+$(".notice5").on('click', function(){
+    $(".notice6").stop().show();
+});
+$(".notice5").on('click', function(){
+    $(".notice4").stop().hide();
+});
+$(".notice5").on('click', function(){
+    $(".notice8").stop().hide();
+});
+$(".notice5").on('click', function(){
+    $(".notice10").stop().hide();
+});
+$(".notice7").on('click', function(){
+    $(".notice8").stop().show();
+});
+$(".notice7").on('click', function(){
+    $(".notice4").stop().hide();
+});
+$(".notice7").on('click', function(){
+    $(".notice6").stop().hide();
+});
+$(".notice7").on('click', function(){
+    $(".notice10").stop().hide();
+});
+$(".notice9").on('click', function(){
+    $(".notice10").stop().show();
+});
+$(".notice9").on('click', function(){
+    $(".notice4").stop().hide();
+});
+$(".notice9").on('click', function(){
+    $(".notice6").stop().hide();
+});
+$(".notice9").on('click', function(){
+    $(".notice8").stop().hide();
+});
 });
 
 
@@ -2924,7 +3037,7 @@ var left_value = 0;
                         <ul>
                             <li class="gnb1"><span class="a1"><a href="#">복지</a></span>
                                 <ul class="bg1">
-                                    <li class="bg1_1">
+                                    <li>
                                         <ul class="small_gnb">
                                             <li><span class="gnb1_1"><a href="#">시흥등불SOS센터</a></span></li>
                                         </ul>
@@ -3641,50 +3754,50 @@ var left_value = 0;
                 </div>
                 <div class="information">                    
                     <h2 class="notice">분야별 공지사항</h2>
-                    <div class="notice2">                        
+                    <div class="notice2">
                         <ul>
-                            <li><span class="notice3"><a href="#">보건</a></span>
+                            <li><span class="notice3">보건</span>
                                 <ul class="notice4">
-                                    <li> · 2022년 노인학대 취업제한 점검 · 확인 관련 자료 제출<span>보건정책과</span><span>2022-10-26</span></li>
-                                    <li> · 정왕 4동 찾아가는 치매조기검진 운영<span>정왕보건지소</span><span>2022-10-18</span></li>
-                                    <li> · 모자보건프로그램 수강생 모집(정왕보건지소)<span>정왕보건지소</span><span>2022-09-27</span></li>
-                                    <li> · 2022년도 의료기관 긴급복지 신고의무자 교육 안내<span>보건정책과</span><span>2022-09-23</span></li>
-                                    <li> · 2022년도 의료기관 아동학대 신고의무자 교육 안내<span>보건정책과</span><span>2022-09-23</span></li>
-                                    <li> · 코로나19 격리대상자의 시험목적 외출 허용 안내사항<span>감염병관리과</span><span>2022-07-14</span></li>
-                                    <li> · 2022년도 심폐소생술교육 신청 안내(개인)<span>건강도시과</span><span>2022-07-13</span></li>
+                                    <li><a href="#"> · 2022년 노인학대 취업제한 점검 · 확인 관련 자료 제출<span class="n_date">2022-10-26</span></a></li>
+                                    <li><a href="#"> · 정왕 4동 찾아가는 치매조기검진 운영<span class="n_date">2022-10-18</span></a></li>
+                                    <li><a href="#"> · 모자보건프로그램 수강생 모집(정왕보건지소)<span class="n_date">2022-09-27</span></a></li>
+                                    <li><a href="#"> · 2022년도 의료기관 긴급복지 신고의무자 교육 안내<span class="n_date">2022-09-23</span></a></li>
+                                    <li><a href="#"> · 2022년도 의료기관 아동학대 신고의무자 교육 안내<span class="n_date">2022-09-23</span></a></li>
+                                    <li><a href="#"> · 코로나19 격리대상자의 시험목적 외출 허용 안내사항<span class="n_date">2022-07-14</span></a></li>
+                                    <li><a href="#"> · 2022년도 심폐소생술교육 신청 안내(개인)<span class="n_date">2022-07-13</span></a></li>
                                 </ul>
                             </li>
                         </ul>                         
                         <ul>
-                            <li><span class="notice5"><a href="#">도시행정</a></span>
+                            <li><span class="notice5">행정</span>
                                 <ul class="notice6">
-                                    <li> · 김장철 음식물쓰레기 적정 배출 요령 안내<span>자원순환과</span><span>2022-11-02</span></li>
-                                    <li> · 2022년 10월말 기준 시흥시 친환경차량 보조금 지원 현황<span>환경정책과</span><span>2022-11-01</span></li>
-                                    <li> · 2022년 9월말 기준 시흥시 친환경차량 보조금 지원 현황<span>환경정책과</span><span>2022-10-04</span></li>
-                                    <li> · 2022년 8월말 기준 시흥시 친환경차량 보조금 지원 현황<span>환경정책과</span><span>2022-09-02</span></li>
-                                    <li> · 폐기물 무단투기 신고포상금 제도 안내<span>자원순환과</span><span>2022-08-30</span></li>                                    
+                                    <li><a href="#"> · 김장철 음식물쓰레기 적정 배출 요령 안내<span class="n_date">2022-11-02</span></a></li>
+                                    <li><a href="#"> · 2022년 10월말 기준 시흥시 친환경차량 보조금 지원 현황<span class="n_date">2022-11-01</span></a></li>
+                                    <li><a href="#"> · 2022년 9월말 기준 시흥시 친환경차량 보조금 지원 현황<span class="n_date">2022-10-04</span></a></li>
+                                    <li><a href="#"> · 2022년 8월말 기준 시흥시 친환경차량 보조금 지원 현황<span class="n_date">2022-09-02</span></a></li>
+                                    <li><a href="#"> · 폐기물 무단투기 신고포상금 제도 안내<span class="n_date">2022-08-30</span></a></li>
                                 </ul>
                             </li>
                         </ul>
                         <ul>
-                            <li><span class="notice7"><a href="#">환경</a></span>
+                            <li><span class="notice7">환경</span>
                                 <ul class="notice8">
-                                    <li> · 김장철 음식물쓰레기 적정 배출 요령 안내<span>2022-11-08</span></li>
-                                    <li> · 2022년 시흥시 도시건축공동위원회 위원명단<span>2022-11-08</span></li>
-                                    <li> · 2022년 상반기 시흥장현 공공주택지구 입주지원협의회 서면개…<span>2022-07-04</span></li>
-                                    <li> · 2021년 시흥시 도시건축공동위원회 위원 명단<span>2022-04-18</span></li>
-                                    <li> · 2021년 시흥시 도시계획위원회 위원 명단<span>2022-09-23</span></li>                                    
+                                    <li><a href="#"> · 김장철 음식물쓰레기 적정 배출 요령 안내<span class="n_date">2022-11-08</span></a></li>
+                                    <li><a href="#"> · 2022년 시흥시 도시건축공동위원회 위원명단<span class="n_date">2022-11-08</span></a></li>
+                                    <li><a href="#"> · 2022년 상반기 시흥장현 공공주택지구 입주지원협의회 서면개…<span class="n_date">2022-07-04</span></a></li>
+                                    <li><a href="#"> · 2021년 시흥시 도시건축공동위원회 위원 명단<span class="n_date">2022-04-18</span></a></li>
+                                    <li><a href="#"> · 2021년 시흥시 도시계획위원회 위원 명단<span class="n_date">2022-09-23</span></a></li>
                                 </ul>
                             </li>
                         </ul>
                         <ul>
-                            <li><span class="notice9"><a href="#">농업</a></span>
+                            <li><span class="notice9">농업</span>
                                 <ul class="notice10">
-                                    <li> · 청년창업농육성장학생 추가모집 안내<span>농업정책과</span><span>2020-03-15</span></li>
-                                    <li> · 2020년 저탄소 농축산물 인증제 설명회 개최 안내<span>농업기술센터</span><span>2020-02-05</span></li>
-                                    <li> · 2021년도 농림축산식품사업 신청공고<span>농업기술센터</span><span>2020-02-05</span></li>
-                                    <li> · 2020년 농기계 구입 지원사업 신청 접수 안내<span>농업정책과</span><span>2020-01-31</span></li>
-                                    <li> · 2020년 환경친화형농자재 지원사업 신청 및 추진 알림<span>농업기술센터</span><span>2020-01-17</span></li>                                    
+                                    <li><a href="#"> · 청년창업농육성장학생 추가모집 안내<span class="n_date">2020-03-15</span></a></li>
+                                    <li><a href="#"> · 2020년 저탄소 농축산물 인증제 설명회 개최 안내<span class="n_date">2020-02-05</span></a></li>
+                                    <li><a href="#"> · 2021년도 농림축산식품사업 신청공고<span class="n_date">2020-02-05</span></a></li>
+                                    <li><a href="#"> · 2020년 농기계 구입 지원사업 신청 접수 안내<span class="n_date">2020-01-31</span></a></li>
+                                    <li><a href="#"> · 2020년 환경친화형농자재 지원사업 신청 및 추진 알림<span class="n_date">2020-01-17</span></a></li>
                                 </ul>
                             </li>                            
                         </ul>
@@ -3699,7 +3812,7 @@ var left_value = 0;
                                 <ul>
                                     <li class="hospital4">
                                         <a href="#">
-                                        <span class="hospital4_1">보건소</span>오시는길<span class="hospital4_1">&nbsp&rharu;</span>
+                                        <span class="hospital4_1">보건소</span>오시는길<span class="hospital4_1">&nbsp;&rharu;</span>
                                         </a>
                                     </li>
                                 </ul>

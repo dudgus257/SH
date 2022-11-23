@@ -20,9 +20,9 @@
         .hide{position:absolute;left:-9999px;top:-9999px}
             /* wrap */
         .wrap{min-width:1600px}
-        .header{height:271px;width:1600px;border-bottom:1px solid #DDDDE0;margin:auto;position:relative;z-index:10}
+        .header{height:271px;border-bottom:1px solid #DDDDE0;margin:auto;position:relative;z-index:10}
         /* header */
-        .top{border-bottom:2px solid #FC7D07;width:1600px;height:70px;position:relative;margin: auto }
+        .top{border-bottom:2px solid #FC7D07;height:70px;margin: auto }
         .top_menu{border:0px solid #fff;width: 1200px;margin:auto;}        
         .top1{float:left;position:relative;margin:25px 36px 26px 0px}
         .top1 > a{width:72px;height:70px;font-weight:900;display:block/* margin:25px 36px 26px 218px  */}
@@ -41,11 +41,11 @@
         .top8{float:left;margin:25px 16px 36px 0;width:5px;height:18px;display:block;font-weight:900}
         .top9 {float:left;margin:25px 0 36px 0 }
         .top9 a {width:82px;height:18px;display:block;font-weight:900}
-                /* logo */
+                /* logo */        
         .logo{width:225px;height:99px;margin:17px auto 0px}
         .logo a{display:block;background:url(images/logo_03.jpg) no-repeat;text-indent:-9999px;width:225px;height:99px;}        
         .gnb{position:relative;margin:auto;width: 1200px;height: auto;}
-        .nav_bg{width:1200px;height:auto;background:#8484aa;margin:auto}
+        .nav_bg{width:1200px;height:auto;background:#8484aa;margin:auto;position:relative;z-index:5}
         .gnb h2{position:absolute;left:-9999px;top:-9999px;}
         .gnb>ul>li{float:left;width:200px;position:relative;line-height:40px;text-align:center;margin:25px 0 0 0;height:auto}
         .gnb>ul>li>a{display:block; height: 40px;/* height:auto */}
@@ -55,6 +55,17 @@
         .gnb4>ul{display:none}
         .gnb5>ul{display:none}
         .gnb6>ul{display:none}
+        .gnb_full_bg{
+            width:100%;
+            height:auto;
+            background:#fff;
+            position:absolute;
+            left:0;
+            top:270px;
+            z-index:1;
+            display:none;
+            /* border-bottom:1px solid #36AE58; */
+        }
                         /* gnb1 */        
         .bg1{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:370px;margin:20px 0 0 0;}
         .gnb1>li{width:200px;height:auto}
@@ -626,8 +637,15 @@
     <script src="js/jquery-3.6.1.min.js"></script>    
     <script type="text/javascript">
         $(document).ready(function(){
-
-        $(".gnb1").mouseenter(function(){
+            
+        $(".gnb > ul > li, .gnb_full_bg").hover(function(){
+            $(this).find("ul").stop().slideDown("fast");
+            $(".gnb_full_bg").stop().slideDown("fast");
+        }, function(){
+            $(this).find("ul").hide();
+            $(".gnb_full_bg").hide();
+        })
+        /* $(".gnb1").mouseenter(function(){
             $(".gnb1>ul").stop().slideDown("fast");
         });
 
@@ -673,7 +691,7 @@
         
         $(".gnb6").mouseleave(function(){
             $(".gnb6>ul").stop().slideUp("fast");
-        });
+        }); */
 
                     /* gnb1 */
 
@@ -1045,6 +1063,7 @@
                     </ul>
             </nav>
         </div>
+        <div class="gnb_full_bg"></div>  
 </header>
 
                 <!-- main -->

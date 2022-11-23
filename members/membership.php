@@ -132,6 +132,8 @@
             position:relative;
             margin:15px auto 0px; 
             width: 1200px;
+            height: auto;
+            z-index:5
         }
         
         .gnb h2{
@@ -160,6 +162,7 @@
         .gnb ul ul{
             padding-top:20px;
             width:100%;
+            height: auto;
             position:absolute;
             left:0;
             top:40px;
@@ -167,11 +170,12 @@
             display:none}
 
         .nav_bg{
-            width:100%;
+            width:1200px;
             height:450px;
             background:#fff; 
             border-bottom:1px solid #cbc9c9;
-            display:none}
+            display:none
+            }
 
         .gnb8 a{
             display:block;
@@ -230,9 +234,7 @@
         .m3_3{
             font-size:20px
         }
-        .m3_4{
-            
-            
+        .m3_4{                        
             border:1px solid #FC7D07;
             border-radius:40px;
             width: 300px;
@@ -242,17 +244,14 @@
             color:#FC7D07;
             background-color:#fff;
             margin:20px 0 0 0;  
-            cursor:pointer                      
-         
-            
+            cursor:pointer                     
         }            
         .m4{
             text-align:center;            
             width: 500px;
             height: 160px;
         }
-        .m4_4{
-            
+        .m4_4{            
             border:1px solid #FC7D07;
             border-radius:40px;
             width: 300px;
@@ -276,12 +275,7 @@
         }
         .m4_3{
             font-size:20px;
-        }
-        
-        
-
-
-
+        }                
         button{
             /* border:none; */
             cursor:pointer
