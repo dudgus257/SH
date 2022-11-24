@@ -15,7 +15,7 @@ $headers[] = 'From: webmaster<받는사람@gmail.com>';
 
 mail($to, $subject, $message, implode("\r\n", $headers));
 echo "이메일을 보냈습니다.";
-	echo "<script language=javascript> alert('인증되셨습니다. 회원가입을 계속 진행해주세요.'); location.replace('http://localhost/siheung/members/membership3.php');
+	echo "<script language=javascript> alert('인증되셨습니다. 회원가입을 계속 진행해주세요.'); location.replace('http://dudgus257.dothome.co.kr/siheung/members/membership3.php');
     </script>";
 
 
