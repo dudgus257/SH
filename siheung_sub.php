@@ -8,7 +8,7 @@
     <title>분야별</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <liㅇnk href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script type="text/javascript" src="jquery.js"></script>
     <scrip type="text/javascript">
 
@@ -2832,12 +2832,12 @@ $(".child_welfare3").hover(function(){
 
 $("#godang0 > div:gt(0)").hide();
 setInterval(function(){
-    $('#godang0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#godang0');     
+    $('#godang0 > div:first').fadeOut(2000).next().fadeIn(2000).end().appendTo('#godang0');     
 }, 3000);
 
 $("#bear0 > div:gt(0)").hide();
 setInterval(function(){
-    $('#bear0 > div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('#bear0');
+    $('#bear0 > div:first').fadeOut(2000).next().fadeIn(2000).end().appendTo('#bear0');
 }, 3000);
 
 $("#godang0").hover(function(){
