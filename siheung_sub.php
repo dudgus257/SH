@@ -2360,12 +2360,16 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         .hospital14_1{
             font-family: 'Nanum Pen Script', cursive;
             position:absolute;
-            margin:20px
+            margin:20px;
+            font-size:15px
+            
+            
         }
         .hospital14_2{
             font-family: 'Nanum Pen Script', cursive;
             position:absolute;
-            margin:40px 0 0 90px
+            margin:40px 0 0 90px;
+            font-size:15px
         }
         .tour{
             position:relative;
