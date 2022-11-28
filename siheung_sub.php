@@ -224,7 +224,9 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
         }
         /* .gnb{
             border:3px solid #cbcbcb
-        } */        
+        } */  
+        
+        /* gnb */
         .nav_bg{            
             width:1200px;
             height:auto;
@@ -253,9 +255,8 @@ body,h1,h2,h3,p,div,ul,li,dl,dt,dd
             line-height:40px;
             text-align:center;
             margin:25px 0 0 0;
-            height:auto                               
+            height:auto;                                        
         }
-
         .gnb>ul>li>a{
             display:block;
             height: 40px;                        
