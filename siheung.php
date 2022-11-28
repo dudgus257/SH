@@ -43,90 +43,104 @@
         .top9 a {width:82px;height:18px;display:block;font-weight:900}
                 /* logo */        
         .logo{width:225px;height:99px;margin:17px auto 0px}
-        .logo a{display:block;background:url(images/logo_03.jpg) no-repeat;text-indent:-9999px;width:225px;height:99px;}        
-        .gnb{position:relative;margin:auto;width: 1200px;height: auto;}
-        .nav_bg{width:1200px;height:auto;background:#8484aa;margin:auto;position:relative;z-index:5}
-        .gnb h2{position:absolute;left:-9999px;top:-9999px;}
-        .gnb>ul>li{float:left;width:200px;position:relative;line-height:40px;text-align:center;margin:25px 0 0 0;height:auto}
-        .gnb>ul>li>a{display:block; height: 40px;/* height:auto */}
-        .gnb1>ul{display:none;height:auto}
-        .gnb2>ul{display:none}
-        .gnb3>ul{display:none}
-        .gnb4>ul{display:none}
-        .gnb5>ul{display:none}
-        .gnb6>ul{display:none}
-        .gnb_full_bg{
-            width:100%;
-            height:auto;
-            background:#fff;
-            position:absolute;
-            left:0;
-            top:270px;
-            z-index:1;
-            display:none;
-            /* border-bottom:1px solid #36AE58; */
+        .logo a{display:block;background:url(images/logo_03.jpg) no-repeat;text-indent:-9999px;width:225px;height:99px;}      
+        
+                /* gnb */
+
+        .nav_bg{
+            
+            width: 1200px;
+            height: auto;
+            background:#8484aa;
+            margin:auto;
+            position:relative;
+            z-index:5
+        }                
+        .gnb{
+                       
+            position:relative;
+            margin:auto;
+            width: 1200px;
+            height: auto;
         }
-                        /* gnb1 */        
-        .bg1{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:370px;margin:20px 0 0 0;}
-        .gnb1>li{width:200px;height:auto}
-        .gnb1_1{/* float:left; */text-align:left;border-bottom:1px solid #FC7D07;margin-left:10px;width:150px;height:auto;line-height:50px;font-weight: bold;display: block;}
-        .small_gnb{font-size:15px;text-align:left;margin-left:10px;height:auto}
-        .a1 {font-weight: bold;}
-                            /* gnb2 */
-        .a2{font-weight: bold;}
-        .bg2{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:370px;margin:20px 0 0 -200px;}
-        .gnb2_1{/* float:left; */position:absolute;border-bottom:1px solid #FC7D07;width:150px;height:40px;left:10px;text-align:left;display: block;font-weight: bold;}
-        .small_gnb1{position:absolute;text-align:left;left:10px;font-size:15px;top:40px}        
-        .gnb2>li{width:200px;height:370px;}        
-        .gnb2_2{position:absolute;border-bottom:1px solid #FC7D07;width:150px;height:40px;top:0px;left:250px;font-weight: bold;text-align:left;display: block;}        
-        .small_gnb2{position:absolute;top:40px;left:250px;text-align:left;font-size:15px}
-        .gnb2_3{position:absolute;border-bottom:1px solid #FC7D07;width: 150px;height:40px;top:0px;left:500px;text-align:left;font-weight: bold;}
-        .small_gnb3{position:absolute;top: 40px;left: 500px;text-align:left;font-size:15px}
-        .gnb2_4{position:absolute;border-bottom:1px solid #FC7D07;width: 150px;height:40px;top:0px;left:750px;font-weight: bold;text-align:left   }    
-        .small_gnb4{position:absolute;top:40px;left:750px;text-align:left;font-size:15px} 
-        .gnb2_5{position:absolute;border-bottom:1px solid #FC7D07;width: 150px;height:40px;top:0px;left:1000px;text-align:left;font-weight: bold;            }
-        .small_gnb5{position:absolute;top:40px;left:1000px;font-size:15px;text-align:left}     
-        .gnb2_6{position:absolute;border-bottom:1px solid #FC7D07;font-weight: bold;text-align:left;width:170px;height:40px;top:200px;left:250px}        
-        .gnb2_7{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width:150px;height:40px;top:200px;left:500px}
-        .small_gnb7{position:absolute;top:240px;left:500px;font-size: 15px;text-align:left}
-        .gnb2_8{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align: left;width:150px;height:40px;top:200px;left:750px}
-        .small_gnb8{position:absolute;top:240px;left:750px;font-size:15px;text-align:left}
-        .gnb2_9{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align: left;width:150px;height:40px;top:200px;left:1000px}
-        .small_gnb9{position:absolute;top:240px;left:1000px;font-size:15px;text-align:left}
+        .gnb h2{
+            position:absolute;
+            left:-9999px;
+            top:-9999px;
+        }        
+        .gnb>ul>li{
+            float:left;
+            width:200px;
+            position:relative;
+            line-height:40px;
+            text-align:center;
+            margin:25px 0 0 0;
+            height:auto;
+        }
+        .gnb>ul>li>a{
+            display:block;
+            height: 40px;                        
+        }
+        .gnb1>ul{
+            display:none;
+            height: auto;            
+        }
+        .gnb2>ul{
+            display:none
+        }
+        .gnb3>ul{
+            /* display:none */
+        }
+        .gnb4>ul{
+            display:none
+        }
+        .gnb5>ul{
+            display:none
+        }
+        .gnb6>ul{
+            display:none
+        }
+        .a1{font-weight:bold}
+        .a2{font-weight:bold}
+        .a3{font-weight:bold}
+        .a4{font-weight:bold}
+        .a5{font-weight:bold}
+        .a6{font-weight:bold}
+        /* gnb1 */
+        .bg1{position:absolute;background-color:#fff;border-bottom:1px solid #FC7D07;width: 1200px;height: 170px}
+        .gnb1>li{width: 200px;height:auto}
+        .gnb1 ul ul{width: 200px;height:170px}
+        .gnb1_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb{font-size:15px;text-align:left;margin-left:10px;margin-top:30px;height:auto
+        }
+        /* gnb2 */
+        .bg2{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:450px;margin:0px 0 0 -200px;}
+        .gnb2>li{width:200px;height:auto}
+        .gnb2 ul ul{width: 200px;height:450px}
+        .small_gnb1{font-size:15px;text-align:left;margin-left:10px;margin-top:30px;height:auto}
+        .gnb2_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb2{position:absolute;text-align:left;left:250px;font-size:15px;top:30px}
+        .gnb2_2{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb3{position:absolute;text-align:left;left:500px;font-size:15px;top:30px}
+        .gnb2_3{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb4{position:absolute;text-align:left;left:750px;font-size:15px;top:30px}
+        .gnb2_4{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb5{position:absolute;text-align:left;left:1000px;font-size:15px;top:30px}
+        .gnb2_5{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb6{position:absolute;text-align:left;left:10px;font-size:15px;top:250px}
+        .gnb2_6{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb7{position:absolute;text-align:left;left:250px;font-size:15px;top:250px}
+        .gnb2_7{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb8{position:absolute;text-align:left;left:500px;font-size:15px;top:250px}
+        .gnb2_8{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb9{position:absolute;text-align:left;left:750px;font-size:15px;top:250px}
+        .gnb2_9{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
         /* gnb3 */
-        .a3{font-weight: bold;}
-        .bg3{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:170px;margin:20px 0 0 -400px;   }
-        .gnb3>li{width:200px;height:200px;}
-        .gnb3_1{position:absolute;font-weight: bold;border-bottom:1px solid#FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:10px}
-        .gnb3_2{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:250px}
-        .small_gnb11{position:absolute;text-align:left;font-size:15px;top:40px;left:250px}
-        .gnb3_3{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:500px}
-        .small_gnb12{position:absolute;font-size:15px;text-align:left;top:40px;left:500px}
-        /* gnb4 */
-        .a4{font-weight: bold;}
-        .bg4{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:60px;margin:20px 0 0 -600px; }
-        .gnb4_1{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:10px;}
-        .gnb4_2{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;font-weight: bold;width: 150px;height: 40px;top:0px;left:250px;}
-        .gnb4_3{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:500px;}
-        .gnb4_4{position:absolute;            font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:750px;}
-        .gnb4_5{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;font-weight: bold;width: 150px;height: 40px;top:0px;left:1000px;}    
-        /* gnb5 */
-        .a5{font-weight: bold;}
-        .bg5{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:170px;margin:20px 0 0 -800px;}
-        .gnb5_1{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align: left;width: 210px;height: 40px;top:0px;left:10px;}
-        .small_gnb13{position:absolute;font-size: 15px;text-align: left;top:40px;left:10px;}
-        .gnb5_2{position:absolute;text-align: left;border-bottom:1px solid #FC7D07;font-weight: bold;width: 150px;height: 40px;top:0px;left:270px;}
-        .small_gnb14{font-size:15px;position:absolute;text-align: left;top:40px;left:270px;margin-left:0px}
-        .gnb5_3{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align: left;width: 150px;height: 40px;top:0px;left:500px;}
-        .small_gnb15{position:absolute;text-align: left;font-size:15px;top:40px;margin-left:500px}
-        .gnb5_4{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align:left;width: 150px;height: 40px;top:0px;left:750px;}
-        .small_gnb16{position:absolute;font-size: 15px;text-align:left;top:40px;left:750px;}        
-        .gnb5_5{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align: left;width: 150px;height: 40px;top:0px;left:1000px;}        
-                    /* gnb6 */
-        .a6{font-weight: bold;}
-        .bg6{position:relative;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:200px;margin:20px 0 0 -1000px;}
-        .gnb6_1{position:absolute;font-weight: bold;border-bottom:1px solid #FC7D07;text-align: left;width: 160px;height: 40px;top:0px;left:10px}
-        .small_gnb17{position:absolute;font-size:15px;text-align: left;left:10px;top:40px;height:370px;}        
+        .bg3{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:950px;margin:0px 0 0 -400px;}
+        .gnb3>li{width:200px;height:auto}
+        .gnb3 ul ul{width: 200px;height:950px}
+        .small_gnb10{font-size:15px;text-align:left;margin-left:10px;margin-top:30px;height:auto}
+        .gnb3_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}        
                         /* content */                
         .content{position:relative;z-index:1}
             /* search */
@@ -601,31 +615,9 @@
 
         .sel{color: #FC7D07}
 
-        /* .gnb1_1{
-            background:#FF0606 ; color: #fff
-        } */
+        
 
-        /* .small{
-            margin:auto;
-            width: 1600px;
-        } */
-
-        /* .gnb1 > ul{
-            width:auto;
-            position:absolute;
-            margin:auto    
-        } */
-
-        /* .big{
-            border:1px solid #000;
-            background:#000;
-            width:1600px;
-            height:auto;
-        } */
-
-        .gnb>li{
-            float:left
-        }
+        
         
         .login{
             float:right;
@@ -645,6 +637,8 @@
             $(this).find("ul").hide();
             $(".gnb_full_bg").hide();
         })
+
+        
         /* $(".gnb1").mouseenter(function(){
             $(".gnb1>ul").stop().slideDown("fast");
         });
@@ -915,149 +909,204 @@
                     <ul>
                         <li class="gnb1"><span class="a1"><a href="#">수강신청</a></span>
                             <ul class="bg1">
-                                <li><span class="gnb1_1"><a href="#">수강신청</a></span>
+                                <li>
                                     <ul class="small_gnb">
-                                        <li><a href="#">수강신청</a></li>
-                                        <li><a href="#">수강신청 방법</a></li>
-                                        <li><a href="#">수강취소(수강료반환)방법</a></li>
+                                        <li><span class="gnb1_1"><a href="#">수강신청</a></span>
+                                            <ul>
+                                                <li><a href="#">수강신청</a></li>
+                                                <li><a href="#">수강신청 방법</a></li>
+                                                <li><a href="#">수강취소(수강료반환)방법</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>   
                         <li class="gnb2"><span class="a2"><a href="#">평생학습도시</a></span>
-                            <ul class="bg2">                                                                
-                                <li><span class="gnb2_1"><a href="#">학습동아리란</a></span>
+                            <ul class="bg2">
+                                <li>
                                     <ul class="small_gnb1">
-                                        <li><a href="#">시흥시학습동아리현황</a></li>
-                                        <li><a href="#">학습동아리란</a></li>
-                                        <li><a href="#">학습동아리검색</a></li>
-                                        <li><a href="#">학습동아리 등록 신청</a></li>
+                                        <li><span class="gnb2_1"><a href="#">학습동아리란</a></span>
+                                            <ul>
+                                                <li><a href="#">시흥시학습동아리현황</a></li>
+                                                <li><a href="#">학습동아리란</a></li>
+                                                <li><a href="#">학습동아리검색</a></li>
+                                                <li><a href="#">학습동아리 등록 신청</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                        
-                                <li><span class="gnb2_2"><a href="#">학습소외계층</a></span>
                                     <ul class="small_gnb2">
-                                        <li><a href="#">성인문해교육</a></li>
-                                        <li><a href="#">장애인 평생교육</a></li>
+                                        <li><span class="gnb2_2"><a href="#">학습소외계층</a></span>
+                                            <ul>
+                                                <li><a href="#">성인문해교육</a></li>
+                                                <li><a href="#">장애인 평생교육</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                        
-                                <li><span class="gnb2_3"><a href="#">평생학습마을</a></span>
                                     <ul class="small_gnb3">
-                                        <li><a href="#">평생학습마을이란</a></li>
-                                        <li><a href="#">평생학습마을소개</a></li>
-                                        <li><a href="#">평생학습마을지도</a></li>
+                                        <li><span class="gnb2_3"><a href="#">평생학습마을</a></span>
+                                            <ul>
+                                                <li><a href="#">평생학습마을이란</a></li>
+                                                <li><a href="#">평생학습마을소개</a></li>
+                                                <li><a href="#">평생학습마을지도</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                        
-                                <li><span class="gnb2_4"><a href="#">일터학습지원</a></span>
                                     <ul class="small_gnb4">
-                                        <li><a href="#">강사역량 강화교육</a></li>
-                                        <li><a href="#">강사인턴</a></li>
+                                        <li><span class="gnb2_4"><a href="#">일터학습지원</a></span>
+                                            <ul>
+                                                <li><a href="#">강사역량 강화교육</a></li>
+                                                <li><a href="#">강사인턴</a></li>                                        
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                        
-                                <li><span class="gnb2_5"><a href="#">강사뱅크</a></span>
                                     <ul class="small_gnb5">
-                                        <li><a href="#">강사뱅크란</a></li>
-                                        <li><a href="#">강사뱅크 등록 및 현황</a></li>
-                                        <li><a href="#">강사모집 게시판</a></li>
+                                        <li><span class="gnb2_5"><a href="#">강사뱅크</a></span>
+                                            <ul>
+                                                <li><a href="#">강사뱅크란</a></li>
+                                                <li><a href="#">강사뱅크 등록 및 현황</a></li>
+                                                <li><a href="#">강사모집 게시판</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="small_gnb6">
+                                        <li><span class="gnb2_6"><a href="#">평생학습네트워크</a></span></li>
+                                    </ul>
+                                    <ul class="small_gnb7">
+                                        <li><span class="gnb2_7"><a href="#">평생학습축제</a></span>
+                                            <ul>
+                                                <li><a href="#">평생학습축제 소개</a></li>
+                                                <li><a href="#">축제 게시판</a></li>
+                                                <li><a href="#">축제사진갤러리</a></li>
+                                            </ul>                                            
+                                        </li>
+                                    </ul>
+                                    <ul class="small_gnb8">
+                                        <li><span class="gnb2_8"><a href="#">학습재능기부</a></span>                                    
+                                            <ul>
+                                                <li><a href="#">재능기부란</a></li>
+                                                <li><a href="#">학습재능기부(나눔)</a></li>
+                                                <li><a href="#">학습재능기부(받음)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="small_gnb9">
+                                        <li><span class="gnb2_9"><a href="#">ESD인증</a></span>
+                                            <ul>
+                                                <li><a href="#">학습동아리 활성화</a></li>
+                                                <li><a href="#">평생학습네트워크 활성화</a></li>
+                                                <li><a href="#">평생학습마을 육성</a></li>
+                                            </ul>
+                                        </li>           
                                     </ul>
                                 </li>
-                                <li><span class="gnb2_6"><a href="#">평생학습네트워크</a></span>
-                                    <ul class="small_gnb6"></ul>
-                                </li>                                                                            
-                                <li><span class="gnb2_7"><a href="#">평생학습축제</a></span>
-                                    <ul class="small_gnb7">
-                                        <li><a href="#">평생학습축제 소개</a></li>
-                                        <li><a href="#">축제 게시판</a></li>
-                                        <li><a href="#">축제사진갤러리</a></li>
-                                    </ul>
-                                </li>                                                                        
-                                <li><span class="gnb2_8"><a href="#">학습재능기부</a></span>
-                                    <ul class="small_gnb8">
-                                        <li><a href="#">재능기부란</a></li>
-                                        <li><a href="#">학습재능기부(나눔)</a></li>
-                                        <li><a href="#">학습재능기부(받음)</a></li>
-                                    </ul>
-                                </li>                                                                        
-                                <li><span class="gnb2_9"><a href="#">ESD인증</a></span>
-                                    <ul class="small_gnb9">
-                                        <li><a href="#">학습동아리 활성화</a></li>
-                                        <li><a href="#">평생학습네트워크 활성화</a></li>
-                                        <li><a href="#">평생학습마을 육성</a></li>
-                                    </ul>
-                                </li>                                                                   
                             </ul>
-                        </li>
+                        </li>                        
                         <li class="gnb3"><span class="a3"><a href="#">시흥아카데미</a></span>
                             <ul class="bg3">
-                                <li><span class="gnb3_1"><a href="#">아카데미 소개</a></span>
-                                    <ul class="small_gnb10">                                        
+                                <li>
+                                    <ul class="small_gnb10">
+                                        <li><span class="gnb3_1"><a href="#">아카데미 소개</a></span></li>
                                     </ul>
-                                </li>
-                                <li><span class="gnb3_2"><a href="#">지난 강의 목록</a></span>
                                     <ul class="small_gnb11">
-                                        <li><a href="#">참살이 학부</a></li>
-                                        <li><a href="#">꿈모작 학부</a></li>
-                                        <li><a href="#">교양 학부</a></li>
+                                        <li><span class="gnb3_2"><a href="#">지난 강의 목록</a></span>
+                                            <ul>
+                                                <li><a href="#">참살이 학부</a></li>
+                                                <li><a href="#">꿈모작 학부</a></li>
+                                                <li><a href="#">교양 학부</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="small_gnb12">
+                                        <li><span class="gnb3_3"><a href="#">콘텐츠 모음집</a></span>
+                                            <ul>
+                                                <li><a href="#">콘텐츠 모음집</a></li>
+                                                <li><a href="#">학교별 목록</a></li>
+                                                <li><a href="#">주제별 목록</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li><span class="gnb3_3"><a href="#">콘텐츠 모음집</a></span>
-                                    <ul class="small_gnb12">
-                                        <li><a href="#">콘텐츠 모음집</a></li>
-                                        <li><a href="#">학교별 목록</a></li>
-                                        <li><a href="#">주제별 목록</a></li>
-                                    </ul>
-                                </li>                                                                                                                                                
                             </ul>
                         </li>
                         <li class="gnb4"><span class="a4"><a href="#">정보마당</a></span>
                             <ul class="bg4">
-                                <li><span class="gnb4_1"><a href="notice/list.php">공지사항</a></span></li>
-                                <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
-                                <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
-                                <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
-                                <li><span class="gnb4_5"><a href="#">사이버 학습관</a></span></li>
+                                <li>
+                                    <ul>
+                                        <li><span class="gnb4_1"><a href="notice/list.php">공지사항</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span class="gnb4_2"><a href="#">교육개설요청</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span class="gnb4_3"><a href="#">자료실</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span class="gnb4_4"><a href="#">온라인 설문</a></span></li>
+                                    </ul>
+                                    <ul>
+                                        <li><span class="gnb4_5"><a href="#">사이버 학습관</a></span></li>
+                                    </ul>
+                                </li>
                             </ul> 
                         </li>
                         <li class="gnb5"><span class="a5"><a href="#">평생학습기관</a></span>
                             <ul class="bg5">
-                                <li><span class="gnb5_1"><a href="#">시흥ABC행복학습타운</a></span>
+                                <li>
                                     <ul class="small_gnb13">
-                                        <li><a href="#">학습타운소개</a></li>
-                                        <li><a href="#">시설배치도</a></li>
-                                        <li><a href="#">시설소개</a></li>
+                                        <li><span class="gnb5_1"><a href="#">시흥ABC행복학습타운</a></span>
+                                            <ul>
+                                                <li><a href="#">학습타운소개</a></li>
+                                                <li><a href="#">시설배치도</a></li>
+                                                <li><a href="#">시설소개</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                                                                                                    
-                                <li><span class="gnb5_2"><a href="#">청년협업마을</a></span>
                                     <ul class="small_gnb14">
-                                        <li><a href="#">청년협업마을 소개</a></li>
-                                        <li><a href="#">시설배치도</a></li>
-                                        <li><a href="#">프로그램소개</a></li>
+                                        <li><span class="gnb5_2"><a href="#">청년협업마을</a></span>
+                                            <ul>
+                                                <li><a href="#">청년협업마을 소개</a></li>
+                                                <li><a href="#">시설배치도</a></li>
+                                                <li><a href="#">프로그램소개</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                        
-                                <li><span class="gnb5_3"><a href="#">대야평생학습관</a></span>
                                     <ul class="small_gnb15">
-                                        <li><a href="#">대야평생학습관 소개</a></li>
-                                        <li><a href="#">프로그램 소개</a></li>
+                                        <li><span class="gnb5_3"><a href="#">대야평생학습관</a></span>
+                                            <ul>    
+                                                <li><a href="#">대야평생학습관 소개</a></li>
+                                                <li><a href="#">프로그램 소개</a></li>
+                                            </ul>
+                                        </li>                                                                        
                                     </ul>
-                                </li>                                                                        
-                                <li><span class="gnb5_4"><a href="#">정왕평생학습관</a></span>
                                     <ul class="small_gnb16">
-                                        <li><a href="#">정왕평생학습관 소개</a></li>
-                                        <li><a href="#">프로그램 소개</a></li>
+                                        <li><span class="gnb5_4"><a href="#">정왕평생학습관</a></span>
+                                            <ul> 
+                                                <li><a href="#">정왕평생학습관 소개</a></li>
+                                                <li><a href="#">프로그램 소개</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>                                                                    
-                                <li><span class="gnb5_5"><a href="#">청년스테이션</a></span></li>                                                                    
+                                    <ul>
+                                        <li><span class="gnb5_5"><a href="#">청년스테이션</a></span></li>                                                                    
+                                    </ul>
+                                </li>    
                             </ul>
-                        </li>
+                        </li>                                                                            
                         <li class="gnb6"><span class="a6"><a href="#">평생교육원</a></span>
-                            <ul class="bg6">                                                                
-                                <li><span class="gnb6_1"><a href="#">평생교육원 소개</a></span>
+                            <ul class="bg6">
+                                <li>
                                     <ul class="small_gnb17">
-                                        <li><a href="#">인사말</a></li>
-                                        <li><a href="#">연혁</a></li>
-                                        <li><a href="#">조직도</a></li>
-                                        <li><a href="#">직원 업무 안내</a></li> 
+                                        <li><span class="gnb6_1"><a href="#">평생교육원 소개</a></span>
+                                            <ul>
+                                                <li><a href="#">인사말</a></li>
+                                                <li><a href="#">연혁</a></li>
+                                                <li><a href="#">조직도</a></li>
+                                                <li><a href="#">직원 업무 안내</a></li> 
+                                            </ul>
+                                        </li>                                                                    
                                     </ul>
-                                </li>                                                                    
+                                </li>
                             </ul>
                         </li>
                     </ul>
