@@ -89,7 +89,7 @@
             display:none
         }
         .gnb3>ul{
-            /* display:none */
+            display:none
         }
         .gnb4>ul{
             display:none
@@ -107,7 +107,7 @@
         .a5{font-weight:bold}
         .a6{font-weight:bold}
         /* gnb1 */
-        .bg1{position:absolute;background-color:#fff;border-bottom:1px solid #FC7D07;width: 1200px;height: 170px}
+        .bg1{position:absolute;background-color:#fff;border-bottom:1px solid #D9D7D7;width: 1200px;height: 170px}
         .gnb1>li{width: 200px;height:auto}
         .gnb1 ul ul{width: 200px;height:170px}
         .gnb1_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
@@ -136,11 +136,43 @@
         .small_gnb9{position:absolute;text-align:left;left:750px;font-size:15px;top:250px}
         .gnb2_9{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
         /* gnb3 */
-        .bg3{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:950px;margin:0px 0 0 -400px;}
+        .bg3{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:200px;margin:0px 0 0 -400px;}
         .gnb3>li{width:200px;height:auto}
-        .gnb3 ul ul{width: 200px;height:950px}
-        .small_gnb10{font-size:15px;text-align:left;margin-left:10px;margin-top:30px;height:auto}
-        .gnb3_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}        
+        .gnb3 ul ul{width: 200px;height:200px}
+        .small_gnb10{position:absolute;font-size:15px;text-align:left;margin-left:10px;margin-top:30px;height:auto}
+        .gnb3_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb11{position:absolute;font-size:15px;text-align:left;margin-left:250px;top:30px;height:auto}
+        .gnb3_2{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb12{position:absolute;font-size:15px;text-align:left;margin-left:500px;top:30px;height:auto}
+        .gnb3_3{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        /* gnb4 */
+        .bg4{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:100px;margin:0px 0 0 -600px;}
+        .gnb4>li{width:200px;height:auto}
+        .gnb4 ul ul{width: 200px;height:100px}
+        .gnb4_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block;margin-top:20px}
+        .gnb4_2{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block;left:250px;top:20px}
+        .gnb4_3{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block;left:500px;top:20px}
+        .gnb4_4{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block;left:750px;top:20px}
+        .gnb4_5{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block;left:1000px;top:20px}
+        /* gnb5 */
+        .bg5{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:200px;margin:0px 0 0 -800px;}
+        .gnb5>li{width:200px;height:auto}
+        .gnb5 ul ul{width: 200px;height:200px}
+        .small_gnb13{position:absolute;font-size:15px;text-align:left;margin-left:0px;top:30px;height:auto}
+        .gnb5_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb14{position:absolute;font-size:15px;text-align:left;margin-left:250px;top:30px;height:auto}
+        .gnb5_2{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb15{position:absolute;font-size:15px;text-align:left;margin-left:500px;top:30px;height:auto}
+        .gnb5_3{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
+        .small_gnb16{position:absolute;font-size:15px;text-align:left;margin-left:750px;top:30px;height:auto}
+        .gnb5_4{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}        
+        .gnb5_5{position:absolute;text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block;top:30px;left:1000px}
+        /* gnb6 */
+        .bg6{position:absolute;background-color: #fff;border-bottom:1px solid #D9D7D7;width:1200px;height:250px;margin:0px 0 0 -1000px;}
+        .gnb6>li{width:200px;height:auto}
+        .gnb6 ul ul{width: 200px;height:250px}
+        .small_gnb17{position:absolute;font-size:15px;text-align:left;margin-left:0px;top:30px;height:auto}
+        .gnb6_1{text-align:left;border-bottom:1px solid #FC7D07;width: 200px;height:auto;font-weight:bold;font-size:15px;display:block}
                         /* content */                
         .content{position:relative;z-index:1}
             /* search */
@@ -1092,7 +1124,7 @@
                                     </ul>
                                 </li>    
                             </ul>
-                        </li>                                                                            
+                        </li>   
                         <li class="gnb6"><span class="a6"><a href="#">평생교육원</a></span>
                             <ul class="bg6">
                                 <li>
@@ -1104,7 +1136,7 @@
                                                 <li><a href="#">조직도</a></li>
                                                 <li><a href="#">직원 업무 안내</a></li> 
                                             </ul>
-                                        </li>                                                                    
+                                        </li>           
                                     </ul>
                                 </li>
                             </ul>
