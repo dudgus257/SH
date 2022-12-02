@@ -7,254 +7,252 @@
     <title>siheung_main</title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/siheung.css">
-    <style type="text/css">
-        
+    <link rel="stylesheet" type="text/css" href="css/siheung.css">    
+    <style type="text/css">        
     </style>    
     <script type="text/javascript" src="jquery.js"></script>
     <script src="js/jquery-3.6.1.min.js"></script>    
     <script type="text/javascript">
-        $(document).ready(function(){
+    $(document).ready(function(){
             
-        $(".gnb > ul > li, .gnb_full_bg").hover(function(){
-            $(this).find("ul").stop().slideDown("fast");
-            $(".gnb_full_bg").stop().slideDown("fast");
-        }, function(){
-            $(this).find("ul").hide();
-            $(".gnb_full_bg").hide();
-        })
-
-        
-        /* $(".gnb1").mouseenter(function(){
-            $(".gnb1>ul").stop().slideDown("fast");
-        });
-
-        $(".gnb1").mouseleave(function(){
-            $(".gnb1>ul").stop().slideUp("fast");
-        });
-
-        $(".gnb2").mouseenter(function(){
-            $(".gnb2 ul ").stop().slideDown("fast");
-        });
-
-        $(".gnb2").mouseleave(function(){
-            $(".gnb2 ul ").stop().slideUp("fast");
-        });
-
-        $(".gnb3").mouseenter(function(){
-            $(".gnb3>ul").stop().slideDown("fast");
-        });
-
-        $(".gnb3").mouseleave(function(){
-            $(".gnb3>ul").stop().slideUp("fast");
-        });
-
-        $(".gnb4").mouseenter(function(){
-            $(".gnb4>ul").stop().slideDown("fast");
-        });
-
-        $(".gnb4").mouseleave(function(){
-            $(".gnb4>ul").stop().slideUp("fast");
-        });
-
-        $(".gnb5").mouseenter(function(){
-            $(".gnb5>ul").stop().slideDown("fast");
-        });
-
-        $(".gnb5").mouseleave(function(){
-            $(".gnb5>ul").stop().slideUp("fast");
-        });
-
-        $(".gnb6").mouseenter(function(){
-            $(".gnb6>ul").stop().slideDown("fast");
-        });
-        
-        $(".gnb6").mouseleave(function(){
-            $(".gnb6>ul").stop().slideUp("fast");
-        }); */
-
-                    /* gnb1 */
-
-        /* $(".gnb1").mouseenter(function(){
-            $(".bg1").stop().slideDown("fast");
-        });
-
-        $(".gnb1").mouseleave(function(){
-            $(".bg1").stop().slideUp("fast");
-        }); */
-
-                    /* gnb2 */
-
-        /* $(".gnb2").mouseenter(function(){
-            $(".bg2").stop().slideDown("fast");
-        });
-
-        $(".gnb2").mouseleave(function(){
-            $(".bg2").stop().slideUp("fast");
-        }); */        
-
-        /* here ↑ */
-
-
-        /*     $(".gnb").mouseenter(function(){
-		    $(".small > ul").stop().slideDown("fast");
-	    });
-	        $(".gnb").mouseleave(function(){
-		    $(this).find("ul").stop().slideUp("fast");
-	    }); */
-
-       /*  $(".gnb > ul > li, .nav_bg").mouseenter(function(){
-		$(".gnb ul ul, .nav_bg").stop().slideDown("fast");
-	});
-	$(".gnb > ul > li, .nav_bg").mouseleave(function(){
-		$(".gnb ul ul, .nav_bg").stop().slideUp("fast");
-	}); */
-
-        $("a").hover(function(){
-            $(this).addClass("sel");
-        }, function(){
-            $(this).removeClass("sel")
-        })
-        
-        $(function(){
-        $(".next2").click(function(){
-                /* $(".direct2").animate({"margin-left": "-=200px"}, 1000 ); */
-                $(".direct2").animate({"margin-left": "-1200px"}, 500 );
-            
-                /* $(".direct2>li:first-child").insertAfter(".direct2>li:last-child") ; */
-                  
-            });
-        });
-
-        
-        $(function(){
-        $(".prev2").click(function(){
-            /* $(".direct2").animate({"margin-left": "+=200px"}, 1000 ); */
-            $(".direct2").animate({"margin-left": "0px"}, 500 );
-                  
-
-            
-            });
-        });
-
-       /*  $(".next2").click(function(){
-            $(".direct3").animate({"margin-left": "-200px"}, 1000, function(){
-                $(".direct2>li:first-child").insertAfter(".direct2>li:last-child");
-            });
-        });
-
-        $(".next2").click(function(){
-            $(".direct3").animate({"margin-left": "-200px"}, 1000, function(){
-                $(".direct2>li:first-child").insertAfter(".direct2>li:last-child");
-            });
-        }); */
-        
-                    /* news slide ↓ */
-
-        /* setInterval(fnSlide, 3000);
-        function fnSlide() {
-            $(".news_slide").animate({"margin-left": "-=300px"}, 3000, function (){
-                
-                
-            });
-        }; */
-        
-        
-        
-        
-       
-        
-        
-
-    });
-
-        /* function left_func(){
-            var inner = document.getElementById(".news_slide > li");
-            inner.style.left = "-100px";
-        } */
-
-       /*  var gall = setInterval(galleryfun, 2000);
-        var inter = true;
-        var idx = 2;
-
-            function galleryfun(){
-                
-                $(".news_slide").animate({
-                    "left":-300*idx+"px" },300);
-                    $(".news_slide li").eq(idx-1).addClass("on").siblings().removeClass("on");
-     idx++;
-                if(idx> $(".news_slide li").length-3){
-                    $(".news_slide").animate({ "left":0
-                    },0);
-                    idx=0;
-                }                
-            }
-
-            $("#insAfter").hover(function(){
-                if(inter==true){
-                    clearInterval(gall);
-                    inter=false;
-                }
-            },function(){
-                if(inter==false){
-                    gall = setInterval(galleryfun, 2000);
-                    inter=true;
-                }
-            }); */
-
-
-        
-
-        
-
-
-
-
-
-
-
-        let currSlide = 1;
-
-        
-        function button_click(num){
-            showSlide((currSlide += num))
-        }
-        function showSlide(num){
-            const slides = document.querySelectorAll(".slide");
-            if(num>slides.length){
-                currSlide =1;
-            }if(num<1){
-                currSlide = slides.length;
-            }
-            for(let i=0; i<slides.length; i++){
-                slides[i].style.display="none";
-                }slides[currSlide -1].style.display="block";
-            };
-        
-
-        var left_value = 0;
-        
-
-        function left_func(){
-            var inner = document.getElementById("inner_div");
-            left_value = left_value - 200;
-            if(left_value <= -5474){
-                left_value = -5474;
-            }
-            inner.style.left = left_value+"px"; 
-        }
-
-        function right_func(){
-            var inner = document.getElementById("inner_div");
-            left_value = left_value + 200;
-            if(left_value > 0){
-                left_value = 0;
-            }
-            inner.style.left = left_value+"px";
-
-        }
-        
+            $(".gnb > ul > li, .gnb_full_bg").hover(function(){
+                $(this).find("ul").stop().slideDown("fast");
+                $(".gnb_full_bg").stop().slideDown("fast");
+            }, function(){
+                $(this).find("ul").hide();
+                $(".gnb_full_bg").hide();
+            })
     
+            
+            /* $(".gnb1").mouseenter(function(){
+                $(".gnb1>ul").stop().slideDown("fast");
+            });
+    
+            $(".gnb1").mouseleave(function(){
+                $(".gnb1>ul").stop().slideUp("fast");
+            });
+    
+            $(".gnb2").mouseenter(function(){
+                $(".gnb2 ul ").stop().slideDown("fast");
+            });
+    
+            $(".gnb2").mouseleave(function(){
+                $(".gnb2 ul ").stop().slideUp("fast");
+            });
+    
+            $(".gnb3").mouseenter(function(){
+                $(".gnb3>ul").stop().slideDown("fast");
+            });
+    
+            $(".gnb3").mouseleave(function(){
+                $(".gnb3>ul").stop().slideUp("fast");
+            });
+    
+            $(".gnb4").mouseenter(function(){
+                $(".gnb4>ul").stop().slideDown("fast");
+            });
+    
+            $(".gnb4").mouseleave(function(){
+                $(".gnb4>ul").stop().slideUp("fast");
+            });
+    
+            $(".gnb5").mouseenter(function(){
+                $(".gnb5>ul").stop().slideDown("fast");
+            });
+    
+            $(".gnb5").mouseleave(function(){
+                $(".gnb5>ul").stop().slideUp("fast");
+            });
+    
+            $(".gnb6").mouseenter(function(){
+                $(".gnb6>ul").stop().slideDown("fast");
+            });
+            
+            $(".gnb6").mouseleave(function(){
+                $(".gnb6>ul").stop().slideUp("fast");
+            }); */
+    
+                        /* gnb1 */
+    
+            /* $(".gnb1").mouseenter(function(){
+                $(".bg1").stop().slideDown("fast");
+            });
+    
+            $(".gnb1").mouseleave(function(){
+                $(".bg1").stop().slideUp("fast");
+            }); */
+    
+                        /* gnb2 */
+    
+            /* $(".gnb2").mouseenter(function(){
+                $(".bg2").stop().slideDown("fast");
+            });
+    
+            $(".gnb2").mouseleave(function(){
+                $(".bg2").stop().slideUp("fast");
+            }); */        
+    
+            /* here ↑ */
+    
+    
+            /*     $(".gnb").mouseenter(function(){
+                $(".small > ul").stop().slideDown("fast");
+            });
+                $(".gnb").mouseleave(function(){
+                $(this).find("ul").stop().slideUp("fast");
+            }); */
+    
+           /*  $(".gnb > ul > li, .nav_bg").mouseenter(function(){
+            $(".gnb ul ul, .nav_bg").stop().slideDown("fast");
+        });
+        $(".gnb > ul > li, .nav_bg").mouseleave(function(){
+            $(".gnb ul ul, .nav_bg").stop().slideUp("fast");
+        }); */
+    
+            $("a").hover(function(){
+                $(this).addClass("sel");
+            }, function(){
+                $(this).removeClass("sel")
+            })
+            
+            $(function(){
+            $(".next2").click(function(){
+                    /* $(".direct2").animate({"margin-left": "-=200px"}, 1000 ); */
+                    $(".direct2").animate({"margin-left": "-1200px"}, 500 );
+                
+                    /* $(".direct2>li:first-child").insertAfter(".direct2>li:last-child") ; */
+                      
+                });
+            });
+    
+            
+            $(function(){
+            $(".prev2").click(function(){
+                /* $(".direct2").animate({"margin-left": "+=200px"}, 1000 ); */
+                $(".direct2").animate({"margin-left": "0px"}, 500 );
+                      
+    
+                
+                });
+            });
+    
+           /*  $(".next2").click(function(){
+                $(".direct3").animate({"margin-left": "-200px"}, 1000, function(){
+                    $(".direct2>li:first-child").insertAfter(".direct2>li:last-child");
+                });
+            });
+    
+            $(".next2").click(function(){
+                $(".direct3").animate({"margin-left": "-200px"}, 1000, function(){
+                    $(".direct2>li:first-child").insertAfter(".direct2>li:last-child");
+                });
+            }); */
+            
+                        /* news slide ↓ */
+    
+            /* setInterval(fnSlide, 3000);
+            function fnSlide() {
+                $(".news_slide").animate({"margin-left": "-=300px"}, 3000, function (){
+                    
+                    
+                });
+            }; */
+            
+            
+            
+            
+           
+            
+            
+    
+        });
+    
+            /* function left_func(){
+                var inner = document.getElementById(".news_slide > li");
+                inner.style.left = "-100px";
+            } */
+    
+           /*  var gall = setInterval(galleryfun, 2000);
+            var inter = true;
+            var idx = 2;
+    
+                function galleryfun(){
+                    
+                    $(".news_slide").animate({
+                        "left":-300*idx+"px" },300);
+                        $(".news_slide li").eq(idx-1).addClass("on").siblings().removeClass("on");
+         idx++;
+                    if(idx> $(".news_slide li").length-3){
+                        $(".news_slide").animate({ "left":0
+                        },0);
+                        idx=0;
+                    }                
+                }
+    
+                $("#insAfter").hover(function(){
+                    if(inter==true){
+                        clearInterval(gall);
+                        inter=false;
+                    }
+                },function(){
+                    if(inter==false){
+                        gall = setInterval(galleryfun, 2000);
+                        inter=true;
+                    }
+                }); */
+    
+    
+            
+    
+            
+    
+    
+    
+    
+    
+    
+    
+            let currSlide = 1;
+    
+            
+            function button_click(num){
+                showSlide((currSlide += num))
+            }
+            function showSlide(num){
+                const slides = document.querySelectorAll(".slide");
+                if(num>slides.length){
+                    currSlide =1;
+                }if(num<1){
+                    currSlide = slides.length;
+                }
+                for(let i=0; i<slides.length; i++){
+                    slides[i].style.display="none";
+                    }slides[currSlide -1].style.display="block";
+                };
+            
+    
+            var left_value = 0;
+            
+    
+            function left_func(){
+                var inner = document.getElementById("inner_div");
+                left_value = left_value - 200;
+                if(left_value <= -5474){
+                    left_value = -5474;
+                }
+                inner.style.left = left_value+"px"; 
+            }
+    
+            function right_func(){
+                var inner = document.getElementById("inner_div");
+                left_value = left_value + 200;
+                if(left_value > 0){
+                    left_value = 0;
+                }
+                inner.style.left = left_value+"px";
+    
+            }
+            
     </script>
     
 </head>

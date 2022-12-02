@@ -1,0 +1,551 @@
+input[type=checkbox]{
+    width: 20px;
+    height: 20px; 
+    }
+
+#err_id{
+    margin:0 0 0 0 
+}
+
+.err_txt{
+    font-size:16px;
+    color:red;
+    
+    
+}
+.err_no{font-size:16px;color:red}
+
+body,h1,h2,h3,p,div,ul,li,dl,dt,dd 
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "나눔고딕";
+    font-size: 18px
+}
+
+ul,li,dl,dt,dd {
+    list-style: none
+}
+
+a{
+    text-decoration: none;
+    color: #000
+        /* inherit */
+}
+
+address {
+    font-style: normal
+}
+
+
+/* 공통 클래스 */
+
+.blind{
+    position:absolute;
+    clip:rect(0 0 0 0);
+    width:1px;
+    height:1px;
+    margin:-1px;
+    overflow:hidden
+    }
+
+.screen_out{
+    overflow:hidden;
+    position:absolute;
+    width:0;
+    height:0;
+    line-height:0;
+    text-indent:-9999px
+    }
+
+.hide{
+    position:absolute;
+    left:-9999px;
+    top:-9999px
+    }
+    /* header */
+
+.wrap{
+    min-width:1600px
+}
+
+.logo{            
+    margin:auto;
+    margin-top: 17px;
+    margin-bottom: 12px;
+    width: 112px;
+    height: 40px;
+}
+    
+.logo a{
+    display:block;
+    background:url(../images/ssoc_03.jpg)no-repeat;
+    text-indent:-9999px;
+    width: 112px;
+    height: 40px;
+} 
+.user_menu{
+    text-indent:-9999px;
+    font-size:0px
+}
+.user_menu1{
+    font-size:18px;
+    font-weight:bold;
+    margin:auto;
+    width: 1600px;
+}
+.login{
+    float:left;
+    margin:-38px 0 0px 1246px 
+}
+.slash{
+    float:left;
+    margin:-38px 0 0 1309px 
+}
+.membership{
+    float:left;
+    margin:-38px 0 0 1328px 
+}
+.line1{
+    font-size:0px;
+    text-indent:-9999px;
+    border-bottom:1px solid #cbc9c9;
+    width: 1600px;
+    margin:auto
+}
+
+.gnb{
+    position:relative;
+    margin:15px auto 0px; 
+    width: 1200px;
+}
+
+.gnb h2{
+    position:absolute;
+    left:-9999px;
+    top:-9999px}
+
+.gnb>ul{
+    width:100%;
+    height:40px;
+    margin:auto;
+    color:#d1ccc9;}
+
+.gnb>ul>li{
+    font-weight:bold;
+    float:left;
+    margin:0px auto;
+    width:150px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    position:relative}
+
+.gnb>ul>li>a{display:block;}
+
+.gnb ul ul{
+    padding-top:20px;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:40px;
+    background:#fff;
+    display:none
+}
+
+.nav_bg{
+    width:100%;
+    height:450px;
+    background:#fff; 
+    border-bottom:1px solid #cbc9c9;
+    display:none
+}
+
+.gnb8 a{
+    display:block;
+    background:url(../images/more_07.jpg) no-repeat;
+    width: 36px;
+    height: 30px;
+    text-indent:-9999px;
+    position:absolute;
+    margin:3px 0 0 1100px
+    
+    
+}
+
+.line2{
+    text-indent:-9999px;
+    font:0px;
+    border-bottom:1px solid #cbc9c9;
+    width: 1600px;
+    margin:auto;  
+}
+
+            /* content */
+
+.login2{
+    margin:50px 0 20px 0;
+    text-align:center
+}
+
+.select0{
+    
+    width: 1200px;
+    padding-top:37px;
+    
+    margin:auto;
+    
+}
+.select1{
+    background:url(../images/one_2.jpg) no-repeat;
+    text-indent:-9999px;
+    width: 34px;
+    height: 34px;
+    float:left;
+    margin-left:450px
+}
+.next1{
+    background:url(../images/next_23.jpg) no-repeat;
+    text-indent:-9999px;
+    width: 52px;
+    height: 8px;
+    float:left;
+    margin:10px 0 0 20px 
+}
+.select2{
+    background:url(../images/two_12.jpg) no-repeat;
+    text-indent:-9999px;
+    width: 34px;
+    height: 34px;
+    float:left;
+    margin-left:30px
+}
+.next2{
+    background:url(../images/next2_14.jpg) no-repeat;
+    text-indent:-9999px;
+    width: 50px;
+    height: 8px;
+    float:left;
+    margin:10px 0 0 20px 
+}
+.select3{
+    background:url(../images/three_25.jpg) no-repeat;
+    text-indent:-9999px;
+    width: 34px;
+    height: 34px;
+    float:left;
+    margin-left:30px
+}
+.select4{
+    
+    width: 1200px;
+    margin:auto;
+    padding-bottom:120px
+}
+.select5{
+    color: #f37b21;
+    font-weight:bold;
+    float:left;
+    margin:50px 0 0 -320px 
+}
+.select6{
+    color: #d1ccc9;
+    font-weight:bold;
+    float:left;
+    margin:50px 0 0 -195px;
+    text-align:center
+}
+.select7{
+    color: #d1ccc9;
+    font-weight:bold;
+    float:left;
+    margin:50px 0 0 -49px;
+    text-align:center
+}
+.mem{
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:40px 0 0px 0
+}
+legend{
+    text-indent:-9999px        
+}
+fieldset{
+    border:none;
+    width: 800px;
+    margin:auto;
+    
+    text-align:center
+}
+
+
+.login3{
+    border:1px solid #FC7D07;
+    border-radius:40px;
+    width: 400px;
+    height: 70px;
+    font-size:20px;        
+    font-weight:bold;
+    color:#FC7D07;
+    background-color:#fff;
+    margin:20px 0 0 0;  
+    cursor:pointer                      
+}
+.login3_1{
+    font-size:15px;
+    color:#cbc9c9;
+}
+.membership2{
+    border:1px solid #FC7D07;
+    border-radius:40px;
+    width: 400px;
+    height: 70px;
+    font-size:20px;        
+    font-weight:bold;
+    color:#FC7D07;
+    background-color:#fff;
+    margin:20px 0 0 0;  
+    cursor:pointer 
+}
+
+
+
+
+.gseek5{
+    
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    margin:40px 0 40px 0
+
+}
+.gseek6{
+    
+    width: 230px;
+    height: auto;
+    margin:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between
+}
+.naver{
+    
+    width: 65px;
+    height: auto;            
+}
+.naver2 a{
+    display:block;
+    
+    background:url(../images/naver.jpg)no-repeat;
+    width: 41px;
+    height: 41px;
+    margin:auto            
+}
+.kakao{
+    
+    width: 65px;
+    height: auto;
+}
+.kakao2 a{
+    display:block;
+    
+    background:url(../images/kakao.jpg) no-repeat;
+    width: 41px;
+    height: 41px; 
+    margin:auto            
+}
+.apple{
+   
+   width: 65px;
+   height: auto; 
+}
+.apple2 a{
+    display:block;
+    
+    background:url(../images/apple.jpg) no-repeat;
+    width: 41px;
+    height: 41px;   
+    margin:auto
+}
+.gseek7{
+    
+    width: 230px;
+    height: auto;
+    margin:20px auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between
+}
+.gseek8{
+    font-size:15px;
+    
+    width:65px
+}
+.gseek9{
+    font-size:15px;
+    
+    width:65px
+}
+.gseek10{
+    font-size:15px;
+    
+    width:65px
+}
+.naver3{
+    text-align:center
+}
+.kakao3{
+    text-align:center
+}
+.apple3{
+    text-align:center
+}
+.line7{
+    border-bottom:2px solid #cbc9c9;
+    width: 1600px;
+    text-indent:-9999px;
+    font-size:0px;
+    margin:50px auto 50px
+}
+
+#center{
+    font-weight: bold;
+    border:1px solid#fff;
+    width: 1600px;
+    margin:auto;
+}
+
+.center0{
+    width: 1200px;
+    margin:0 0 41px 0
+}
+.cen{
+    float:left;
+    margin:0 0 0 200px
+}
+
+.cen0{
+    float:left;
+    margin:0 0 0 39px
+}
+.cen1{
+    float:left;
+    margin:6px 0 0 81px;
+    font-size:12px
+}
+
+.center1{
+    border:1px solid #fff;
+    margin:0 0 41px 0
+}
+.cen2{
+    float:left;
+    margin:0 0 0 200px
+}
+.cen3{
+    float:left;
+    margin:0 0 0 39px
+}
+.cen4{
+    float:left;
+    margin:6px 0 0 30px;
+    font-size:12px
+}
+
+.center2{
+    
+    margin:0 0 20px 0
+}
+.cen5{
+    float:left;
+    margin:0 0 0 200px
+}
+.cen6{
+    float:left;
+    margin:0 0 0 39px
+}
+.cen7{
+    float:left;
+    margin:6px 0 41px 53px;
+    font-size:12px
+}
+
+#foot{
+    border:1px solid #f8f8f8;
+    width: 1600px;
+    height: 205px;
+    background-color:#f8f8f8;
+    margin:58px auto 0px
+}
+
+.foot0 a{
+    display:block;            
+    background:url(../images/foot_51.jpg) no-repeat;
+    text-indent:-9999px;
+    width: 200px;
+    height: 60px;
+    margin:41px 0 0 200px
+}
+
+#foot1{
+    
+    width: 1600px;
+    margin:-40px 0 46px 455px;
+    font-weight: bold;
+    
+}
+
+.foot2{
+    float:left
+}
+.foot3{
+    float:left;
+    margin:0 0 0 27px
+}
+.foot4{
+    float:left;
+    margin:0 0 0 27px
+}
+.foot5{
+    float:left;
+    margin:0 0 0 27px
+}
+
+#foot6{
+    width: 1600px;
+    margin:0 0 0px 455px;
+    font-weight: bold;
+}
+.foot7{
+    float:left;
+    font-size:15px
+}
+.foot8{
+    float:left;
+    margin:0 0 0 30px ;
+    font-size:14px
+}
+.foot9{
+    border:1px solid #000;
+    width: 1600px;
+    margin:30px 0 0 0
+}
+.foot10{
+    font-size:12px;
+    color: rgb(124, 122, 122);
+    margin:14px 0 40px 0
+}
+.sel{
+    background-color:#FC7D07;
+    color: #fff
+}
+.sel2{
+    color: #FC7D07;            
+}
